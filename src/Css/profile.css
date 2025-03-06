@@ -1,0 +1,108 @@
+:root {
+  --color1: #d4f0fc;
+  --color2: #89d6fb;
+  --color3: #02a9f7;
+  --color4: #02577a;
+  --color5: #01303f;
+  --gradiant1: linear-gradient(
+    36deg,
+    rgba(2, 169, 247, 1) 0%,
+    rgba(1, 48, 63, 1) 100%
+  );
+  --black-text: #444444;
+  --black-heading: #222222;
+  --text-white-heading: rgb(255, 255, 255);
+  --text-white-text: rgba(255, 255, 255, 0.8);
+}
+.marquee-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #f8f9fa; /* Light background */
+  padding: 10px 0;
+  position: relative;
+}
+
+.marquee-content {
+  display: flex;
+  gap: 50px; /* Space between duplicate texts */
+  animation: marquee 10s linear infinite;
+  width: max-content;
+}
+
+.marquee-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #007bff; /* Bootstrap primary color */
+}
+
+.marquee-content {
+  display: flex; /* Makes sure items stay in a row */
+}
+
+.marquee-item {
+  display: inline-block;
+  margin-right: 10px; /* Adds 10px gap between items */
+  white-space: nowrap; /* Prevents text wrapping */
+}
+.rfm-child,
+.rfm-initial-child-container {
+  width: 100%;
+}
+.profileImageBox {
+  border-radius: 20px 20px 20px 300px !important;
+}
+.profile.serviceBoxGrid {
+  width: 70%;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(10rem, 1fr));
+  justify-content: space-between;
+}
+.profile.serviceBoxGrid .serviceBox {
+  width: 300px;
+}
+.profileBoxDescription {
+  text-decoration: none;
+  padding-left: 0;
+}
+.profileServiceHeading {
+  text-align: left;
+}
+.profile.sectionHeading {
+  text-align: left;
+  font-size: 32px;
+}
+.profileAboutImg {
+  border-radius: 20px;
+  width: 350px;
+}
+.ProjectsectionDescription {
+  height: 100px;
+  overflow-y: auto;
+}
+
+.AboutUsSecction.team {
+  background: none !important;
+}
+.client-img-box.userTeamBoxes {
+  background-color: #fff;
+  border-radius: 300px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0rem 0rem 1rem 0.1rem rgba(0, 0, 0, 0.2);
+  align-items: center;
+  width: 100px; /* Adjust width */
+  height: 100px; /* Adjust height */
+}
+
+.education-section {
+  /* background: var(--gradiant1); */
+}
+@keyframes marquee {
+  from {
+    transform: translateX(100%);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}

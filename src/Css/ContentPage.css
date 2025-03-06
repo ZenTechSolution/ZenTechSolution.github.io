@@ -1,0 +1,438 @@
+.ContentPageData {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.ContentNavBar {
+  height: 10%;
+  background-color: aqua;
+}
+
+.ContentDataSection {
+  flex-grow: 1;
+  /* background-color: green; */
+  height: 100%;
+  overflow-y: auto;
+}
+
+.imgBox {
+  height: 130px;
+  width: 130px;
+  padding: 1rem;
+}
+.imgBox img {
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+}
+/* ////////////////////////////////////////////////////////// */
+.projectCard {
+  width: 350px;
+  height: 415px !important;
+  /* max-height: 400px; */
+  padding: 5rem 0.5rem 0.2rem 0.5rem;
+  position: relative;
+  margin: auto;
+}
+.ImgBox {
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+  border: 3px solid rgb(59, 58, 58);
+  margin: auto;
+  background-color: #fff;
+  overflow: hidden;
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0rem 0rem 1rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+.ImgBox img {
+  transition: 0.5s ease-in-out;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  object-fit: fill;
+}
+.ImgBox img:hover {
+  scale: 1.07;
+}
+.projectCardText {
+  background-color: #fff;
+  padding: 0.5rem;
+  padding-top: 36px;
+  box-shadow: 0rem 0rem 1rem 0.1rem rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.contributorName {
+  background-color: #bfcaee;
+  padding: 0.2rem 1rem;
+  border-radius: 0.3rem;
+  transition: 0.3s ease-in-out;
+}
+.contributorName:hover {
+  background-color: #9eacd6;
+  cursor: default;
+}
+.Contributors {
+  flex-wrap: wrap;
+}
+.projectGridBox {
+  display: flex;
+  justify-content: left;
+  gap: 1rem;
+  width: 100%;
+  margin: auto;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  /* height: 90%; */
+}
+.projectGridBox {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  /* gap: 1rem; */
+  /* width: 100%; */
+  margin: auto;
+  flex-wrap: wrap;
+  overflow-y: scroll;
+  /* height: 90%; */
+}
+.mainPageDashboard {
+  max-height: 100vh;
+}
+.projectDescription {
+  height: 100px;
+  overflow-y: auto;
+}
+/* Out team Section */
+.teamSectionBox {
+  width: fit-content;
+}
+.TeamCard {
+  background-color: #fff;
+  width: 450px;
+  height: 285px;
+  display: flex;
+  gap: 15px;
+  text-align: left;
+  padding: 1rem 0.5rem;
+  border-radius: 8px;
+  box-shadow: 0rem 0rem 1rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+.teamLeftSection {
+  width: 150px !important;
+}
+.teamLeftSection {
+  height: fit-content !important;
+  width: 100%;
+  margin: 0 auto !important;
+}
+.TeamImgBox {
+  height: 150px;
+  width: 100%;
+  border-radius: 5rem 5rem 0.3rem 5rem;
+  overflow: hidden;
+  /* border: 1px solid rgba(101, 101, 101, 0.375); */
+  background-color: #ededed;
+}
+.TeamImgBox img {
+  width: 150px;
+  height: 150px;
+  /* object-fit: contain; */
+  border-radius: inherit;
+  transition: 0.3s ease-in-out;
+}
+.TeamImgBox img:hover {
+  scale: 1.1;
+}
+.teamCardText {
+  width: 100%;
+}
+.teamName {
+  width: fit-content;
+  margin: auto;
+}
+.teamDescription {
+  height: 100%;
+  max-height: 160px;
+  overflow-y: auto;
+}
+.teamBtns {
+  position: relative;
+  height: 50px;
+}
+.teamBtns button {
+  position: absolute;
+  right: 0%;
+}
+
+.teamSectionBox {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: auto;
+  max-height: 100vh;
+  column-gap: 65px;
+  row-gap: 35px;
+}
+.navigationBar .button {
+  height: fit-content;
+  margin: auto 0.2rem;
+}
+.navigationBar .button .btn {
+  width: 150px;
+}
+.navigationBar .heading {
+  height: fit-content;
+  margin: auto 0.5rem;
+}
+/* Service Section */
+.serviceCard {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  width: 330px;
+  padding: 1rem;
+  margin: 1rem auto;
+  border-radius: 10px;
+  box-shadow: 0rem 0rem 1rem 0.1rem rgba(0, 0, 0, 0.3);
+}
+.serviceImgBox {
+  width: 120px;
+  height: 120px;
+  margin: auto;
+  padding: 2px;
+  border: 1px solid rgba(101, 101, 101, 0.375);
+  border-radius: 60px;
+}
+.serviceImgBox img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
+.serviceDescriptionDahboard {
+  text-align: center;
+  max-height: 100px;
+  overflow: auto;
+}
+
+.border-tl {
+  border-radius: 10px 0 0 0;
+}
+.border-tr {
+  border-radius: 0 10px 0 0;
+}
+/* ///////////////////////////////////////////////////////////////////////////// */
+.supportList {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #dee2e6;
+  border-radius: 5px;
+  /* overflow: hidden; */
+  border: none;
+}
+
+.supportRow {
+  display: flex;
+  border-bottom: 1px solid #dee2e6;
+  height: 100px;
+  align-items: center;
+  border: none;
+}
+.supportRow:hover {
+  background-color: #e7e7e7 !important;
+}
+.supportRow:first-child {
+  height: fit-content !important;
+  padding: 1rem;
+  border-radius: 10px 10px 0 0;
+}
+.supportRow:first-child:hover {
+  background-color: #343a40 !important;
+}
+.supportRow:nth-child(even) {
+  background-color: #ebebeb;
+}
+.supportHeader {
+  background-color: #343a40;
+  color: white;
+  font-weight: bold;
+}
+.supportCol {
+  flex: 1;
+  text-align: center;
+  word-wrap: break-word;
+  height: fit-content;
+  max-height: 100%;
+}
+/* .supportDescription {
+  height: 100%;
+  text-align: left;
+} */
+.supportDescription {
+  display: -webkit-box;
+  -webkit-line-clamp: 2; /* Limit to 3 lines */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  height: auto;
+  max-height: 4.5em; /* Approx height for 3 lines */
+  position: relative;
+  text-align: left;
+}
+
+/* Show "Read More" button */
+.supportDescription::after {
+  content: " ... Read More";
+  color: blue;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.selectBar label {
+  text-align: left;
+  padding: 0;
+}
+.spinnerBlock {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  z-index: 2;
+  background-color: #343a40;
+}
+.spinner-border.spinner-border-sm {
+  top: 20%;
+  color: blue;
+  width: 50px;
+  height: 50px;
+  scale: 3;
+}
+.spinnerText {
+  position: absolute;
+  color: rgb(13, 13, 135);
+  font-size: 20px;
+  z-index: 5;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+/* /////////////////// Responsive /////////////////////////// */
+/* ///////////////////////////////////////////////////////////////////////////// */
+
+@media (max-width: 480px) {
+  .projectGridBox {
+    display: flex;
+    flex-direction: column;
+  }
+  .teamSectionBox {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+  }
+  .TeamCard {
+    flex-direction: column;
+    max-width: 95%;
+    margin: 10px auto;
+    height: 380px !important;
+    padding-bottom: 2px;
+    gap: 5px;
+  }
+  .teamLeftSection {
+    height: 130px;
+  }
+  .TeamImgBox {
+    height: 100px;
+    width: 100px;
+    margin: auto;
+  }
+  .teamDescription {
+    text-align: center;
+    margin-top: 25px;
+    height: 100px;
+    overflow-y: auto;
+  }
+  .teamLeftSection {
+    margin: auto;
+  }
+  .TeamImgBox {
+    border-radius: 5rem !important;
+    width: 100px;
+    height: 100px !important;
+  }
+  .TeamImgBox img {
+    width: 100px;
+    height: 100px;
+  }
+  .serviceDescriptionDahboard {
+    text-align: center;
+  }
+  .supportList {
+    border: none;
+  }
+  .supportRow {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    height: fit-content;
+    border: none;
+    margin-bottom: 20px;
+    box-shadow: 0rem 0rem 1rem 0.1rem rgba(0, 0, 0, 0.2);
+    padding: 0.5rem;
+    border-radius: 10px;
+  }
+  .supportRow:nth-child(even) {
+    background-color: #fff;
+  }
+  .supportRow:first-child {
+    display: none !important;
+  }
+  .supportCol {
+    height: fit-content;
+    margin: auto;
+    width: 100%;
+    max-width: 100% !important;
+  }
+  .supportCol button {
+    width: 45%;
+  }
+  .supportCol:first-child {
+    width: fit-content;
+    margin: auto;
+  }
+  .supportDescription {
+    max-height: 80px !important;
+  }
+
+  .mobileFormBoxes.teamPopup {
+    scale: 80%;
+  }
+}
+/* ///////////////////////////////////////////////////////////////////////////// */
+.profileImgBox {
+  width: 300px;
+  height: 300px;
+  object-fit: contain;
+  border: 2px solid #343a4040;
+  margin: auto;
+  border-radius: 150px;
+  overflow: hidden;
+}
+.profileImgBox img {
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease-in-out;
+}
+.profileImgBox img:hover {
+  scale: 1.1;
+}
+
+.myTeamMember .swiper-container {
+  /* background-color: green; */
+  max-width: 80%;
+}
