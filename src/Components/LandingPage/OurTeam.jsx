@@ -16,66 +16,49 @@ import {
 const teamObj = [
   {
     id: "1",
-    name: "Team Member 1",
-    role: "Role 1",
+    name: "Adil Sehr",
+    role: "Founder & Lead Mobile Developer",
     img_path: "./Images/Images/UserImage.png",
-    skills: [{ name: "Skill 1" }, { name: "Skill 2" }, { name: "Skill 3" }],
+    skills: [
+      { name: "Mobile App Development" },
+      { name: "Firebase" },
+      { name: "Full-Stack Development" },
+    ],
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti numquam asperiores quis consequatur, eum accusantium nostrum itaque rem aut cum unde tempora exercitationem aliquid reprehenderit neque omnis labore assumenda ullam",
-
-    // facebook: "https://facebook.com",
-    // linkedin: "https://linkedin.com",
-    linkedin: null,
-    github: "https://github.com",
-    twitter: "https://x.com",
+      "I am  founder of Zentech Solutions, has been developing mobile apps since 2014. With expertise in various modern technologies, I leads the team in crafting cutting-edge digital solutions with a focus on efficiency and innovation.",
   },
   {
     id: "2",
-    name: "Team Member 2",
-    role: "Role 2",
+    name: "Saad Shafique",
+    role: "Senior Mobile App Developer",
     img_path: "./Images/Images/UserImage.png",
-    skills: [{ name: "Skill 1" }, { name: "Skill 2" }],
+    skills: [
+      { name: "Flutter" },
+      { name: "Game Development" },
+      { name: "PHP, Python (AI Scripts)" },
+      { name: "SQL & Firestore" },
+    ],
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti numquam asperiores quis consequatur, eum accusantium nostrum itaque rem aut cum unde tempora exercitationem aliquid reprehenderit neque omnis labore assumenda ullam",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    github: "https://github.com",
-    twitter: "https://x.com",
+      "I am a  skilled mobile app developer with 3 years of experience in Flutter. I had developed mobile games and worked on numerous projects involving PHP, Python AI scripting, Firestore, and SQL, bringing versatile expertise to the team.",
   },
   {
     id: "3",
-    name: "Team Member 3",
-    role: "Role 3",
+    name: "Talha Nazir",
+    role: "Web Developer",
     img_path: "./Images/Images/UserImage.png",
     skills: [
-      { name: "Skill 1" },
-      { name: "Skill 2" },
-      { name: "Skill 3" },
-      { name: "Skill 4" },
+      { name: "React.js" },
+      { name: "Laravel" },
+      { name: "SQL" },
+      { name: "Firestore" },
     ],
     description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti numquam asperiores quis consequatur, eum accusantium nostrum itaque rem aut cum unde tempora exercitationem aliquid reprehenderit neque omnis labore assumenda ullam",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    github: "https://github.com",
-    twitter: "https://x.com",
-  },
-  {
-    id: "4",
-    name: "Team Member 4",
-    role: "Role 4",
-    img_path: "./Images/Images/UserImage.png",
-    skills: [{ name: "Skill 3" }, { name: "Skill 4" }],
-    description:
-      " Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti numquam asperiores quis consequatur, eum accusantium nostrum itaque rem aut cum unde tempora exercitationem aliquid reprehenderit neque omnis labore assumenda ullam",
-    facebook: "https://facebook.com",
-    linkedin: "https://linkedin.com",
-    twitter: "https://x.com",
+      "I am a web developer with 1.5 years of experience specializing in React.js, Laravel, SQL, and Firestore. I am about building scalable and efficient web applications, ensuring seamless user experiences.",
   },
 ];
 
 export const OurTeam = () => {
-  const [team, setTeam] = useState(teamObj);
+  const [team, setTeam] = useState([...teamObj, ...teamObj]);
   const [apiResponse, setApiResponse] = useState([]);
 
   useEffect(() => {

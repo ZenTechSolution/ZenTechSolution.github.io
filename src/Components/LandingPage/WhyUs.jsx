@@ -2,40 +2,40 @@ import React, { useState } from "react";
 
 let whyUsData = [
   {
-    name: "Section 1",
+    name: "Innovative Solutions",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sit voluptates recusandae itaque possimus, repellat voluptatibus dicta non! Adipisci magni quod quia maiores nulla quae sapiente harum rerum sunt quis.",
-    image: "./Images/Icons/icon.svg",
+      "We create cutting-edge software solutions tailored to meet modern business needs, ensuring efficiency, scalability, and success.",
+    image: "./Images/Icons/whyus2.png",
   },
   {
-    name: "Section 2",
+    name: "Experienced Team",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sit voluptates recusandae itaque possimus, repellat voluptatibus dicta non! Adipisci magni quod quia maiores nulla quae sapiente harum rerum sunt quis.",
-    image: "./Images/Icons/icon.svg",
+      "Our team of skilled developers and tech experts brings years of experience in crafting high-quality, robust, and reliable software applications.",
+    image: "./Images/Icons/whyus3.png",
   },
   {
-    name: "Section3",
+    name: "Customer-Centric Approach",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sit voluptates recusandae itaque possimus, repellat voluptatibus dicta non! Adipisci magni quod quia maiores nulla quae sapiente harum rerum sunt quis.",
-    image: "./Images/Icons/icon.svg",
+      "We prioritize understanding your business goals to deliver customized software that enhances productivity and drives growth.",
+    image: "./Images/Icons/whyus4.png",
   },
   {
-    name: "Section 4",
+    name: "End-to-End Development",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sit voluptates recusandae itaque possimus, repellat voluptatibus dicta non! Adipisci magni quod quia maiores nulla quae sapiente harum rerum sunt quis.",
-    image: "./Images/Icons/icon.svg",
+      "From idea validation to deployment and support, we handle the entire software development lifecycle to ensure seamless execution.",
+    image: "./Images/Icons/whyus1.png",
   },
   {
-    name: "Section 5",
+    name: "Scalable and Secure",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sit voluptates recusandae itaque possimus, repellat voluptatibus dicta non! Adipisci magni quod quia maiores nulla quae sapiente harum rerum sunt quis.",
-    image: "./Images/Icons/icon.svg",
+      "Our software solutions are designed for scalability and security, enabling businesses to grow without worrying about system limitations or threats.",
+    image: "./Images/Icons/whyus6.png",
   },
   {
-    name: "Section 6",
+    name: "Continuous Support",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis sit voluptates recusandae itaque possimus, repellat voluptatibus dicta non! Adipisci magni quod quia maiores nulla quae sapiente harum rerum sunt quis.",
-    image: "./Images/Icons/icon.svg",
+      "We provide ongoing maintenance and support to ensure your software remains updated, efficient, and aligned with your business goals.",
+    image: "./Images/Icons/whyus5.png",
   },
 ];
 

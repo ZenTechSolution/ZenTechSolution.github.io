@@ -6,6 +6,7 @@ import { WhyUs } from "../Components/LandingPage/WhyUs";
 import { OurTeam } from "../Components/LandingPage/OurTeam";
 import { Testmonial } from "../Components/LandingPage/Testmonial";
 import { Footer } from "../Components/LandingPage/Footer";
+import "./../Css/scroll.css";
 
 export const LandingPage = () => {
   // Create refs for each section
@@ -69,11 +70,16 @@ const Navigation = ({ onNavigate, sections }) => {
   const [isOpen, setIsOpen] = useState(false);
 
   return (
-    <nav className="navbar navbar-expand-sm bg-light navbar-light">
+    <nav className="navbar navbar-expand-sm navigationBar Landing">
       <div className="container-fluid">
         {/* Logo */}
         <a className="navbar-brand" href="#">
-          <img src="./images/img.png" alt="ZentechLogo" width="100" />
+          <img
+            className="text-light"
+            src="./images/img.png"
+            alt="ZentechLogo"
+            width="100"
+          />
         </a>
 
         {/* Burger Menu Button */}
@@ -90,7 +96,7 @@ const Navigation = ({ onNavigate, sections }) => {
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
               <button
-                className="nav-link btn btn-link"
+                className="nav-link btn btn-link text-light"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigate(sections.services);
@@ -102,7 +108,7 @@ const Navigation = ({ onNavigate, sections }) => {
             </li>
             <li className="nav-item">
               <button
-                className="nav-link btn btn-link"
+                className="nav-link btn btn-link text-light"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigate(sections.about);
@@ -114,7 +120,7 @@ const Navigation = ({ onNavigate, sections }) => {
             </li>
             <li className="nav-item">
               <button
-                className="nav-link btn btn-link"
+                className="nav-link btn btn-link text-light"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigate(sections.whyUs);
@@ -126,7 +132,7 @@ const Navigation = ({ onNavigate, sections }) => {
             </li>
             <li className="nav-item">
               <button
-                className="nav-link btn btn-link"
+                className="nav-link btn btn-link text-light"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigate(sections.team);
@@ -138,14 +144,14 @@ const Navigation = ({ onNavigate, sections }) => {
             </li>
             <li className="nav-item">
               <button
-                className="nav-link btn btn-link"
+                className="nav-link btn btn-link text-light"
                 onClick={(e) => {
                   e.preventDefault();
                   onNavigate(sections.testimonials);
                   setIsOpen(false);
                 }}
               >
-                Reviews
+                Projects
               </button>
             </li>
           </ul>

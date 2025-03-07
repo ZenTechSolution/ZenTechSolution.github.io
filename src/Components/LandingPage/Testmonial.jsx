@@ -9,46 +9,55 @@ import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
 
 const clients = [
   {
-    img_path: "./Images/Images/UserImage.png",
-    name: "LusDen",
-    customer_name: "1122",
+    img_path: "./Images/projects/eris.png",
+    name: "Eris",
+    customer_name: "Johnque Washington",
     customer_review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, com",
+      "Amazing work! The Eris app has completely transformed how we manage toll booth payments. The team was professional, delivered on time, and provided great support throughout the process. Highly recommended!",
+    project: "Toll Booth Payment System",
+    description:
+      "Eris is a booth app used by toll plazas in the USA for seamless digital payments. It streamlines transactions for booth management, ensuring efficiency and accuracy.",
+  },
+  {
+    img_path: "./Images/projects/milesMobile.png",
+    name: "Miles",
+    customer_name: "Johnque Washington",
+    customer_review:
+      "Brilliant job! The backend system works flawlessly, and integration with our existing apps was seamless. The team provided continuous updates and made sure everything was working perfectly. Five stars!",
+    project: "Booth Management Web Backend",
+    description:
+      "Miles is a web-based backend system for Eris and Patreon Management, providing toll plaza management with real-time data, reporting, and operational control.",
+  },
+  {
+    img_path: "./Images/projects/patreonManagment.png",
+    name: "Patreon Management",
+    customer_name: "Johnque Washington",
+    customer_review:
+      "Absolutely fantastic experience! The app was built exactly to our requirements, and the attention to detail was incredible. Smooth functionality and excellent communication from the team. Would definitely work with them again!",
+    project: "Toll Booth Client Management",
+    description:
+      "Patreon Management is a toll booth client app that enables secure digital transactions, providing a smooth experience for booth clients across the USA.",
+  },
 
-    project:
-      "Project 1 Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+  {
+    img_path: "./Images/projects/schoolletCanteen.png",
+    name: "Schoollet Canteen",
+    customer_name: "Naif Al Harbi",
+    customer_review:
+      "The Schoollet Canteen Management system has streamlined our billing process, making transactions quick and hassle-free. The team delivered exactly what we needed with great attention to detail. Highly recommended!",
+    project: "Canteen Billing & Digital Transactions",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "Schoollet Canteen Management is a digital solution designed for canteens to manage billing and transactions efficiently. It enables seamless digital payments, automates invoicing, and simplifies financial tracking for both vendors and students.",
   },
   {
-    img_path: "./Images/Images/UserImage.png",
-    name: "John Doe",
-    project: "Sed do eiusmod",
-    description:
-      "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat . Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat .",
-    customer_name: "1122",
+    img_path: "./Images/projects/schoollet.png",
+    name: "Schoollet",
+    customer_name: "Naif Al Harbi",
     customer_review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, com",
-  },
-  {
-    img_path: "./Images/Images/UserImage.png",
-    name: "Jane Smith",
-    project: "Duis aute irure",
+      "Great work! The Schoollet app has made digital payments super easy for students and vendors. The developers were very responsive, and the app was delivered on time with excellent quality. Will definitely hire again!",
+    project: "Canteen & Student Digital Transactions",
     description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    customer_name: "1122",
-    customer_review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, com",
-  },
-  {
-    img_path: "./Images/Images/UserImage.png",
-    name: "Alex Brown",
-    project: "Excepteur sint",
-    description:
-      "Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-    customer_name: "1122",
-    customer_review:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, com",
+      "Schoollet is a digital payment app for students and canteens, enabling seamless transactions and credit-based payments in educational institutions.",
   },
 ];
 
@@ -152,7 +161,10 @@ const ClientCard = (props) => {
       <div className="client-detail-box">
         <div className="client-id">
           <div className="client-info text-left">
-            <h5 className="clentName textHeading">
+            <h5
+              className="clentName textHeading"
+              style={{ width: "50%", margin: "auto" }}
+            >
               {props.data.customer_name}
             </h5>
             <div className="testmoniaProjectName div d-flex justify-content-center">
@@ -161,7 +173,9 @@ const ClientCard = (props) => {
             </div>
           </div>
         </div>
-        <p className="client-quote textDescription">{props.data.description}</p>
+        <p className="client-quote textDescription">
+          {props.data.customer_review}
+        </p>
       </div>
     </div>
   );

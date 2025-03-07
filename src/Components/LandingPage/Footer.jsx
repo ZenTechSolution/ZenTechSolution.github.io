@@ -17,7 +17,7 @@ let footerData = {
 
 export const Footer = () => {
   return (
-    <div className="footerSection d-flex justify-content-center gap-1 py-5 m-0 row d-flex gap-2">
+    <div className="footerSection d-flex justify-content-around gap-1 py-5 m-0 row d-flex gap-2">
       {/* Logo Section */}
       <div className="col-10 col-md-2 text-center mb-3">
         <div className="footerLogoImg">
@@ -33,13 +33,13 @@ export const Footer = () => {
       <div className="col-10 col-md-2 mb-3" style={{ textAlign: "left" }}>
         <h3 className="text-light">Info</h3>
         <p className="text-light">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium
-          asperiores, natus praesentium quidem.
+          We take pride in empowering businesses worldwide with innovative
+          solutions. We bring an unwavering commitment to excellence.
         </p>
       </div>
 
       {/* Links Section */}
-      <div className="col-10 col-md-2  mb-3 footerSectionLinks">
+      {/* <div className="col-10 col-md-2  mb-3 footerSectionLinks">
         <h3 className="text-light m-0">Links</h3>
         <div className="text-light">
           <div>Home</div>
@@ -49,7 +49,7 @@ export const Footer = () => {
           <div>Our Team</div>
           <div>Testimonial</div>
         </div>
-      </div>
+      </div> */}
 
       {/* Contact Section */}
       <div className="col-10 col-md-2 mb-3 footerContactSection text-light">

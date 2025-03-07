@@ -12,19 +12,19 @@ let sliderData = [
   {
     heading: "Web Devolpment",
     description:
-      " Lorem ipsum WEB DEV dolor sit amet consectetur adipisicing elit. Rerum qui,  magni aperiam repellendus blanditiis iure molestias ea corporis quas  perspiciatis minima nobis laudantium voluptatem officia alias, perferendis itaque at tenetur?",
+      "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses. Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations",
     image: "./Images/Images/slider-img-1.png",
   },
   {
     heading: "Mobile Devolpment",
     description:
-      " Lorem ipsum MOBILE DEV dolor sit amet consectetur adipisicing elit. Rerum qui,  magni aperiam repellendus blanditiis iure molestias ea corporis quas  perspiciatis minima nobis laudantium voluptatem officia alias, perferendis itaque at tenetur?",
+      " Every app we build is engineered to drive measurable business outcomes. With expertise spanning cutting-edge native development, cross-platform solutions, and enterprise-grade systems, our engineers transform bold ideas into dynamic mobile experiences.",
     image: "./Images/Images/slider-img-2.png",
   },
   {
     heading: "Project Manage",
     description:
-      " Lorem ipsum PROJECT MANAGE dolor sit amet consectetur adipisicing elit. Rerum qui,  magni aperiam repellendus blanditiis iure molestias ea corporis quas  perspiciatis minima nobis laudantium voluptatem officia alias, perferendis itaque at tenetur?",
+      "Our project management services ensure seamless planning, execution, and delivery of projects with precision and efficiency. We specialize in managing projects of all sizes, from small-scale initiatives to enterprise-level operations. With a structured approach, we streamline workflows, optimize resource allocation, and mitigate risks to ensure timely completion and exceptional results.",
     image: "./Images/Images/slider-img-3.png",
   },
 ];

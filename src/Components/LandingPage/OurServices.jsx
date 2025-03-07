@@ -3,35 +3,34 @@ import axios from "axios";
 
 let services = [
   {
-    name: "Service 1",
+    name: "Mobile App Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo deleniti enim necessitatibus quia libero laborum fugiat laboriosam iusto at vero ipsa, quod consequuntur nisi?",
-    img_path: "./Images/Icons/icon.svg",
+      "Every app we build is engineered to drive measurable business outcomes. With expertise spanning cutting-edge native development, cross-platform solutions, and enterprise-grade systems, our engineers transform bold ideas into dynamic mobile experiences",
+    img_path: "./Images/Icons/mobile.png",
   },
   {
-    name: "Service 2",
+    name: "Web Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo deleniti enim necessitatibus quia libero laborum fugiat laboriosam iusto at vero ipsa, quod consequuntur nisi  consectetur adipisicing elit. Nemo deleniti enim necessitatibus quia libero laborum fugiat laboriosam iusto at vero ipsa, quod consequuntur nisi?",
-    img_path:
-      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvLeTF8i4BJfDzb-sbp4AxveNaX4uvw_yyCw&s",
+      "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses.Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations.",
+    img_path: "./Images/Icons/website.png",
   },
   {
-    name: "Service 3",
+    name: "Generative AI",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo deleniti enim necessitatibus quia libero laborum fugiat laboriosam iusto at vero ipsa, quod consequuntur nisi?",
-    img_path: "./Images/Icons/icon.svg",
+      "We delivers expert generative AI solutions designed to accelerate your digital transformation. Using advanced technologies like TensorFlow, PyTorch, and GPT architectures, we create tailored AI solutions that enable businesses to innovate with precision and creativity.",
+    img_path: "./Images/Icons/ai.png",
   },
   {
-    name: "Service 4",
+    name: "Custom Software Development",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo deleniti enim necessitatibus quia libero laborum fugiat laboriosam iusto at vero ipsa, quod consequuntur nisi?",
-    img_path: "./Images/Icons/icon.svg",
+      "We specialize in building scalable and bespoke software tailored to address specific business challenges. Whether you're enhancing operational processes or revolutionizing customer experiences, our team leverages cutting-edge tools and technologies to turn your vision into reality.",
+    img_path: "./Images/Icons/software.png",
   },
   {
-    name: "Service 5",
+    name: "Cloud Application",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo deleniti enim necessitatibus quia libero laborum fugiat laboriosam iusto at vero ipsa, quod consequuntur nisi?",
-    img_path: "./Images/Icons/icon.svg",
+      "Cloud applications are transforming businesses with unmatched scalability, flexibility, and efficiency. We craft tailored cloud solutions using leading platforms like AWS, Azure, and Google Cloud, combined with tools such as Kubernetes, Terraform, and Docker.",
+    img_path: "./Images/Icons/cloud.png",
   },
 ];
 
@@ -61,9 +60,8 @@ export const OurServices = () => {
           Our <span>Services</span>
         </h3>
         <p className="w-100 col-md-6 m-auto sectionDescription">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nemo
-          deleniti enim necessitatibus quia libero laborum fugiat laboriosam
-          iusto at vero ipsa, quod conser nisi?
+          We take pride in empowering businesses worldwide with innovative
+          solutions. We bring an unwavering commitment to excellence.
         </p>
       </div>
       <ServiceDiv showAll={showAll} data={data} />
