@@ -59,6 +59,9 @@
   background-color: #0787c2;
 }
 
+.hidden {
+  display: none !important;
+}
 /* Landing Page */
 .navigationBar {
   background-color: var(--color1) !important;

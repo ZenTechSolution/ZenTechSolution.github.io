@@ -6,6 +6,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import axios from "axios";
 import { IoIosArrowForward, IoIosArrowBack } from "react-icons/io";
+import { InfiniteScrollImgs } from "./../ProfilePage/InfiniteScroll";
 
 const clients = [
   {
@@ -64,23 +65,26 @@ const clients = [
 export const Testmonial = () => {
   const [data, setData] = useState(clients);
 
-  useEffect(() => {
-    axios
-      .get("http://127.0.0.1:8000/api/getProjects", {
-        headers: {
-          "Content-Type": "application/json",
-        },
-      })
-      .then((response) => {
-        setData(response.data.data || []);
-      })
-      .catch((err) => {
-        console.error("Error fetching projects:", err);
-      });
-  }, []);
+  // useEffect(() => {
+  //   axios
+  //     .get("http://127.0.0.1:8000/api/getProjects", {
+  //       headers: {
+  //         "Content-Type": "application/json",
+  //       },
+  //     })
+  //     .then((response) => {
+  //       setData(response.data.data || []);
+  //     })
+  //     .catch((err) => {
+  //       console.error("Error fetching projects:", err);
+  //     });
+  // }, []);
 
   return (
     <div className="TestmonialSection">
+      <div className="div my-4">
+        <InfiniteScrollImgs data={clients} />
+      </div>
       <div className="testmonialContainer">
         <h3 className="sectionHeading">Testimonial</h3>
         <SwiperSlideshow data={data} />

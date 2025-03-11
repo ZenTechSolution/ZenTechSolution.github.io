@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import { NavigationBar } from "./DashboardData";
 import { ConfirmBox, AlertBox } from "../AlertBox";
 import { TeamPopUp } from "./../TeamPopUp";
+import { ProjectPage } from "./ProjectPage";
 import { CircularProgressBar } from "./../TeamPopUp";
 import axios from "axios";
 
@@ -16,17 +17,15 @@ let projects = [
   },
 ];
 
-export const Projects = (props) => {
-  let [show, setShow] = useState(false);
-  let [data, setData] = useState(projects);
-  useEffect(() => {
-    // Retrieve token from localStorage (or any other secure storage)
-    // const token = localStorage.getItem("token");
+export const Projects = () => {
+  const [showPopup, setShowPopup] = useState(false);
+  const [selectedProject, setSelectedProject] = useState(null);
+  const [data, setData] = useState([]);
 
+  useEffect(() => {
     axios
       .get("http://127.0.0.1:8000/api/getProjects", {
         headers: {
-          // Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
         },
       })
@@ -36,69 +35,78 @@ export const Projects = (props) => {
       })
       .catch((err) => {
         console.error("Error fetching projects:", err);
-        // setError("Failed to load projects");
       });
   }, []);
 
-  function AddBtn() {
-    setShow(true);
+  function handleAddProject() {
+    setShowPopup(true);
   }
+
   return (
     <>
-      <NavigationBar heading={"Projects"} Addbtn={AddBtn} />
-      <div className="div projectGridBox">
-        {data.map((project) => {
-          return <ProjectBox project={project} />;
-        })}
+      <NavigationBar
+        heading={selectedProject ? selectedProject.name : "Projects"}
+        Addbtn={handleAddProject}
+        btnName={selectedProject ? "Edit" : "Add"}
+      />
+
+      {/* Hide the grid when a project is selected */}
+      <div className={`projectGridBox ${selectedProject ? "d-none" : ""}`}>
+        {data.map((project) => (
+          <ProjectBox
+            key={project.id}
+            project={project}
+            onSelect={setSelectedProject}
+          />
+        ))}
       </div>
-      <ProjectPopUp show={show} onCancel={() => setShow(false)} />
+
+      {/* Show ProjectPage when a project is selected */}
+      {selectedProject && (
+        <ProjectPage
+          show={true}
+          data={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
+
+      {/* Show Popup for adding a new project */}
+      <ProjectPopUp
+        show={showPopup}
+        data={selectedProject}
+        onCancel={() => setShowPopup(false)}
+      />
     </>
   );
 };
 
-function ProjectBox(props) {
-  let [show, setShow] = useState(false);
-
-  function deleteProject() {}
+function ProjectBox({ project, onSelect }) {
   return (
-    <>
-      <div className="div projectCard " onClick={() => setShow(true)}>
-        <div className="div ImgBox">
-          <img src={props.project.img_path} alt="Project Name" />
-        </div>
-        <div className="div projectCardText mt-2">
-          <h3>{props.project.name}</h3>
-          <p className="projectDescription">{props.project.description}</p>
-          <div className="Contributors d-flex justify-content-around">
-            {props.project.team.map((team, i) => {
-              if (i <= 2) {
-                return (
-                  <div className="div contributorName mb-2">{team.name}</div>
-                );
-              }
-            })}
-          </div>
-          <button
-            className="btn btn-outline-danger w-100"
-            onClick={(e) => {
-              e.stopPropagation();
-              deleteProject();
-            }}
-          >
-            Delete
-          </button>
-        </div>
+    <div className="projectCard" onClick={() => onSelect(project)}>
+      <div className="ImgBox">
+        <img src={project.img_path} alt={project.name} />
       </div>
-      {show ? (
-        <ProjectPopUp
-          show={show}
-          onCancel={() => setShow(false)}
-          data={props.project}
-        />
-      ) : (
-        ""
-      )}
-    </>
+      <div className="projectCardText mt-2">
+        <h3>{project.name}</h3>
+        <p className="projectDescription">{project.description}</p>
+        <div className="Contributors d-flex justify-content-around">
+          {project.team.slice(0, 3).map((team, i) => (
+            <div key={i} className="contributorName mb-2">
+              {team.name}
+            </div>
+          ))}
+        </div>
+        <button
+          className="btn btn-outline-danger w-100"
+          onClick={(e) => {
+            e.stopPropagation();
+            // Delete function here
+          }}
+        >
+          Delete
+        </button>
+      </div>
+    </div>
   );
 }
 
@@ -237,7 +245,6 @@ function ProjectPopUp(props) {
               />
             </div>
 
-            {/* Project Description Input */}
             <div className="selectBar row w-100 m-auto">
               <label className="col-12 col-md-3">Review</label>
               <textarea
@@ -247,6 +254,7 @@ function ProjectPopUp(props) {
                 onChange={(e) => setReview(e.target.value)}
               />
             </div>
+            {/* Project Description Input */}
             <div className="selectBar row w-100 m-auto">
               <label className="col-12 col-md-3">Description</label>
               <textarea

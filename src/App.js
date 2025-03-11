@@ -1,5 +1,5 @@
 import {
-  BrowserRouter as Router,
+  HashRouter as Router,
   Routes,
   Route,
   Navigate,
@@ -29,9 +29,7 @@ function AuthRoute({ children }) {
 }
 
 function App() {
-  //////////////////////////////////////
   let [url, setUrl] = useState("http://127.0.0.1:8000");
-  //////////////////////////////////////
   let [token, setToken] = useState(localStorage.getItem("token") || null);
 
   return (
@@ -48,7 +46,8 @@ function App() {
                 </ProtectedRoute>
               }
             />
-            <Route path="/profile" element={<ProfilePage />} />
+            <Route path="/profile/:id" element={<ProfilePage />} />
+
             <Route
               path="/login"
               element={

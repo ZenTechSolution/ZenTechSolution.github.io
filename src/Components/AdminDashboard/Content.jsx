@@ -4,6 +4,7 @@ import { Projects } from "./Projects";
 import { Team } from "./Team";
 import { Support } from "./Support";
 import { Profile } from "./../Profile";
+import { ProjectPage } from "./../AdminDashboard/ProjectPage";
 import { Services } from "./Services";
 import { UserTeam } from "./../UserDashboard/UserTeam";
 
@@ -11,7 +12,7 @@ export const Content = (props) => {
   return (
     <div className="ContentDataSection">
       {/* {props.page === "Team" && <Team />} */}
-      {props.page === "Team" && <UserTeam />}
+      {props.page === "Team" && <Team />}
       {props.page === "Support" && <Support />}
       {props.page === "Profile" && <Profile />}
       {props.page === "Projects" && <Projects />}

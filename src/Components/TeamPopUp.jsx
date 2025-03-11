@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { AlertBox } from "./AlertBox";
 import axios from "axios";
 
 export function TeamPopUp({ show, team, onCancel, onSave, ...props }) {
@@ -8,29 +9,28 @@ export function TeamPopUp({ show, team, onCancel, onSave, ...props }) {
   const [password, setPassword] = useState("");
   const [startDate, setStartDate] = useState("");
   const [role, setRole] = useState("");
-  const [facebook, setFacebook] = useState("");
-  const [linkedin, setLinkedin] = useState("");
-  const [github, setGithub] = useState("");
-  const [twitter, setTwitter] = useState("");
   const [selectedMedia, setSelectedMedia] = useState();
   const [isUploading, setIsUploading] = useState(false);
   let [roleDisable, setRoleDisable] = useState(false);
   let [description, setDescription] = useState("");
+  let [id, setId] = useState(null);
+  //////////////////////////////////////////////////
+  let [heading, setHeading] = useState("Alert");
+  let [alertDescription, setAlertDescription] = useState("Are You Sure");
+  let [alertBox, setAlertBox] = useState(false);
+  //////////////////////////////////////////////////
   const isEditMode = !!team;
 
   // Populate form in edit mode
   useEffect(() => {
     if (show && team) {
+      setId(team.id || null);
       setFname(team.first_name || "");
       setLname(team.last_name || "");
       setStartDate(team.dob || "");
       setRole(team.role || "");
       setPassword(team.password_text || "");
       setEmail(team.email || "");
-      setFacebook(team.facebook || "");
-      setLinkedin(team.linkedin || "");
-      setGithub(team.github || "");
-      setTwitter(team.twitter || "");
       setSelectedMedia(null);
       setRoleDisable(team.role == "admin" ? true : false);
       setDescription(team.description);
@@ -40,16 +40,22 @@ export function TeamPopUp({ show, team, onCancel, onSave, ...props }) {
       setLname("");
       setStartDate("");
       setRole("");
-      setFacebook("");
-      setLinkedin("");
-      setGithub("");
-      setTwitter("");
       setSelectedMedia(null);
       setDescription("");
     }
   }, [show, team]);
 
   if (!show) return null;
+
+  function handleAlertBox(
+    showAlert = false,
+    heading = "heading",
+    description = "description"
+  ) {
+    setAlertBox(showAlert);
+    setAlertDescription(description);
+    setHeading(heading);
+  }
 
   const handleMediaSelection = () => {
     const fileInput = document.createElement("input");
@@ -66,29 +72,20 @@ export function TeamPopUp({ show, team, onCancel, onSave, ...props }) {
     setIsUploading(true);
 
     try {
-      const formData = new FormData();
+      // const formData = new FormData();
 
-      if (props.data && props.data.id) {
-        formData.append("id", props.data.id); // Send ID only if updating
-      }
+      let formData = {
+        id,
+        first_name: fname,
+        last_name: lname,
+        email,
+        password,
+        role,
+        description,
+        media: selectedMedia,
+      };
 
-      formData.append("id", team.id || null);
-      formData.append("fname", fname);
-      formData.append("lname", lname);
-      formData.append("email", email);
-      formData.append("password", password);
-      formData.append("facebook", facebook);
-      formData.append("github", github);
-      formData.append("twitter", twitter);
-      formData.append("linkedIn", linkedin);
-      formData.append("role", role);
-      formData.append("description", description);
-
-      if (selectedMedia) {
-        formData.append("media", selectedMedia);
-      }
-
-      console.log(formData); // Debugging output to check data before sending
+      // console.log(formData);
 
       const response = await axios.post(
         "http://127.0.0.1:8000/api/addTeam",
@@ -97,14 +94,14 @@ export function TeamPopUp({ show, team, onCancel, onSave, ...props }) {
           headers: { "Content-Type": "multipart/form-data" },
         }
       );
-
+      if (response.data.success) {
+        handleAlertBox(true, "Team", "Team Member Added");
+        props.update(response.data.user);
+      }
       console.log("Project updated successfully:", response.data);
-      props.onCancel();
     } catch (error) {
-      console.error(
-        "Error updating project:"
-        // error.response?.data || error.message
-      );
+      console.error("Error updating project:" + error.response.data.message);
+      handleAlertBox(true, "Team", error.response.data.message);
     } finally {
       setIsUploading(false);
     }
@@ -184,29 +181,11 @@ export function TeamPopUp({ show, team, onCancel, onSave, ...props }) {
               <label className="col-md-3 col-12">Password</label>
               <input
                 className="border p-2 bg-light col-md-9 col-12"
-                placeholder="Role"
+                placeholder="Password"
                 value={password}
                 onChange={(e) => setPassword(e.target.value)}
               />
             </div>
-
-            {/* Social Media Links */}
-            {[
-              { label: "Facebook", state: facebook, setter: setFacebook },
-              { label: "LinkedIn", state: linkedin, setter: setLinkedin },
-              { label: "GitHub", state: github, setter: setGithub },
-              { label: "Twitter", state: twitter, setter: setTwitter },
-            ].map(({ label, state, setter }) => (
-              <div className="selectBar" key={label}>
-                <label className="col-md-3 col-12">{label}</label>
-                <input
-                  className="border p-2 bg-light col-md-9 col-12"
-                  placeholder={`Enter ${label} Profile Link`}
-                  value={state}
-                  onChange={(e) => setter(e.target.value)}
-                />
-              </div>
-            ))}
 
             {/* Image Upload */}
             <div className="selectBar my-2">
@@ -243,6 +222,15 @@ export function TeamPopUp({ show, team, onCancel, onSave, ...props }) {
         </div>
       </div>
       <CircularProgressBar show={isUploading} />
+      <AlertBox
+        show={alertBox}
+        heading={heading}
+        description={alertDescription}
+        OkClick={() => {
+          setAlertBox(false);
+          onCancel();
+        }}
+      />
     </>
   );
 }

@@ -436,3 +436,32 @@
   /* background-color: green; */
   max-width: 80%;
 }
+
+.swiper-container.myProject {
+  max-width: 90% !important;
+  display: flex;
+  justify-content: space-around;
+}
+.skill-img .DeleteBtn {
+  position: absolute;
+  bottom: 2%;
+  right: 5%;
+  width: 100px;
+  padding: 5px 10px;
+}
+.deleteBtnTeamSections {
+  position: absolute;
+  top: 10%;
+  right: 2%;
+  scale: 60%;
+}
+.deleteBtnProjectImgBox {
+  position: relative;
+  display: inline-block; /* Ensures it wraps around the content */
+}
+
+.deleteBtnTeamSections.projectSection {
+  top: 0% !important;
+}
+
+/* /////////////////// */

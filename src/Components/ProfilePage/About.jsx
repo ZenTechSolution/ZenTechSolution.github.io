@@ -28,10 +28,7 @@ export const About = (props) => {
               ?
             </h3>
             <p className="textDescription text-dark">
-              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repellat
-              laborum impedit sunt non, deleniti ex exercitationem illo saepe
-              facere modi, distinctio harum cupiditate! Officia omnis
-              dignissimos iure, asperiores sed facilis?
+              {props.data.description}
             </p>
             <SocialMedia data={props.data} />
           </div>

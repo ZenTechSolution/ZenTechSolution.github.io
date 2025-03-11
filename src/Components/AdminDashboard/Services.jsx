@@ -68,7 +68,15 @@ function ServiceBox(props) {
           </div>
           <h3 className="serviceName mt-1 m-auto">{props.service.name}</h3>
         </div>
-        <div className="div ">
+        <div
+          className="div"
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            height: "100%",
+            justifyContent: "space-between",
+          }}
+        >
           <p className="serviceDescriptionDahboard">
             {props.service.description}
           </p>
@@ -76,7 +84,7 @@ function ServiceBox(props) {
             className="btn  btn-outline-danger my-2 align-self-end w-100"
             onClick={(e) => deleteFunction(e)}
           >
-            Delete
+            Deletes
           </button>
         </div>
       </div>

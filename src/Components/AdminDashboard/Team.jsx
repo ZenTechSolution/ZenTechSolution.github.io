@@ -1,12 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { NavigationBar } from "./DashboardData";
 import { TeamPopUp } from "./../TeamPopUp";
+import { UserTeam } from "../UserDashboard/UserTeam";
 import axios from "axios";
 
 let data = [
   {
     id: 1,
-    name: "name1",
+    first_name: "First",
+    last_name: "Last",
     img_path: "/Images/Images/user-avatar.png",
     facebook: "https://facebook.com",
     linkedin: "https://linkedin.com",
@@ -20,17 +22,16 @@ let data = [
 ];
 
 export const Team = () => {
-  let [show, setShow] = useState(false);
-  let [team, setTeam] = useState(data);
+  const [show, setShow] = useState(false);
+  const [team, setTeam] = useState(data);
+  const [selectedTeam, setSelectedTeam] = useState(null);
+  const [navTitle, setNavTitle] = useState("Team");
+  const [openTeam, setOpenTeam] = useState(false);
 
   useEffect(() => {
-    // Retrieve token from localStorage (or any other secure storage)
-    // const token = localStorage.getItem("token");
-
     axios
       .get("http://127.0.0.1:8000/api/getTeams", {
         headers: {
-          // Authorization: `Bearer ${token}`,
           "Content-Type": "application/json",
         },
       })
@@ -39,66 +40,99 @@ export const Team = () => {
         console.log(response.data.data);
       })
       .catch((err) => {
-        console.error("Error fetching projects:", err);
-        // setError("Failed to load projects");
+        console.error("Error fetching teams:", err);
       });
   }, []);
 
   function Addbtn() {
     setShow(true);
   }
+
+  function AddTeam(data) {
+    setTeam([data, ...team]);
+    console.log();
+  }
+
+  function handleTeamClick(selectedMember) {
+    setSelectedTeam(selectedMember);
+    setNavTitle(`${selectedMember.first_name} ${selectedMember.last_name}`);
+    setOpenTeam(true); // Open the UserTeam section
+  }
+
+  function handleOutsideClick() {
+    setSelectedTeam(null);
+    setNavTitle("Team");
+    setOpenTeam(false); // Close the UserTeam section
+  }
+
   return (
     <>
-      <NavigationBar heading={"Team"} Addbtn={Addbtn} />
-      <div className="teamSectionBox mt-4">
-        {team.map((member) => {
-          return <TeamBox team={member} />;
-        })}
+      <NavigationBar heading={navTitle} Addbtn={Addbtn} />
+
+      {/* Click outside UserTeam to show teamSectionBox again */}
+      <div>
+        {!openTeam && ( // Hide team list when UserTeam is open
+          <div className="teamSectionBox mt-4">
+            {team.map((member) => (
+              <TeamBox
+                key={member.id}
+                team={member}
+                onClick={() => handleTeamClick(member)}
+              />
+            ))}
+          </div>
+        )}
+
+        {/* Show UserTeam when openTeam is true */}
+        {openTeam && <UserTeam show={openTeam} data={selectedTeam} />}
       </div>
-      <TeamPopUp show={show} onCancel={() => setShow(false)} />
+
+      {/* Pass selectedTeam to popup when UserTeam is open */}
+      <TeamPopUp
+        show={show}
+        onCancel={() => setShow(false)}
+        team={selectedTeam}
+        update={AddTeam}
+      />
     </>
   );
 };
 
-function TeamBox(props) {
-  let [show, setShow] = useState(false);
+// ///////////////////////////////////////////////////////////////
+function TeamBox({ team, onClick }) {
   function deleteTeam(e) {
     e.stopPropagation();
+    console.log("Delete team:", team.id);
   }
+
   return (
     <>
-      <div className="div TeamCard d-flex" onClick={() => setShow(true)}>
-        <div className="div teamLeftSection col-2">
-          <div className="div TeamImgBox">
-            <img src={props.team.img_path} alt="Project Name" />
+      <div
+        className="TeamCard d-flex"
+        onClick={(e) => {
+          e.stopPropagation();
+          onClick();
+        }}
+      >
+        <div className="teamLeftSection col-2">
+          <div className="TeamImgBox">
+            <img src={team.img_path} alt={team.name} />
           </div>
-          <h3 className="teamName mt-1 m-auto">{props.team.name}</h3>
-          <p className="teamName mt-1 m-auto">{props.team.role}</p>
+          <h3 className="teamName mt-1 m-auto">
+            {team.first_name + " " + team.last_name}
+          </h3>
+          <p className="teamRole mt-1 m-auto">{team.role}</p>
         </div>
-        <div className="div teamCardText ">
-          <p className="teamDescription">{props.team.description}</p>
-          <div className="Contributors d-flex justify-content-between">
-            {/* {props.team.skills.map((team, i) => {
-              if (i <= 2) {
-                return (
-                  <div className="div contributorName mb-2">{team.name}</div>
-                );
-              }
-            })} */}
-          </div>
+        <div className="teamCardText">
+          <p className="teamDescription">{team.description}</p>
           <button
-            className="btn  btn-outline-danger my-2 align-self-end w-100"
-            onClick={(e) => deleteTeam(e)}
+            className="btn btn-outline-danger my-2 w-100"
+            onClick={deleteTeam}
           >
             Delete
           </button>
         </div>
       </div>
-      <TeamPopUp
-        show={show}
-        onCancel={() => setShow(false)}
-        team={props.team}
-      />
     </>
   );
 }
