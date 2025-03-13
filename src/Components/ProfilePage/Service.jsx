@@ -29,7 +29,6 @@ export const Service = (props) => {
   );
 };
 
-// Service List Component
 function ServiceDiv({ showAll, data }) {
   return (
     <div className="serviceBoxGrid profile d-flex flex-wrap justify-content-center gap-4">
@@ -61,7 +60,7 @@ function ServiceBox({ service }) {
       className={`serviceBox p-3 rounded shadow-lg ${
         showFull ? "expanded" : ""
       }`}
-      style={{ width: "350px" }}
+      style={{ width: "350px", minHeight: "355px" }}
     >
       {/* Service Image */}
       <div className="service-image text-center mb-3">
@@ -81,7 +80,11 @@ function ServiceBox({ service }) {
         className={`text-dark textDescription ${
           showFull ? "expanded" : "collapsed"
         }`}
-        style={{ overflow: "hidden", maxHeight: showFull ? "none" : "4.5rem" }}
+        style={{
+          overflow: "hidden",
+          maxHeight: showFull ? "none" : "4.5rem",
+          textAlign: "center",
+        }}
       >
         {service.description}
       </div>

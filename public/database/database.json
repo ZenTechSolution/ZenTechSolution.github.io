@@ -1,0 +1,539 @@
+{
+  "users": [
+    {
+      "profile": {
+        "id": 3,
+        "first_name": "Adil",
+        "last_name": "Sehr",
+        "role": "Founder & Lead Mobile Developer",
+        "email": "adil@example.com",
+        "dob": "1989-06-15",
+        "facebook": "https://facebook.com/adilsehr",
+        "github": "https://github.com/adilsehr",
+        "linkedin": "https://linkedin.com/in/adilsehr",
+        "twitter": "https://twitter.com/adilsehr",
+        "address": "Lahore, Pakistan",
+        "img_path": "./Images/team/adilsehr.png",
+        "description": "Founder of Zentech Solutions with over a decade of experience in mobile app development. Leading the team in building innovative digital solutions with a focus on efficiency and scalability."
+      },
+      "skills": [
+        {
+          "id": 10,
+          "name": "Android Developer",
+          "description": "Experienced in building native Android applications using Java and Kotlin, with expertise in Jetpack components and MVVM architecture.",
+          "img_path": "/Images/Icons/skill8.png"
+        },
+        {
+          "id": 7,
+          "name": "Full Stack Developer",
+          "description": "Develops full-stack Android applications using Java/Kotlin for the frontend and Firebase or Node.js for the backend.",
+          "img_path": "/Images/Icons/skill7.png"
+        },
+        {
+          "id": 1,
+          "name": "Flutter Developer",
+          "description": "Experienced in building cross-platform mobile applications with Flutter, ensuring smooth UI and performance.",
+          "img_path": "/Images/Icons/skill9.png"
+        },
+        {
+          "id": 2,
+          "name": "Firebase",
+          "description": "Proficient in Firebase services including Firestore, Authentication, Cloud Functions, and Realtime Database.",
+          "img_path": "/Images/Icons/skill1.png"
+        },
+        {
+          "id": 6,
+          "name": "Java",
+          "description": "Strong knowledge of Java for Android development and backend services, with experience in Spring Boot.",
+          "img_path": "/Images/Icons/skill6.png"
+        },
+        {
+          "id": 9,
+          "name": "PHP Developer",
+          "description": "Develops dynamic web applications using PHP, specializing in frameworks like Laravel and CodeIgniter.",
+          "img_path": "/Images/Icons/skill4.png"
+        }
+      ],
+      "education": [
+        {
+          "name": "ICS",
+          "from": "2017-01-01",
+          "to": "2019-01-01",
+          "type": "education",
+          "institute": "Jinnah Science Collage",
+          "description": "892/1100"
+        },
+        {
+          "name": "BsIt",
+          "from": "2019-01-01",
+          "to": "2021-01-01",
+          "type": "education",
+          "institute": "Islamia University Bahawalpur",
+          "description": "Cgpa 3.54"
+        },
+        {
+          "name": "Web Dev",
+          "from": "2017-01-01",
+          "to": "2019-01-01",
+          "type": "job",
+          "institute": "Zentech",
+          "description": "Worked as a Web Developer at Zentech, developing dynamic websites and web applications using modern technologies. Collaborated with designers and backend teams to build responsive and user-friendly interfaces. Gained experience in front-end and back-end development, optimizing performance and functionality."
+        }
+      ],
+      "projects": [101, 102, 103, 104, 105]
+    },
+    {
+      "profile": {
+        "id": 1,
+        "first_name": "Saad",
+        "last_name": "Shafique",
+        "role": "Senior Mobile App Developer",
+        "email": "saad@example.com",
+        "dob": "1998-08-10",
+        "facebook": "https://facebook.com/saadshafique",
+        "github": "https://github.com/saadshafique",
+        "linkedin": "https://linkedin.com/in/saadshafique",
+        "twitter": "https://twitter.com/saadshafique",
+        "address": "Lahore, Pakistan",
+        "img_path": "./Images/team/saadshafique.jpg",
+        "description": "Experienced mobile app developer with 3 years of expertise in Flutter, game development, and AI scripting using PHP and Python."
+      },
+      "skills": [
+        {
+          "id": 7,
+          "name": "Full Stack Developer",
+          "description": "Develops full-stack Android applications using Java/Kotlin for the frontend and Firebase or Node.js for the backend.",
+          "img_path": "/Images/Icons/skill7.png"
+        },
+        {
+          "id": 1,
+          "name": "Flutter Developer",
+          "description": "Experienced in building cross-platform mobile applications with Flutter, ensuring smooth UI and performance.",
+          "img_path": "/Images/Icons/skill9.png"
+        },
+        {
+          "id": 10,
+          "name": "Android Developer",
+          "description": "Experienced in building native Android applications using Java and Kotlin, with expertise in Jetpack components and MVVM architecture.",
+          "img_path": "/Images/Icons/skill8.png"
+        },
+        {
+          "id": 2,
+          "name": "Firebase",
+          "description": "Proficient in Firebase services including Firestore, Authentication, Cloud Functions, and Realtime Database.",
+          "img_path": "/Images/Icons/skill1.png"
+        },
+        {
+          "id": 5,
+          "name": "Python",
+          "description": "Experienced in writing automation scripts, data processing, and backend development using Django and Flask.",
+          "img_path": "/Images/Icons/skill5.png"
+        },
+        {
+          "id": 7,
+          "name": "System Admin",
+          "description": "Experienced in managing and maintaining IT systems, ensuring network security, configuring servers, and troubleshooting system issues. Proficient in Linux, Windows Server, cloud platforms, and automation tools.",
+          "img_path": "/Images/Icons/skill10.png"
+        },
+        {
+          "id": 8,
+          "name": "Scripting",
+          "description": "Skilled in writing automation scripts, data processing, and system administration tasks using Python. Experienced with libraries like Selenium, Pandas, and OS scripting for workflow automation.",
+          "img_path": "/Images/Icons/skill11.png"
+        },
+        {
+          "id": 6,
+          "name": "Java",
+          "description": "Strong knowledge of Java for Android development and backend services, with experience in Spring Boot.",
+          "img_path": "/Images/Icons/skill6.png"
+        },
+        {
+          "id": 9,
+          "name": "PHP Developer",
+          "description": "Develops dynamic web applications using PHP, specializing in frameworks like Laravel and CodeIgniter.",
+          "img_path": "/Images/Icons/skill4.png"
+        }
+      ],
+      "education": [
+        {
+          "name": "Bachelor of Science in Computer Sciences",
+          "from": "2019-07-01",
+          "to": "2023-05-01",
+          "type": "education",
+          "institute": "National University of Computer and Emerging Sciences",
+          "description": "FYP showcase in Ignite 2024 , Participant in Softec23 FYP competition"
+        },
+        {
+          "name": "Data Scientist",
+          "from": "2023-07-01",
+          "to": "2024-02-01",
+          "type": "job",
+          "institute": "LTVCO",
+          "description": "Automated retail data extraction using Python web scraping libraries. Deployed scripts to GCP and AWS, streamlining the data ingestion pipeline by 30%. Conducted competitor analysis and price monitoring to support strategic decision-making."
+        },
+        {
+          "name": "Software Engineer",
+          "from": "2024-02-01",
+          "to": "2024-04-01",
+          "type": "job",
+          "institute": "New Elevation",
+          "description": "Provided technical support and ensured optimal software system performance. Conducted thorough testing in the staging environment, identified potential issues, and resolved critical deployment challenges to maintain system stability and efficiency."
+        },
+        {
+          "name": "Mobile App Developer",
+          "from": "2024-02-01",
+          "to": "present",
+          "type": "job",
+          "institute": "Zentech Solutions",
+          "description": "Specializing in mobile app development using Flutter, I design and build high-performance applications for both mobile and Android TV platforms. I develop interactive and engaging games with Flutter, ensuring seamless user experiences. My role involves end-to-end development, performance optimization, and troubleshooting to deliver scalable and efficient solutions."
+        }
+      ],
+      "projects": [101, 102, 103, 104, 105]
+    },
+    {
+      "profile": {
+        "id": 2,
+        "first_name": "Talha",
+        "last_name": "Nazir",
+        "role": "Web Developer",
+        "email": "talhanazzir786y@gmail.com",
+        "dob": "2001-07-21",
+        "facebook": "https://facebook.com",
+        "github": "https://github.com",
+        "linkedin": "https://linkedin.com",
+        "twitter": "https://twitter.com",
+        "address": "Lahore, Pakistan",
+        "img_path": "./Images/team/talhanazir.png",
+        "description": "Web developer with 1.5 years of experience in React.js, Laravel, SQL, and Firestore, specializing in building scalable and efficient web applications."
+      },
+      "skills": [
+        {
+          "id": 8,
+          "name": "Full Stack Developer (Web)",
+          "description": "Builds robust web applications using React for the frontend and Laravel for the backend, ensuring security and scalability.",
+          "img_path": "/Images/Icons/skill7.png"
+        },
+        {
+          "id": 2,
+          "name": "Firebase",
+          "description": "Proficient in Firebase services including Firestore, Authentication, Cloud Functions, and Realtime Database.",
+          "img_path": "/Images/Icons/skill1.png"
+        },
+        {
+          "id": 3,
+          "name": "React",
+          "description": "Develops dynamic web applications using React, focusing on reusable components and optimized state management.",
+          "img_path": "/Images/Icons/skill2.png"
+        },
+        {
+          "id": 4,
+          "name": "SQL",
+          "description": "Skilled in writing efficient SQL queries, database optimization, and working with relational databases like MySQL and PostgreSQL.",
+          "img_path": "/Images/Icons/skill3.png"
+        }
+      ],
+      "education": [
+        {
+          "name": "Bachelor of Science in Information Technology",
+          "from": "2020-01-01",
+          "to": "2024-01-01",
+          "type": "education",
+          "institute": "Islamia University Bahawalpur",
+          "description": "Cgpa 3.54"
+        },
+        {
+          "name": "Lead Generation",
+          "from": "2022-01-01",
+          "to": "2023-01-01",
+          "type": "job",
+          "institute": "Infinite IT Solutions",
+          "description": "Worked as a Lead Generation Specialist for a years, identifying potential clients, managing outreach campaigns, and optimizing lead conversion strategies."
+        },
+        {
+          "name": "Web Developer",
+          "from": "2017-01-01",
+          "to": "2019-01-01",
+          "type": "job",
+          "institute": "Zentech Solutions",
+          "description": "Worked as a Web Developer at Zentech, developing dynamic websites and web applications using modern technologies. Collaborated with designers and backend teams to build responsive and user-friendly interfaces. Gained experience in front-end and back-end development, optimizing performance and functionality."
+        }
+      ],
+      "projects": [103, 104, 105]
+    }
+  ],
+  "projects": {
+    "101": {
+      "profile": {
+        "id": 101,
+        "name": "Eris",
+        "img_path": "/Images/projects/eris.png",
+        "description": "Eris is a toll management system designed to control entry and exit signals while automating billing processes. The system allows users to open and close toll signals and generate bills efficiently, ensuring smooth traffic management and accurate transaction tracking.",
+        "link": "https://johndoe-portfolio.com",
+        "address": "New York, USA",
+        "customer_review": "Eris has streamlined our toll operations significantly! The ability to manage signals and generate bills automatically has improved efficiency and reduced manual work. Highly recommended!",
+        "customer_name": "Michael Johnson"
+      },
+      "project_img": [
+        {
+          "id": 1,
+          "img_path": "/Images/projects/eris/1.png",
+          "description": "Homepage design preview."
+        },
+        {
+          "id": 2,
+          "img_path": "/Images/projects/eris/2.png",
+          "description": "Homepage design preview."
+        },
+        {
+          "id": 3,
+          "img_path": "/Images/projects/eris/3.png",
+          "description": "Homepage design preview."
+        },
+        {
+          "id": 4,
+          "img_path": "/Images/projects/eris/4.png",
+          "description": "Homepage design preview."
+        }
+      ]
+    },
+    "102": {
+      "profile": {
+        "id": 102,
+        "name": "Patreon",
+        "img_path": "/Images/projects/patreonManagment.png",
+        "description": "Patreon is the toll management system, designed specifically for vehicle users. It allows users to pay toll bills online, track their transactions, and manage toll-related services efficiently. The platform enhances convenience by offering seamless digital payments and additional features for a hassle-free experience.",
+        "link": "https://ecommerce-store.com",
+        "address": "San Francisco, USA",
+        "customer_review": "Patreon has revolutionized toll payments for our users! The online payment system is smooth, secure, and user-friendly. Managing toll expenses has never been easier. Highly recommended!",
+        "customer_name": "Sarah Williams"
+      },
+      "project_img": [
+        {
+          "id": 1,
+          "img_path": "/Images/projects/patreon/1.png",
+          "description": "Product listing page."
+        },
+        {
+          "id": 2,
+          "img_path": "/Images/projects/patreon/2.png",
+          "description": "Shopping cart interface."
+        },
+        {
+          "id": 3,
+          "img_path": "/Images/projects/patreon/3.png",
+          "description": "Product listing page."
+        },
+        {
+          "id": 4,
+          "img_path": "/Images/projects/patreon/4.png",
+          "description": "Shopping cart interface."
+        },
+        {
+          "id": 5,
+          "img_path": "/Images/projects/patreon/5.png",
+          "description": "Product listing page."
+        },
+        {
+          "id": 6,
+          "img_path": "/Images/projects/patreon/6.png",
+          "description": "Shopping cart interface."
+        },
+        {
+          "id": 7,
+          "img_path": "/Images/projects/patreon/7.png",
+          "description": "Product listing page."
+        },
+        {
+          "id": 8,
+          "img_path": "/Images/projects/patreon/8.png",
+          "description": "Shopping cart interface."
+        },
+        {
+          "id": 9,
+          "img_path": "/Images/projects/patreon/9.png",
+          "description": "Product listing page."
+        },
+        {
+          "id": 10,
+          "img_path": "/Images/projects/patreon/10.png",
+          "description": "Shopping cart interface."
+        }
+      ]
+    },
+    "103": {
+      "profile": {
+        "id": 103,
+        "name": "Schoollet",
+        "img_path": "/Images/projects/schoollet.png",
+        "description": "Schoollet is a digital transaction and management platform designed for students and canteens. The app allows users to add students, deposit virtual credits, and apply for withdrawals. When a canteen generates a bill, the student's credit balance is automatically deducted through the mobile app. This seamless cashless system ensures efficient transaction management for schools and canteens.",
+        "link": "https://bizmanage.com",
+        "address": "Chicago, USA",
+        "customer_review": "Schoollet transformed the way we handle transactions at our school! The cashless system is seamless, and students love the convenience. The team was responsive, professional, and implemented the solution flawlessly. Highly recommended!",
+        "customer_name": "Naif"
+      },
+      "project_img": [
+        {
+          "id": 1,
+          "img_path": "/Images/projects/schoollet/1.png",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 2,
+          "img_path": "/Images/projects/schoollet/2.png",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 3,
+          "img_path": "/Images/projects/schoollet/3.png",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 4,
+          "img_path": "/Images/projects/schoollet/4.png",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 5,
+          "img_path": "/Images/projects/schoollet/5.png",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 6,
+          "img_path": "/Images/projects/schoollet/6.png",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 7,
+          "img_path": "/Images/projects/schoollet/7.png",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 8,
+          "img_path": "/Images/projects/schoollet/8.png",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 9,
+          "img_path": "/Images/projects/schoollet/9.png",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 10,
+          "img_path": "/Images/projects/schoollet/10.png",
+          "description": "Dashboard overview."
+        }
+      ]
+    },
+    "104": {
+      "profile": {
+        "id": 104,
+        "name": "Schoollet Canteen",
+        "img_path": "/Images/projects/schoolletCanteen.png",
+        "description": "Schoollet Canteen is a mobile application designed for canteens and student transactions. It enables canteen users to create bills, accept cashless payments using virtual credits, and track transactions. The backend is controlled via a web portal, allowing canteens to manage billing, create withdrawal requests, and efficiently handle earnings.",
+        "link": "https://bizmanage.com",
+        "address": "Chicago, USA",
+        "customer_review": "Schoollet Canteen has completely streamlined our operations. The ability to generate bills instantly and accept digital payments has made transactions effortless. The web-based backend control is a game changer. Highly recommended for any school canteen!",
+        "customer_name": "Naif"
+      },
+      "project_img": [
+        {
+          "id": 1,
+          "img_path": "/Images/projects/schoollet_canteen/1.jpg",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 2,
+          "img_path": "/Images/projects/schoollet_canteen/2.png",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 3,
+          "img_path": "/Images/projects/schoollet_canteen/3.jpg",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 4,
+          "img_path": "/Images/projects/schoollet_canteen/4.jpg",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 5,
+          "img_path": "/Images/projects/schoollet_canteen/5.jpg",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 6,
+          "img_path": "/Images/projects/schoollet_canteen/6.jpg",
+          "description": "Dashboard overview."
+        }
+      ]
+    },
+    "105": {
+      "profile": {
+        "id": 105,
+        "name": "WeAd",
+        "img_path": "/Images/projects/wead.png",
+        "description": "WeAd is a web application designed to control an Android TV app for ad management. It allows users to add new ads, connect new screens, and manage which ads run on specific screens. Users can schedule ads with start and end dates, ensuring automatic disabling after expiry. The system provides a seamless and efficient way to manage digital signage.",
+        "link": "https://bizmanage.com",
+        "address": "Chicago, USA",
+        "customer_review": "WeAd has revolutionized our digital ad management. The ability to control screens remotely and schedule ads effortlessly has saved us time and increased efficiency. The platform is intuitive, and the automation features are fantastic. Highly recommended!",
+        "customer_name": "Naif"
+      },
+      "project_img": [
+        {
+          "id": 1,
+          "img_path": "/Images/projects/wead/1.png",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 2,
+          "img_path": "/Images/projects/wead/2.png",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 3,
+          "img_path": "/Images/projects/wead/3.png",
+          "description": "Dashboard overview."
+        },
+        {
+          "id": 4,
+          "img_path": "/Images/projects/wead/4.png",
+          "description": "Dashboard overview."
+        }
+      ]
+    }
+  },
+  "services": [
+    {
+      "name": "Mobile App Development",
+      "description": "Every app we build is engineered to drive measurable business outcomes. With expertise spanning cutting-edge native development, cross-platform solutions, and enterprise-grade systems, our engineers transform bold ideas into dynamic mobile experiences",
+      "img_path": "./Images/Icons/mobile.png"
+    },
+    {
+      "name": "Web Development",
+      "description": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses.Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations.",
+      "img_path": "./Images/Icons/website.png"
+    },
+    {
+      "name": "Generative AI",
+      "description": "We delivers expert generative AI solutions designed to accelerate your digital transformation. Using advanced technologies like TensorFlow, PyTorch, and GPT architectures, we create tailored AI solutions that enable businesses to innovate with precision and creativity.",
+      "img_path": "./Images/Icons/ai.png"
+    },
+    {
+      "name": "Custom Software Development",
+      "description": "We specialize in building scalable and bespoke software tailored to address specific business challenges. Whether you're enhancing operational processes or revolutionizing customer experiences, our team leverages cutting-edge tools and technologies to turn your vision into reality.",
+      "img_path": "./Images/Icons/software.png"
+    },
+    {
+      "name": "Cloud Application",
+      "description": "Cloud applications are transforming businesses with unmatched scalability, flexibility, and efficiency. We craft tailored cloud solutions using leading platforms like AWS, Azure, and Google Cloud, combined with tools such as Kubernetes, Terraform, and Docker.",
+      "img_path": "./Images/Icons/cloud.png"
+    }
+  ],
+  "skill": {
+    "id": 7,
+    "name": "System Admin",
+    "description": "Develops full-stack Android applications using Java/Kotlin for the frontend and Firebase or Node.js for the backend.",
+    "img_path": "/Images/Icons/skill10.png"
+  }
+}

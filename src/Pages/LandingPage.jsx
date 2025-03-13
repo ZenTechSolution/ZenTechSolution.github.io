@@ -76,9 +76,9 @@ const Navigation = ({ onNavigate, sections }) => {
         <a className="navbar-brand" href="#">
           <img
             className="text-light"
-            src="./images/img.png"
+            src="/Images/Icons/zentech.png"
             alt="ZentechLogo"
-            width="100"
+            style={{ width: "100px", height: "100px", scale: "70%" }}
           />
         </a>
 

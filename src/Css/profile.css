@@ -225,3 +225,23 @@
     transform: scale(1.1) !important;
   }
 }
+
+@media (max-width: 576px) {
+  .miniLogoPages {
+    scale: 60%;
+    top: 0% !important;
+    left: 50% !important;
+    transform: translateX(-100%);
+    margin: 0% !important;
+  }
+  .miniLogoPages.projects {
+    display: none !important;
+  }
+  .miniLogoPagesContainer {
+    margin-top: 100px;
+  }
+  .profileImageBox {
+    scale: 70%;
+    border-radius: 50% !important;
+  }
+}

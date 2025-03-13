@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { use, useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/pagination";
 import { Navigation } from "swiper/modules";
@@ -7,7 +7,6 @@ import "swiper/css/navigation";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-// import { FaFacebook } from "react-icons/fa";
 import {
   FaFacebook,
   FaSquareXTwitter,
@@ -472,9 +471,20 @@ const teamObj = [
 ];
 
 export const OurTeam = (props) => {
-  const [team, setTeam] = useState([...teamObj, ...teamObj]);
+  const [team, setTeam] = useState([]);
   const [apiResponse, setApiResponse] = useState([]);
   const navigate = useNavigate(); // Initialize navigation
+
+  useEffect(() => {
+    let data = localStorage.getItem("users");
+
+    if (data) {
+      let responseData = JSON.parse(data);
+
+      setTeam([...responseData, ...responseData]);
+      // setApiResponse(JSON.parse(data));
+    }
+  }, []);
 
   // useEffect(() => {
   //   axios
@@ -539,7 +549,6 @@ export const OurTeam = (props) => {
 };
 
 const SliderBox = ({ member }) => {
-  console.log(member);
   return (
     <div className="col-lg-3 col-sm-6 slide-card text-light my-2">
       <div className="box p-3 py-4">
@@ -557,7 +566,7 @@ const SliderBox = ({ member }) => {
         {/* Skills Section */}
         <DescriptionBox team={member.description} />
         {/* Social Links */}
-        <div className="social_box d-flex justify-content-center mt-3 col-6 d-flex justify-content-around m-auto">
+        <div className="social_box landingPage d-flex justify-content-center mt-3 col-6 d-flex justify-content-around m-auto">
           {member.facebook && (
             <a
               className="teamSocialLinks"

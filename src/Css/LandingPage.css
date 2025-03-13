@@ -502,3 +502,7 @@
 .social_box {
   margin-left: 0 !important;
 }
+
+.social_box.landingPage {
+  margin: 20px auto !important;
+}

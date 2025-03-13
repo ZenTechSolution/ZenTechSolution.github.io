@@ -1,19 +1,36 @@
 import React from "react";
 
 export const HeroSection = (props) => {
-  console.log(props.data);
+  // console.log(props.data);
   return (
     <div
       className="HeroSection position-relative bg-light d-flex align-items-center justify-content-center"
-      style={{ minHeight: "80vh" }}
+      style={{ minHeight: "90vh" }}
     >
+      <div
+        className="div bg-light m-3 miniLogoPages"
+        style={{
+          width: "110px",
+          height: "110px",
+          borderRadius: "50%",
+          position: "absolute",
+          top: "0%",
+          left: "0%",
+        }}
+      >
+        <img
+          className="text-light"
+          src="/Images/Icons/zentech.png"
+          alt="ZentechLogo"
+          style={{ width: "100%", height: "100%", scale: "70%" }}
+        />
+      </div>
       {/* Left Content */}
-      <div className="container">
+      <div className="container miniLogoPagesContainer">
         <div className="row align-items-end">
           {/* Left Section */}
           <div className="col-md-6 text-center text-md-start text-light align-self-center">
             <h3 className="fw-bold text-dark">
-              {" "}
               I am{" "}
               <span className="text-light h1" style={{ fontWeight: "bold" }}>
                 {props.data.first_name + " " + props.data.last_name}

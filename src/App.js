@@ -9,9 +9,11 @@ import { LandingPage } from "./Pages/LandingPage";
 import { Login } from "./Pages/Login";
 import { ForgetPassword } from "./Pages/ForgetPassword";
 import { Dashboard } from "./Pages/Dashboard";
+import { ProjectPage } from "./Pages/ProjectPage";
 import { UserDashboard } from "./Pages/UserDashboard";
 import { ProfilePage } from "./Pages/ProfilePage";
 import { createContext, useContext, useState } from "react";
+import { loadAllUsersData } from "./backend/Controllers/userController";
 
 const GlobalContext = createContext();
 
@@ -32,6 +34,8 @@ function App() {
   let [url, setUrl] = useState("http://127.0.0.1:8000");
   let [token, setToken] = useState(localStorage.getItem("token") || null);
 
+  loadAllUsersData();
+
   return (
     <GlobalContext.Provider value={{ url, setUrl, token, setToken }}>
       <Router>
@@ -47,6 +51,8 @@ function App() {
               }
             />
             <Route path="/profile/:id" element={<ProfilePage />} />
+
+            <Route path="/projects/:id" element={<ProjectPage />} />
 
             <Route
               path="/login"

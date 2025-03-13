@@ -65,6 +65,19 @@ const clients = [
 export const Testmonial = () => {
   const [data, setData] = useState(clients);
 
+  useEffect(() => {
+    let cacheData = localStorage.getItem("projects");
+    if (cacheData) {
+      let formateData = JSON.parse(cacheData);
+      let object = Object.values(formateData);
+      let arr = [];
+      object.map((item) => {
+        arr.push(item.profile);
+      });
+      setData(arr);
+    }
+  }, []);
+
   // useEffect(() => {
   //   axios
   //     .get("http://127.0.0.1:8000/api/getProjects", {
@@ -83,7 +96,7 @@ export const Testmonial = () => {
   return (
     <div className="TestmonialSection">
       <div className="div my-4">
-        <InfiniteScrollImgs data={clients} />
+        <InfiniteScrollImgs data={data} />
       </div>
       <div className="testmonialContainer">
         <h3 className="sectionHeading">Testimonial</h3>
@@ -98,10 +111,9 @@ const SwiperSlideshow = ({ data }) => {
   const nextRef = useRef(null);
   const swiperRef = useRef(null);
   const [slides, setSlides] = useState([]);
-
-  // Update the slides when new data comes in from the parent component
   useEffect(() => {
     setSlides(data);
+    console.log(data);
   }, [data]);
 
   useEffect(() => {
@@ -112,7 +124,7 @@ const SwiperSlideshow = ({ data }) => {
       swiperInstance.navigation.init();
       swiperInstance.navigation.update();
     }
-  }, [slides]); // Update Swiper when slides change
+  }, [slides]);
 
   return (
     <div className="swiper-container">
@@ -154,20 +166,27 @@ const SwiperSlideshow = ({ data }) => {
 };
 
 const ClientCard = (props) => {
+  const placeholderUrl = "/Images/Images/UserImage.png";
+
   return (
     <div className="client-card">
-      {/* Image Section */}
-      <div className="client-img-box">
-        <img src={props.data.img_path} alt="client-img" />
+      <div
+        className="client-img-box border border-dark rounded-circle"
+        style={{ width: "100px", height: "100px" }}
+      >
+        <img
+          style={{ width: "100%", height: "100%", objectFit: "cover" }}
+          src={props.data.img_path || placeholderUrl}
+          alt="client-img"
+        />
       </div>
 
-      {/* Details Section */}
       <div className="client-detail-box">
         <div className="client-id">
           <div className="client-info text-left">
             <h5
               className="clentName textHeading"
-              style={{ width: "50%", margin: "auto" }}
+              style={{ width: "40%", margin: "auto" }}
             >
               {props.data.customer_name}
             </h5>

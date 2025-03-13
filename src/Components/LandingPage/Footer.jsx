@@ -21,12 +21,23 @@ export const Footer = () => {
       {/* Logo Section */}
       <div className="col-10 col-md-2 text-center mb-3">
         <div className="footerLogoImg">
-          <img className="footerLogo" src={footerData.imgPath} alt="Logo" />
+          <div
+            className="div bg-light"
+            style={{ width: "130px", height: "130px", borderRadius: "50%" }}
+          >
+            <img
+              className="text-light"
+              src="/Images/Icons/zentech.png"
+              alt="ZentechLogo"
+              style={{ width: "100%", height: "100%", scale: "70%" }}
+            />
+          </div>
         </div>
-        <h3 className="text-light footerName">{footerData.name}</h3>
+        <h3 className="text-light footerName mt-2">{footerData.name}</h3>
         <div className="logoBox">
           <LogoBox member={footerData} />
         </div>
+        <h6 className="text-light footerName mt-3">{"mail@mail.com"}</h6>
       </div>
 
       {/* Info Section */}
@@ -52,7 +63,7 @@ export const Footer = () => {
       </div> */}
 
       {/* Contact Section */}
-      <div className="col-10 col-md-2 mb-3 footerContactSection text-light">
+      {/* <div className="col-10 col-md-2 mb-3 footerContactSection text-light">
         <h3 className="text-light m-0">Contact Us</h3>
         <p className="footerContactText m-0">Email</p>
         <input
@@ -63,7 +74,7 @@ export const Footer = () => {
         <p className="footerContactText m-0">Message</p>
         <input className="footerInput" type="text" placeholder="Your message" />
         <button className="footerSendBtn">Send Email</button>
-      </div>
+      </div> */}
     </div>
   );
 };

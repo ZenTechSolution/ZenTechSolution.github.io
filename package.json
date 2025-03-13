@@ -5,6 +5,7 @@
   "private": true,
   "dependencies": {
     "axios": "^1.7.9",
+    "better-sqlite3": "^11.8.1",
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
     "gsap": "^3.12.7",
@@ -26,9 +27,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
@@ -49,6 +48,8 @@
     ]
   },
   "devDependencies": {
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "path-browserify": "^1.0.1",
+    "react-app-rewired": "^2.2.1"
   }
 }
