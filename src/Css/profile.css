@@ -1,247 +1,42 @@
 :root {
-  --color1: #d4f0fc;
-  --color2: #89d6fb;
-  --color3: #02a9f7;
-  --color4: #02577a;
-  --color5: #01303f;
-  --gradiant1: linear-gradient(
-    36deg,
-    rgba(2, 169, 247, 1) 0%,
-    rgba(1, 48, 63, 1) 100%
-  );
-  --black-text: #444444;
-  --black-heading: #222222;
-  --text-white-heading: rgb(255, 255, 255);
-  --text-white-text: rgba(255, 255, 255, 0.8);
-}
-.marquee-container {
-  width: 100%;
-  overflow: hidden;
-  white-space: nowrap;
-  background-color: #f8f9fa; /* Light background */
-  padding: 10px 0;
-  position: relative;
+  -primary-color-1: #0199e4;
+  -primary-color-2: #002448;
+  -text-d1: #000;
+  -text-d1-8: rgb(0, 0, 0, 0.8);
+  -text-d2: #121212;
+  -text-p1: #fff;
+  -text-p1-8: rgb(255, 255, 255, 0.8);
+  -text-p2: #c5c5c5;
 }
 
-.marquee-content {
-  display: flex;
-  gap: 50px; /* Space between duplicate texts */
-  animation: marquee 10s linear infinite;
-  width: max-content;
+.p-color {
+  color: var(-primary-color-1);
 }
-
-.marquee-text {
-  font-size: 1.2rem;
-  font-weight: bold;
-  color: #007bff; /* Bootstrap primary color */
+.p2-color {
+  color: var(-primary-color-2);
 }
-
-.marquee-content {
-  display: flex; /* Makes sure items stay in a row */
+.text-d {
+  color: var(-text-d1);
 }
-
-.marquee-item {
-  display: inline-block;
-  margin-right: 10px; /* Adds 10px gap between items */
-  white-space: nowrap; /* Prevents text wrapping */
+.text-d-8 {
+  color: var(-text-d1-8);
 }
-.rfm-child,
-.rfm-initial-child-container {
-  width: 100%;
+.text-d2 {
+  color: var(-text-d2);
 }
-.profileImageBox {
-  border-radius: 20px 20px 20px 300px !important;
+.text-p {
+  color: var(-text-p1);
 }
-.profile.serviceBoxGrid {
-  width: 70%;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(10rem, 1fr));
-  justify-content: space-between;
+.text-p-8 {
+  color: var(-text-p1-8);
 }
-.profile.serviceBoxGrid .serviceBox {
-  width: 300px;
+.text-p2 {
+  color: var(-text-p2);
 }
-.profileBoxDescription {
-  text-decoration: none;
-  padding-left: 0;
+/* /////////////////////////////////////////////// */
+.bg-p {
+  background-color: var(-primary-color-1);
 }
-.profileServiceHeading {
-  text-align: left;
-}
-.profile.sectionHeading {
-  text-align: left;
-  font-size: 32px;
-}
-.profileAboutImg {
-  border-radius: 20px;
-  width: 350px;
-}
-.ProjectsectionDescription {
-  height: 100px;
-  overflow-y: auto;
-}
-
-.AboutUsSecction.team {
-  background: none !important;
-}
-.client-img-box.userTeamBoxes {
-  background-color: #fff;
-  border-radius: 300px;
-  display: flex;
-  justify-content: center;
-  box-shadow: 0rem 0rem 1rem 0.1rem rgba(0, 0, 0, 0.2);
-  align-items: center;
-  width: 100px; /* Adjust width */
-  height: 100px; /* Adjust height */
-}
-
-.education-section {
-  /* background: var(--gradiant1); */
-}
-@keyframes marquee {
-  from {
-    transform: translateX(100%);
-  }
-  to {
-    transform: translateX(-100%);
-  }
-}
-
-.CardCard {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  /* background-color: bisque; */
-  width: 16rem;
-  /* height: fit-content; */
-  padding: 0;
-  border-radius: 10px;
-  border-radius: 10px;
-}
-
-/* ImgCarousel.css */
-
-/* Carousel Container */
-.carousel-container {
-  height: 800px;
-  margin: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-/* Card Styling */
-.card-container {
-  transition: transform 0.3s ease-in-out;
-  height: auto;
-  min-width: 430px;
-  max-height: 500px;
-  cursor: pointer;
-}
-
-.card-container:hover {
-  transform: scale(1.1);
-}
-
-/* Image Styling */
-.card-container img {
-  object-fit: contain;
-  width: 100%;
-  height: 100%;
-  max-height: 500px !important;
-  border-radius: 5px;
-}
-
-.center-card {
-  transform: scale(1.2);
-  transition: transform 0.5s ease-in-out;
-}
-.center-card:hover {
-  transform: scale(1.25) !important;
-}
-
-/* Responsive Styles */
-@media (max-width: 1200px) {
-  .card-container {
-    min-width: 500px;
-  }
-  .center-card {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out;
-  }
-  .center-card:hover {
-    transform: scale(1.1) !important;
-  }
-}
-
-@media (max-width: 992px) {
-  .card-container {
-    min-width: 400px;
-  }
-  .center-card {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out;
-  }
-  .center-card:hover {
-    transform: scale(1.1) !important;
-  }
-}
-
-@media (max-width: 768px) {
-  .card-container {
-    min-width: 350px;
-  }
-  .center-card {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out;
-  }
-  .center-card {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out;
-  }
-  .center-card:hover {
-    transform: scale(1.1) !important;
-  }
-}
-
-@media (max-width: 576px) {
-  .card-container {
-    min-width: 250px !important;
-  }
-  .card-container img {
-    overflow-x: auto;
-  }
-  .carousel-container {
-    max-width: 400px !important;
-  }
-  .css-doq0dk {
-    width: inherit;
-  }
-  .center-card {
-    transform: scale(1.05);
-    transition: transform 0.5s ease-in-out;
-  }
-  .center-card:hover {
-    transform: scale(1.1) !important;
-  }
-}
-
-@media (max-width: 576px) {
-  .miniLogoPages {
-    scale: 60%;
-    top: 0% !important;
-    left: 50% !important;
-    transform: translateX(-100%);
-    margin: 0% !important;
-  }
-  .miniLogoPages.projects {
-    display: none !important;
-  }
-  .miniLogoPagesContainer {
-    margin-top: 100px;
-  }
-  .profileImageBox {
-    scale: 70%;
-    border-radius: 50% !important;
-  }
+.bg-p2 {
+  background-color: var(-primary-color-2);
 }

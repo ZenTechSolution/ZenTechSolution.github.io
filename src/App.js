@@ -1,80 +1,32 @@
-import {
-  HashRouter as Router,
-  Routes,
-  Route,
-  Navigate,
-} from "react-router-dom";
+import logo from "./logo.svg";
 import "./App.css";
-import { LandingPage } from "./Pages/LandingPage";
-import { Login } from "./Pages/Login";
-import { ForgetPassword } from "./Pages/ForgetPassword";
-import { Dashboard } from "./Pages/Dashboard";
-import { ProjectPage } from "./Pages/ProjectPage";
-import { UserDashboard } from "./Pages/UserDashboard";
-import { ProfilePage } from "./Pages/ProfilePage";
-import { createContext, useContext, useState } from "react";
-import { loadAllUsersData } from "./backend/Controllers/userController";
-
-const GlobalContext = createContext();
-
-// Custom hook for accessing context
-export const useGlobalContext = () => useContext(GlobalContext);
-
-function ProtectedRoute({ children }) {
-  const { token } = useGlobalContext();
-  return token ? children : <Navigate to="/login" replace />;
-}
-
-function AuthRoute({ children }) {
-  const { token } = useGlobalContext();
-  return token ? <Navigate to="/dashboard" replace /> : children;
-}
+import { Landing } from "./Pages/Landing";
+import { ServicePage } from "./Pages/ServicePage";
+import { AboutUs } from "./Pages/AboutUs";
+import { ContactPage } from "./Pages/ContactPage";
+import { Teams } from "./Pages/Teams";
+import { Projects } from "./Pages/Projects";
+import "./Css/General.css";
+import "./Css/Profile.css";
+import "./Css/Projects.css";
+import "./Css/Responsive.css";
+import "./Css/Classes.css";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
+import { fetchJsonData } from "./Controller/database";
 
 function App() {
-  let [url, setUrl] = useState("http://127.0.0.1:8000");
-  let [token, setToken] = useState(localStorage.getItem("token") || null);
-
-  loadAllUsersData();
-
+  fetchJsonData();
   return (
-    <GlobalContext.Provider value={{ url, setUrl, token, setToken }}>
-      <Router>
-        <div className="App">
-          <Routes>
-            <Route path="/" element={<LandingPage />} />
-            <Route
-              path="/dashboard"
-              element={
-                <ProtectedRoute>
-                  <Dashboard />
-                </ProtectedRoute>
-              }
-            />
-            <Route path="/profile/:id" element={<ProfilePage />} />
-
-            <Route path="/projects/:id" element={<ProjectPage />} />
-
-            <Route
-              path="/login"
-              element={
-                <AuthRoute>
-                  <Login />
-                </AuthRoute>
-              }
-            />
-            <Route
-              path="/forget-password"
-              element={
-                <AuthRoute>
-                  <ForgetPassword />
-                </AuthRoute>
-              }
-            />
-            <Route path="/dashboard-page" element={<UserDashboard />} />
-          </Routes>
-        </div>
-      </Router>
-    </GlobalContext.Provider>
+    <Router>
+      <Routes>
+        <Route path="/" element={<Landing />} />
+        <Route path="/about" element={<AboutUs />} />
+        <Route path="/services/:id" element={<ServicePage />} />
+        <Route path="/contact" element={<ContactPage />} />
+        <Route path="/project/:id" element={<Projects />} />
+        <Route path="/team/:id" element={<Teams />} />
+      </Routes>
+    </Router>
   );
 }
 

@@ -13,45 +13,61 @@
         "linkedin": "https://linkedin.com/in/adilsehr",
         "twitter": "https://twitter.com/adilsehr",
         "address": "Lahore, Pakistan",
-        "img_path": "./Images/team/adilsehr.png",
+        "img_path": "/Images/Team/adilsehr.png",
         "description": "Founder of Zentech Solutions with over a decade of experience in mobile app development. Leading the team in building innovative digital solutions with a focus on efficiency and scalability."
       },
       "skills": [
         {
           "id": 10,
-          "name": "Android Developer",
-          "description": "Experienced in building native Android applications using Java and Kotlin, with expertise in Jetpack components and MVVM architecture.",
-          "img_path": "/Images/Icons/skill8.png"
+          "name": "laravel"
+        },
+        {
+          "id": 10,
+          "name": "python"
+        },
+        {
+          "id": 10,
+          "name": "flask"
+        },
+        {
+          "id": 10,
+          "name": "Azure"
+        },
+        {
+          "id": 10,
+          "name": "Nodejs"
+        },
+        {
+          "id": 10,
+          "name": "Typescript"
         },
         {
           "id": 7,
-          "name": "Full Stack Developer",
-          "description": "Develops full-stack Android applications using Java/Kotlin for the frontend and Firebase or Node.js for the backend.",
-          "img_path": "/Images/Icons/skill7.png"
+          "name": "flutter"
         },
         {
           "id": 1,
-          "name": "Flutter Developer",
-          "description": "Experienced in building cross-platform mobile applications with Flutter, ensuring smooth UI and performance.",
-          "img_path": "/Images/Icons/skill9.png"
+          "name": "javascript"
         },
         {
           "id": 2,
-          "name": "Firebase",
-          "description": "Proficient in Firebase services including Firestore, Authentication, Cloud Functions, and Realtime Database.",
-          "img_path": "/Images/Icons/skill1.png"
+          "name": "Firebase"
         },
         {
           "id": 6,
-          "name": "Java",
-          "description": "Strong knowledge of Java for Android development and backend services, with experience in Spring Boot.",
-          "img_path": "/Images/Icons/skill6.png"
+          "name": "kotlin"
         },
         {
           "id": 9,
-          "name": "PHP Developer",
-          "description": "Develops dynamic web applications using PHP, specializing in frameworks like Laravel and CodeIgniter.",
-          "img_path": "/Images/Icons/skill4.png"
+          "name": "PHP"
+        },
+        {
+          "id": 9,
+          "name": "Sql"
+        },
+        {
+          "id": 9,
+          "name": "java"
         }
       ],
       "education": [
@@ -85,8 +101,8 @@
     {
       "profile": {
         "id": 1,
-        "first_name": "Saad",
-        "last_name": "Shafique",
+        "first_name": "M.Saad",
+        "last_name": "Shafiq",
         "role": "Senior Mobile App Developer",
         "email": "saad@example.com",
         "dob": "1998-08-10",
@@ -95,63 +111,57 @@
         "linkedin": "https://linkedin.com/in/saadshafique",
         "twitter": "https://twitter.com/saadshafique",
         "address": "Lahore, Pakistan",
-        "img_path": "./Images/team/saadshafique.jpg",
+        "img_path": "/Images/Team/saadshafique.jpg",
         "description": "Experienced mobile app developer with 3 years of expertise in Flutter, game development, and AI scripting using PHP and Python."
       },
       "skills": [
         {
           "id": 7,
-          "name": "Full Stack Developer",
-          "description": "Develops full-stack Android applications using Java/Kotlin for the frontend and Firebase or Node.js for the backend.",
-          "img_path": "/Images/Icons/skill7.png"
-        },
-        {
-          "id": 1,
-          "name": "Flutter Developer",
-          "description": "Experienced in building cross-platform mobile applications with Flutter, ensuring smooth UI and performance.",
-          "img_path": "/Images/Icons/skill9.png"
-        },
-        {
-          "id": 10,
-          "name": "Android Developer",
-          "description": "Experienced in building native Android applications using Java and Kotlin, with expertise in Jetpack components and MVVM architecture.",
-          "img_path": "/Images/Icons/skill8.png"
-        },
-        {
-          "id": 2,
-          "name": "Firebase",
-          "description": "Proficient in Firebase services including Firestore, Authentication, Cloud Functions, and Realtime Database.",
-          "img_path": "/Images/Icons/skill1.png"
-        },
-        {
-          "id": 5,
-          "name": "Python",
-          "description": "Experienced in writing automation scripts, data processing, and backend development using Django and Flask.",
-          "img_path": "/Images/Icons/skill5.png"
+          "name": "flutter"
         },
         {
           "id": 7,
-          "name": "System Admin",
-          "description": "Experienced in managing and maintaining IT systems, ensuring network security, configuring servers, and troubleshooting system issues. Proficient in Linux, Windows Server, cloud platforms, and automation tools.",
-          "img_path": "/Images/Icons/skill10.png"
+          "name": "Java"
         },
         {
-          "id": 8,
-          "name": "Scripting",
-          "description": "Skilled in writing automation scripts, data processing, and system administration tasks using Python. Experienced with libraries like Selenium, Pandas, and OS scripting for workflow automation.",
-          "img_path": "/Images/Icons/skill11.png"
+          "id": 7,
+          "name": "Python"
         },
         {
-          "id": 6,
-          "name": "Java",
-          "description": "Strong knowledge of Java for Android development and backend services, with experience in Spring Boot.",
-          "img_path": "/Images/Icons/skill6.png"
+          "id": 7,
+          "name": "firebase"
         },
         {
-          "id": 9,
-          "name": "PHP Developer",
-          "description": "Develops dynamic web applications using PHP, specializing in frameworks like Laravel and CodeIgniter.",
-          "img_path": "/Images/Icons/skill4.png"
+          "id": 7,
+          "name": "sql"
+        },
+        {
+          "id": 7,
+          "name": "kotlin"
+        },
+        {
+          "id": 7,
+          "name": "flask"
+        },
+        {
+          "id": 7,
+          "name": "laravel"
+        },
+        {
+          "id": 7,
+          "name": "azure"
+        },
+        {
+          "id": 7,
+          "name": "javascript"
+        },
+        {
+          "id": 7,
+          "name": "nodejs"
+        },
+        {
+          "id": 7,
+          "name": "typescript"
         }
       ],
       "education": [
@@ -203,33 +213,45 @@
         "linkedin": "https://linkedin.com",
         "twitter": "https://twitter.com",
         "address": "Lahore, Pakistan",
-        "img_path": "./Images/team/talhanazir.png",
+        "img_path": "/Images/Team/talhanazir.png",
         "description": "Web developer with 1.5 years of experience in React.js, Laravel, SQL, and Firestore, specializing in building scalable and efficient web applications."
       },
       "skills": [
         {
           "id": 8,
-          "name": "Full Stack Developer (Web)",
-          "description": "Builds robust web applications using React for the frontend and Laravel for the backend, ensuring security and scalability.",
-          "img_path": "/Images/Icons/skill7.png"
+          "name": "Laravel"
         },
         {
           "id": 2,
-          "name": "Firebase",
-          "description": "Proficient in Firebase services including Firestore, Authentication, Cloud Functions, and Realtime Database.",
-          "img_path": "/Images/Icons/skill1.png"
+          "name": "React"
         },
         {
           "id": 3,
-          "name": "React",
-          "description": "Develops dynamic web applications using React, focusing on reusable components and optimized state management.",
-          "img_path": "/Images/Icons/skill2.png"
+          "name": "firebase"
+        },
+        {
+          "id": 3,
+          "name": "php"
+        },
+        {
+          "id": 3,
+          "name": "nodejs"
         },
         {
           "id": 4,
-          "name": "SQL",
-          "description": "Skilled in writing efficient SQL queries, database optimization, and working with relational databases like MySQL and PostgreSQL.",
-          "img_path": "/Images/Icons/skill3.png"
+          "name": "html"
+        },
+        {
+          "id": 3,
+          "name": "css"
+        },
+        {
+          "id": 4,
+          "name": "SQL"
+        },
+        {
+          "id": 4,
+          "name": "Azure"
         }
       ],
       "education": [
@@ -261,273 +283,960 @@
       "projects": [103, 104, 105]
     }
   ],
-  "projects": {
-    "101": {
+  "projects": [
+    {
       "profile": {
         "id": 101,
-        "name": "Eris",
-        "img_path": "/Images/projects/eris.png",
-        "description": "Eris is a toll management system designed to control entry and exit signals while automating billing processes. The system allows users to open and close toll signals and generate bills efficiently, ensuring smooth traffic management and accurate transaction tracking.",
-        "link": "https://johndoe-portfolio.com",
-        "address": "New York, USA",
-        "customer_review": "Eris has streamlined our toll operations significantly! The ability to manage signals and generate bills automatically has improved efficiency and reduced manual work. Highly recommended!",
-        "customer_name": "Michael Johnson"
-      },
-      "project_img": [
-        {
-          "id": 1,
-          "img_path": "/Images/projects/eris/1.png",
-          "description": "Homepage design preview."
-        },
-        {
-          "id": 2,
-          "img_path": "/Images/projects/eris/2.png",
-          "description": "Homepage design preview."
-        },
-        {
-          "id": 3,
-          "img_path": "/Images/projects/eris/3.png",
-          "description": "Homepage design preview."
-        },
-        {
-          "id": 4,
-          "img_path": "/Images/projects/eris/4.png",
-          "description": "Homepage design preview."
-        }
-      ]
-    },
-    "102": {
-      "profile": {
-        "id": 102,
-        "name": "Patreon",
-        "img_path": "/Images/projects/patreonManagment.png",
-        "description": "Patreon is the toll management system, designed specifically for vehicle users. It allows users to pay toll bills online, track their transactions, and manage toll-related services efficiently. The platform enhances convenience by offering seamless digital payments and additional features for a hassle-free experience.",
-        "link": "https://ecommerce-store.com",
-        "address": "San Francisco, USA",
-        "customer_review": "Patreon has revolutionized toll payments for our users! The online payment system is smooth, secure, and user-friendly. Managing toll expenses has never been easier. Highly recommended!",
-        "customer_name": "Sarah Williams"
-      },
-      "project_img": [
-        {
-          "id": 1,
-          "img_path": "/Images/projects/patreon/1.png",
-          "description": "Product listing page."
-        },
-        {
-          "id": 2,
-          "img_path": "/Images/projects/patreon/2.png",
-          "description": "Shopping cart interface."
-        },
-        {
-          "id": 3,
-          "img_path": "/Images/projects/patreon/3.png",
-          "description": "Product listing page."
-        },
-        {
-          "id": 4,
-          "img_path": "/Images/projects/patreon/4.png",
-          "description": "Shopping cart interface."
-        },
-        {
-          "id": 5,
-          "img_path": "/Images/projects/patreon/5.png",
-          "description": "Product listing page."
-        },
-        {
-          "id": 6,
-          "img_path": "/Images/projects/patreon/6.png",
-          "description": "Shopping cart interface."
-        },
-        {
-          "id": 7,
-          "img_path": "/Images/projects/patreon/7.png",
-          "description": "Product listing page."
-        },
-        {
-          "id": 8,
-          "img_path": "/Images/projects/patreon/8.png",
-          "description": "Shopping cart interface."
-        },
-        {
-          "id": 9,
-          "img_path": "/Images/projects/patreon/9.png",
-          "description": "Product listing page."
-        },
-        {
-          "id": 10,
-          "img_path": "/Images/projects/patreon/10.png",
-          "description": "Shopping cart interface."
-        }
-      ]
-    },
-    "103": {
-      "profile": {
-        "id": 103,
         "name": "Schoollet",
-        "img_path": "/Images/projects/schoollet.png",
         "description": "Schoollet is a digital transaction and management platform designed for students and canteens. The app allows users to add students, deposit virtual credits, and apply for withdrawals. When a canteen generates a bill, the student's credit balance is automatically deducted through the mobile app. This seamless cashless system ensures efficient transaction management for schools and canteens.",
-        "link": "https://bizmanage.com",
-        "address": "Chicago, USA",
+        "img_path": "/Images/Projects/schoollet.png",
+        "link": "https://schoollet.com",
         "customer_review": "Schoollet transformed the way we handle transactions at our school! The cashless system is seamless, and students love the convenience. The team was responsive, professional, and implemented the solution flawlessly. Highly recommended!",
         "customer_name": "Naif"
       },
-      "project_img": [
+      "tags": [
+        "flutter",
+        "sql",
+        "php",
+        "firebase",
+        "nodejs",
+        "Laravel",
+        "react",
+        "javascript",
+        "html",
+        "css"
+      ],
+      "Images": [
         {
           "id": 1,
-          "img_path": "/Images/projects/schoollet/1.png",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/schoollet/1.png"
         },
         {
           "id": 2,
-          "img_path": "/Images/projects/schoollet/2.png",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/schoollet/2.png"
         },
         {
           "id": 3,
-          "img_path": "/Images/projects/schoollet/3.png",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/schoollet/3.png"
         },
         {
           "id": 4,
-          "img_path": "/Images/projects/schoollet/4.png",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/schoollet/4.png"
         },
         {
           "id": 5,
-          "img_path": "/Images/projects/schoollet/5.png",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/schoollet/5.png"
         },
         {
           "id": 6,
-          "img_path": "/Images/projects/schoollet/6.png",
-          "description": "Dashboard overview."
-        },
-        {
-          "id": 7,
-          "img_path": "/Images/projects/schoollet/7.png",
-          "description": "Dashboard overview."
-        },
-        {
-          "id": 8,
-          "img_path": "/Images/projects/schoollet/8.png",
-          "description": "Dashboard overview."
-        },
-        {
-          "id": 9,
-          "img_path": "/Images/projects/schoollet/9.png",
-          "description": "Dashboard overview."
-        },
-        {
-          "id": 10,
-          "img_path": "/Images/projects/schoollet/10.png",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/schoollet/6.png"
         }
+      ],
+      "features": [
+        "Seamless mobile app for students and canteen owners with web-based backend and admin panel control.",
+        "Students can recharge their app balance and use it for purchases at the canteen.",
+        "Secure transactions using either the app or a secret key for quick payments.",
+        "Option to order a physical Schoollet card for easy transactions without a phone.",
+        "Canteen owners can accept payments directly from students via the app.",
+        "Canteen owners can withdraw earned credits as cash by providing bank details.",
+        "Students can apply for credit withdrawals and receive funds in their bank accounts.",
+        "Admin panel to monitor transactions, user activities, and manage canteen accounts.",
+        "Instant transaction history and balance tracking for both students and canteen users.",
+        "Secure and fast authentication for seamless transactions."
       ]
     },
-    "104": {
+    {
       "profile": {
-        "id": 104,
+        "id": 102,
         "name": "Schoollet Canteen",
-        "img_path": "/Images/projects/schoolletCanteen.png",
         "description": "Schoollet Canteen is a mobile application designed for canteens and student transactions. It enables canteen users to create bills, accept cashless payments using virtual credits, and track transactions. The backend is controlled via a web portal, allowing canteens to manage billing, create withdrawal requests, and efficiently handle earnings.",
-        "link": "https://bizmanage.com",
-        "address": "Chicago, USA",
+        "img_path": "/Images/Projects/schoolletCanteen.png",
+        "link": "https://schoollet.com",
         "customer_review": "Schoollet Canteen has completely streamlined our operations. The ability to generate bills instantly and accept digital payments has made transactions effortless. The web-based backend control is a game changer. Highly recommended for any school canteen!",
         "customer_name": "Naif"
       },
-      "project_img": [
+      "tags": [
+        "flutter",
+        "php",
+        "Laravel",
+        "firebase",
+        "sql",
+        "nodejs",
+        "react",
+        "javascript",
+        "css",
+        "html"
+      ],
+      "Images": [
         {
           "id": 1,
-          "img_path": "/Images/projects/schoollet_canteen/1.jpg",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/schoollet_canteen/2.png"
         },
         {
           "id": 2,
-          "img_path": "/Images/projects/schoollet_canteen/2.png",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/schoollet_canteen/1.jpg"
         },
         {
           "id": 3,
-          "img_path": "/Images/projects/schoollet_canteen/3.jpg",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/schoollet_canteen/3.jpg"
         },
         {
           "id": 4,
-          "img_path": "/Images/projects/schoollet_canteen/4.jpg",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/schoollet_canteen/4.jpg"
         },
         {
           "id": 5,
-          "img_path": "/Images/projects/schoollet_canteen/5.jpg",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/schoollet_canteen/5.jpg"
         },
         {
           "id": 6,
-          "img_path": "/Images/projects/schoollet_canteen/6.jpg",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/schoollet_canteen/6.jpg"
         }
+      ],
+      "features": [
+        "Secure authentication and authorization for canteen owners to access their accounts.",
+        "Detailed transaction history with filters for easy tracking of payments and withdrawals.",
+        "Role-based access control to ensure secure and restricted access to sensitive data.",
+        "Generate and manage Schoollet cards for students who prefer card transactions.",
+        "Web-based admin panel for managing canteen transactions and user accounts.",
+        "Accept payments from students directly through the app or their secret key.",
+        "Track daily, weekly, and monthly sales with real-time transaction history.",
+        "Receive instant notifications for new orders and payment transactions.",
+        "Withdraw earned credits as cash by providing bank details securely."
       ]
     },
-    "105": {
+    {
       "profile": {
-        "id": 105,
+        "id": 103,
         "name": "WeAd",
-        "img_path": "/Images/projects/wead.png",
         "description": "WeAd is a web application designed to control an Android TV app for ad management. It allows users to add new ads, connect new screens, and manage which ads run on specific screens. Users can schedule ads with start and end dates, ensuring automatic disabling after expiry. The system provides a seamless and efficient way to manage digital signage.",
-        "link": "https://bizmanage.com",
-        "address": "Chicago, USA",
+        "img_path": "/Images/Projects/wead.png",
         "customer_review": "WeAd has revolutionized our digital ad management. The ability to control screens remotely and schedule ads effortlessly has saved us time and increased efficiency. The platform is intuitive, and the automation features are fantastic. Highly recommended!",
         "customer_name": "Naif"
       },
-      "project_img": [
+      "tags": [
+        "flutter",
+        "php",
+        "java",
+        "Laravel",
+        "firebase",
+        "sql",
+        "react",
+        "nodejs"
+      ],
+      "Images": [
         {
           "id": 1,
-          "img_path": "/Images/projects/wead/1.png",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/wead/1.png"
         },
         {
           "id": 2,
-          "img_path": "/Images/projects/wead/2.png",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/wead/2.png"
         },
         {
           "id": 3,
-          "img_path": "/Images/projects/wead/3.png",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/wead/3.png"
         },
         {
           "id": 4,
-          "img_path": "/Images/projects/wead/4.png",
-          "description": "Dashboard overview."
+          "img_path": "/Images/Projects/wead/4.png"
         }
+      ],
+      "features": [
+        "Android TV-based app for managing and displaying ads on screens.",
+        "Web-based admin panel for full control over screens and ad placements.",
+        "Easily add, remove, and manage multiple screens from a single dashboard.",
+        "Remotely add new ads and schedule them for display on selected screens.",
+        "Delete or update ads in real time without needing physical access to screens.",
+        "Seamless installation process for quickly setting up the app on any screen."
+      ]
+    },
+    {
+      "profile": {
+        "id": 104,
+        "name": "Eris",
+        "description": "Eris is a toll management system designed to control entry and exit signals while automating billing processes. The system allows users to open and close toll signals and generate bills efficiently, ensuring smooth traffic management and accurate transaction tracking.",
+        "img_path": "/Images/Projects/eris.png",
+        "customer_review": "Eris has streamlined our toll operations significantly! The ability to manage signals and generate bills automatically has improved efficiency and reduced manual work. Highly recommended!",
+        "customer_name": "Michael Johnson"
+      },
+      "tags": [
+        "flutter",
+        "php",
+        "firebase",
+        "sql",
+        "nodejs",
+        "javascript",
+        "html",
+        "css",
+        "feathers"
+      ],
+      "Images": [
+        {
+          "id": 1,
+          "img_path": "/Images/Projects/eris/4.png"
+        },
+        {
+          "id": 2,
+          "img_path": "/Images/Projects/eris/2.png"
+        },
+        {
+          "id": 3,
+          "img_path": "/Images/Projects/eris/3.png"
+        },
+        {
+          "id": 4,
+          "img_path": "/Images/Projects/eris/1.png"
+        }
+      ],
+      "features": [
+        "Automated toll entry and exit signal control for seamless traffic management.",
+        "Real-time billing system to generate accurate toll charges instantly.",
+        "User-friendly interface for opening and closing toll signals with a single click.",
+        "Secure authentication and authorization to prevent unauthorized access.",
+        "Detailed transaction history for tracking toll payments and vehicle movements.",
+        "Web-based admin panel for monitoring toll operations and managing users.",
+        "Automated reports and analytics to optimize toll collection and traffic flow.",
+        "Seamless integration with payment gateways for cashless transactions."
+      ]
+    },
+    {
+      "profile": {
+        "id": 105,
+        "name": "Patreon",
+        "description": "Patreon is the toll management system, designed specifically for vehicle users. It allows users to pay toll bills online, track their transactions, and manage toll-related services efficiently. The platform enhances convenience by offering seamless digital payments and additional features for a hassle-free experience.",
+        "img_path": "/Images/Projects/patreonManagment.png",
+        "customer_review": "Patreon has revolutionized toll payments for our users! The online payment system is smooth, secure, and user-friendly. Managing toll expenses has never been easier. Highly recommended!",
+        "customer_name": "Sarah Williams"
+      },
+      "tags": [
+        "flutter",
+        "php",
+        "java",
+        "Laravel",
+        "firebase",
+        "sql",
+        "feathers",
+        "nodejs"
+      ],
+      "Images": [
+        {
+          "id": 1,
+          "img_path": "/Images/Projects/patreon/1.png"
+        },
+        {
+          "id": 2,
+          "img_path": "/Images/Projects/patreon/2.png"
+        },
+        {
+          "id": 3,
+          "img_path": "/Images/Projects/patreon/3.png"
+        },
+        {
+          "id": 4,
+          "img_path": "/Images/Projects/patreon/4.png"
+        },
+        {
+          "id": 5,
+          "img_path": "/Images/Projects/patreon/5.png"
+        },
+        {
+          "id": 6,
+          "img_path": "/Images/Projects/patreon/6.png"
+        },
+        {
+          "id": 7,
+          "img_path": "/Images/Projects/patreon/7.png"
+        },
+        {
+          "id": 8,
+          "img_path": "/Images/Projects/patreon/8.png"
+        },
+        {
+          "id": 9,
+          "img_path": "/Images/Projects/patreon/9.png"
+        }
+      ],
+      "features": [
+        "Multi-vehicle management support for users with multiple registered vehicles.",
+        "Secure authentication and authorization to protect user data and payments.",
+        "Seamless online toll payment system for quick and hassle-free transactions.",
+        "Instant notifications and alerts for toll charges and payment confirmations.",
+        "Real-time transaction tracking to monitor toll payments and history.",
+        "Digital wallet integration for convenient and cashless toll payments.",
+        "User-friendly dashboard to manage toll-related services efficiently.",
+        "Automated billing system with detailed invoices for transparency."
       ]
     }
-  },
+  ],
   "services": [
     {
-      "name": "Mobile App Development",
-      "description": "Every app we build is engineered to drive measurable business outcomes. With expertise spanning cutting-edge native development, cross-platform solutions, and enterprise-grade systems, our engineers transform bold ideas into dynamic mobile experiences",
-      "img_path": "./Images/Icons/mobile.png"
+      "profile": {
+        "id": 1,
+        "name": "Web Development",
+        "description": "Building Seamless Experiences",
+        "img_path": "/Images/Services/webDevolpment.jpg",
+        "description_img": "/Images/Services/webDevolpment22.jpg",
+        "price": 100,
+        "tag": "Digital Transformation",
+        "overView": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses. Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations."
+      },
+      "overview": {
+        "id": 1,
+        "description": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses. Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations.",
+        "img_path": "/Images/Services/webDevolpment22.jpg"
+      },
+      "service": [
+        {
+          "id": 1,
+          "name": "Cutting-Edge Technologies",
+          "description": "Our use of the latest frameworks and technologies such as React.js, Angular, Vue.js, Node.js, Laravel, Ruby on Rails, and Python ensures your web solutions are future-ready."
+        },
+        {
+          "id": 2,
+          "name": "Responsive Design",
+          "description": "Our approach guarantees your website adapts to all screen sizes, providing a seamless user experience."
+        },
+        {
+          "id": 3,
+          "name": "Performance Optimization",
+          "description": "We ensure your website is optimized for speed and performance, leveraging CDNs, lazy loading, and caching strategies to enhance load times.‍"
+        },
+        {
+          "id": 4,
+          "name": "Web Security",
+          "description": "We ensure that your website is protected with the latest security standards, including SSL encryption, firewalls, and regular security audits."
+        }
+      ]
     },
     {
-      "name": "Web Development",
-      "description": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses.Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations.",
-      "img_path": "./Images/Icons/website.png"
+      "profile": {
+        "id": 2,
+        "name": "App Development",
+        "description": "Custom Mobile Apps for Tomorrow",
+        "img_path": "/Images/Services/mobileApp.jpg",
+        "description_img": "/Images/Services/agileSoftware.jpg",
+        "price": 100,
+        "tag": "Digital Transformation",
+        "overView": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses. Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations."
+      },
+      "overview": {
+        "id": 1,
+        "description": "Every app we build is engineered to drive measurable business outcomes.  With expertise spanning cutting-edge native development, cross-platform solutions, and enterprise-grade systems, our engineers transform bold ideas intodynamic mobile experiences.",
+        "img_path": "/Images/Services/mobileApp2.jpg"
+      },
+      "service": [
+        {
+          "id": 1,
+          "name": "Mobile-First Architecture",
+          "description": "Leveraging agile methodologies to build scalable, responsive solutions that align with mobile-first strategies."
+        },
+        {
+          "id": 2,
+          "name": "Enterprise Mobility",
+          "description": "Developing robust, secure applications to streamline operations and enhance productivity for businesses of all sizes."
+        },
+        {
+          "id": 3,
+          "name": "Integration Expertise",
+          "description": "Seamlessly connecting mobile apps with third-party services, APIs, and backend systems."
+        },
+        {
+          "id": 4,
+          "name": "Performance Optimization",
+          "description": "Ensuring apps are fast, lightweight, and responsive, even under heavy user loads."
+        },
+        {
+          "id": 5,
+          "name": "Custom Mobile Solutions",
+          "description": "Building tailored apps to address specific business challenges and deliver measurable results."
+        }
+      ]
     },
     {
-      "name": "Generative AI",
-      "description": "We delivers expert generative AI solutions designed to accelerate your digital transformation. Using advanced technologies like TensorFlow, PyTorch, and GPT architectures, we create tailored AI solutions that enable businesses to innovate with precision and creativity.",
-      "img_path": "./Images/Icons/ai.png"
+      "profile": {
+        "id": 3,
+        "name": "Custom Software Development",
+        "description": "Custom Software Solutions Built to Innovate",
+        "img_path": "/Images/Services/customSoftware.jpg",
+        "description_img": "/Images/Services/agileSoftware.jpg",
+        "price": 100,
+        "tag": "Digital Transformation",
+        "overView": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses. Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations."
+      },
+      "overview": {
+        "id": 1,
+        "description": "we specialize in building scalable and bespoke software tailored to address specific business challenges. Whether you're enhancing operational processes or revolutionizing customer experiences, our team leverages cutting-edge tools and technologies to turn your vision into reality.",
+        "img_path": "/Images/Services/customSoftware2.jpg"
+      },
+      "service": [
+        {
+          "id": 1,
+          "name": "Bespoke Software Development",
+          "description": "Crafting custom software solutions tailored to unique business needs, ensuring efficiency and scalability."
+        },
+        {
+          "id": 2,
+          "name": "Enterprise Software Solutions",
+          "description": "Designing robust enterprise applications to optimize workflows, enhance collaboration, and drive business growth."
+        },
+        {
+          "id": 3,
+          "name": "System Integration",
+          "description": "Seamlessly integrating various software solutions, APIs, and legacy systems for a unified business environment."
+        },
+        {
+          "id": 4,
+          "name": "Scalable Cloud Solutions",
+          "description": "Developing cloud-based applications that provide flexibility, security, and performance for modern businesses."
+        },
+        {
+          "id": 5,
+          "name": "Software Performance Enhancement",
+          "description": "Optimizing software speed, reliability, and responsiveness to meet high-performance standards."
+        }
+      ]
     },
     {
-      "name": "Custom Software Development",
-      "description": "We specialize in building scalable and bespoke software tailored to address specific business challenges. Whether you're enhancing operational processes or revolutionizing customer experiences, our team leverages cutting-edge tools and technologies to turn your vision into reality.",
-      "img_path": "./Images/Icons/software.png"
+      "profile": {
+        "id": 4,
+        "name": "Ux/Ui Design",
+        "description": "Adaptive, Human-Centered Designs",
+        "img_path": "/Images/Services/uxUiDesign.jpg",
+        "description_img": "/Images/Services/agileSoftware.jpg",
+        "price": 100,
+        "tag": "Digital Transformation",
+        "overView": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses. Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations."
+      },
+      "overview": {
+        "id": 1,
+        "description": "we specialize in crafting intuitive, compelling, and functional UI/UX designs that enhance user engagement and drive business success. From user research to interactive prototypes, we combine creativity with data-driven insights to deliver responsive designs. ",
+        "img_path": "/Images/Services/uxuiDesign2.jpg"
+      },
+      "service": [
+        {
+          "id": 1,
+          "name": "User Research & Analysis",
+          "description": "We conduct in-depth user research to understand your audience’s needs, behaviors, and pain points."
+        },
+        {
+          "id": 2,
+          "name": "Wireframing & Prototyping",
+          "description": "We build interactive wireframes and prototypes to validate concepts and test usability before development. "
+        },
+        {
+          "id": 3,
+          "name": "UI Design & Visual Identity",
+          "description": "Our designers create aesthetically pleasing, brand-consistent user interfaces that captivate and engage."
+        },
+        {
+          "id": 4,
+          "name": "Responsive & Mobile-First Design",
+          "description": "We design websites and applications with a mobile-first mindset, ensuring seamless experiences across all devices.‍"
+        },
+        {
+          "id": 5,
+          "name": "User Testing & Feedback",
+          "description": "We perform rigorous usability testing to gather real user feedback and refine designs for maximum impact."
+        }
+      ]
     },
     {
-      "name": "Cloud Application",
-      "description": "Cloud applications are transforming businesses with unmatched scalability, flexibility, and efficiency. We craft tailored cloud solutions using leading platforms like AWS, Azure, and Google Cloud, combined with tools such as Kubernetes, Terraform, and Docker.",
-      "img_path": "./Images/Icons/cloud.png"
+      "profile": {
+        "id": 5,
+        "name": "Gen AI",
+        "description": "AI-Driven Transformation for Your IT Ecosystem",
+        "img_path": "/Images/Services/genAi.jpg",
+        "description_img": "/Images/Services/agileSoftware.jpg",
+        "price": 100,
+        "tag": "Data And AI",
+        "overView": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses. Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations."
+      },
+      "overview": {
+        "id": 1,
+        "description": "Devsinc delivers expert generative AI solutions designed to accelerate your digital transformation. Using advanced technologies like TensorFlow, PyTorch, and GPT architectures, we create tailored AI solutions that enable businesses to innovate with precision and creativity.",
+        "img_path": "/Images/Services/genAi2.jpg"
+      },
+      "service": [
+        {
+          "id": 1,
+          "name": "Generative AI Development",
+          "description": "Building customized AI models to generate unique text, images, and multimedia."
+        },
+        {
+          "id": 2,
+          "name": "AI Tools & Frameworks",
+          "description": "Expertise in using cutting-edge tools such as TensorFlow, PyTorch, and GPT."
+        },
+        {
+          "id": 3,
+          "name": "Data-Driven Innovation",
+          "description": "Leveraging diverse datasets to craft AI solutions that enhance digital experiences."
+        },
+        {
+          "id": 4,
+          "name": "Conversational AI & Chatbots",
+          "description": "Developing intelligent chatbots and virtual assistants powered by NLP and deep learning."
+        },
+        {
+          "id": 5,
+          "name": "AI-Powered Automation",
+          "description": "Enhancing business efficiency with AI-driven process automation and intelligent decision-making."
+        },
+        {
+          "id": 6,
+          "name": "AI Ethics & Bias Mitigation",
+          "description": "Implementing responsible AI practices to ensure fairness, transparency, and compliance."
+        }
+      ]
+    },
+    {
+      "profile": {
+        "id": 6,
+        "name": "Data Analysis",
+        "description": "Turn Data into Action with Our Analytics Solutions",
+        "img_path": "/Images/Services/dataAnalysys.jpg",
+        "description_img": "/Images/Services/agileSoftware.jpg",
+        "price": 100,
+        "tag": "Data And AI",
+        "overView": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses. Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations."
+      },
+      "overview": {
+        "id": 1,
+        "description": "Our data analytics services empower businesses to make informed, data-driven decisions by extracting insights that drive growth and innovation. Using advanced tools and technologies, our data engineers and analysts transform raw data into strategic insights, enhancing operational efficiency and competitive advantage.",
+        "img_path": "/Images/Services/dataAnalysis.jpg"
+      },
+      "service": [
+        {
+          "id": 1,
+          "name": "Data Collection & Integration",
+          "description": "Seamlessly gather, process, and integrate data from diverse sources for unified insights."
+        },
+        {
+          "id": 2,
+          "name": "Predictive Analytics",
+          "description": "Leverage machine learning models to forecast trends and proactively address business challenges."
+        },
+        {
+          "id": 3,
+          "name": "Data Visualization",
+          "description": "Transform complex data into clear, interactive dashboards for informed decision-making."
+        },
+        {
+          "id": 4,
+          "name": "Big Data Solutions",
+          "description": "Analyze large datasets efficiently, providing insights that drive better strategy and planning."
+        },
+        {
+          "id": 5,
+          "name": "Data Quality & Governance",
+          "description": "Ensure data accuracy, security, and compliance with structured data governance protocols."
+        },
+        {
+          "id": 6,
+          "name": "Customer & Market Analytics",
+          "description": "Gain a deeper understanding of customer behavior and market trends to optimize strategies."
+        }
+      ]
+    },
+    {
+      "profile": {
+        "id": 7,
+        "name": "Design & Development",
+        "description": "Building High-Performance E-Commerce Experiences",
+        "img_path": "/Images/Services/ecommerce11.jpg",
+        "description_img": "/Images/Services/agileSoftware.jpg",
+        "price": 100,
+        "tag": "E-Commerce",
+        "overView": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses. Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations."
+      },
+      "overview": {
+        "id": 1,
+        "description": "Our e-commerce development services utilize the latest technology, offering scalable and customizable solutions that adapt to your brand’s evolving and rapidly changing needs. Whether you need a high-converting Shopify store, a custom headless implementation, a flexible checkout experience, or a fully integrated omnichannel solution, we have the expertise to deliver exceptional results.",
+        "img_path": "/Images/Services/ecommerce22.jpg"
+      },
+      "service": [
+        {
+          "id": 1,
+          "name": "Custom eCommerce Development",
+          "description": "Building scalable, secure, and feature-rich online stores tailored to business needs."
+        },
+        {
+          "id": 2,
+          "name": "Multi-Vendor Marketplace Solutions",
+          "description": "Developing platforms that support multiple vendors, product listings, and seamless transactions."
+        },
+        {
+          "id": 3,
+          "name": "Payment Gateway Integration",
+          "description": "Integrating secure and diverse payment options for a smooth checkout experience."
+        },
+        {
+          "id": 4,
+          "name": "eCommerce Performance Optimization",
+          "description": "Enhancing site speed, responsiveness, and user experience for higher conversion rates."
+        },
+        {
+          "id": 5,
+          "name": "Inventory & Order Management Systems",
+          "description": "Developing automated systems to manage stock, orders, and logistics efficiently."
+        }
+      ]
+    },
+    {
+      "profile": {
+        "id": 8,
+        "name": "Maintainance And Support",
+        "description": "Driving E-Commerce Success With Growth-Focused Websites",
+        "img_path": "/Images/Services/support2.jpg",
+        "description_img": "/Images/Services/maintainAndSupport.jpg",
+        "price": 100,
+        "tag": "E-Commerce",
+        "overView": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses. Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations."
+      },
+      "overview": {
+        "id": 1,
+        "description": "Our services are designed to manage the day-to-day activities of your Shopify store, ensuring seamless operations and optimal performance. Our technical support services provide comprehensive assistance in managing and optimizing your Shopify store, ensuring it runs smoothly and efficiently.",
+        "img_path": "/Images/Services/maintainAndSupport.jpg"
+      },
+      "service": [
+        {
+          "id": 1,
+          "name": "Product Management",
+          "description": "We handle product uploads, descriptions, categorization, and updates to keep your store organized."
+        },
+        {
+          "id": 2,
+          "name": "Inventory Management",
+          "description": "Maintain stock accuracy with real-time tracking, automated alerts, and seamless supplier coordination."
+        },
+        {
+          "id": 3,
+          "name": "Store Management",
+          "description": "Ensure smooth daily operations by managing orders, discounts, and overall store functionality."
+        },
+        {
+          "id": 4,
+          "name": "Technical Support",
+          "description": "Troubleshoot and resolve technical issues to keep your Shopify store running efficiently."
+        },
+        {
+          "id": 5,
+          "name": "Performance Optimization",
+          "description": "Improve site speed, responsiveness, and usability for a seamless shopping experience."
+        }
+      ]
+    },
+    {
+      "profile": {
+        "id": 9,
+        "name": "Automation And App",
+        "description": "Maximize your Shopify store’s performance with our advanced applications",
+        "img_path": "/Images/Services/automationApp.jpg",
+        "description_img": "/Images/Services/automationApp.jpg",
+        "price": 100,
+        "tag": "E-Commerce",
+        "overView": ""
+      },
+      "overview": {
+        "id": 1,
+        "description": "Enhance your Shopify store with powerful automation and custom apps designed to streamline operations, boost efficiency, and improve customer experience. Our tailored solutions reduce manual tasks, integrate seamlessly, and help scale your business effortlessly.",
+        "img_path": "/Images/Services/automate2.jpg"
+      },
+      "service": [
+        {
+          "id": 1,
+          "name": "Workflow Automation",
+          "description": "Automate repetitive tasks like order processing, invoicing, and inventory updates.‍"
+        },
+        {
+          "id": 2,
+          "name": "Custom Shopify Apps",
+          "description": "Develop tailored apps to enhance store functionality and meet unique business needs.‍"
+        },
+        {
+          "id": 3,
+          "name": "Shopify  Flow Automation",
+          "description": "Leverage Shopify flow and other advanced tools to create dynamic, automated store processes.‍"
+        },
+        {
+          "id": 4,
+          "name": "Third-Party Integrations",
+          "description": "Seamlessly connect with payment gateways, CRM systems, and fulfillment solutions.‍"
+        },
+        {
+          "id": 5,
+          "name": "AI-Powered Personalization",
+          "description": "Implement AI-driven recommendations to improve conversions and engagement."
+        }
+      ]
+    },
+    {
+      "profile": {
+        "id": 10,
+        "name": "Cloud Application",
+        "description": "Maximize Efficiency with Cloud-First Solutions",
+        "img_path": "/Images/Services/cloudApp.jpg",
+        "description_img": "/Images/Services/agileSoftware.jpg",
+        "price": 100,
+        "tag": "Cloud",
+        "overView": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses. Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations."
+      },
+      "overview": {
+        "id": 1,
+        "description": "Cloud applications are transforming businesses with unmatched scalability, flexibility, and efficiency. At Devsinc, we craft tailored cloud solutions using leading platforms like AWS, Azure, and Google Cloud, combined with tools such as Kubernetes, Terraform, and Docker. ",
+        "img_path": "/Images/Services/cloud2.jpg"
+      },
+      "service": [
+        {
+          "id": 1,
+          "name": "Cloud-Native Development",
+          "description": "Expertise in building scalable and high-performing cloud applications with serverless architecture and containerization."
+        },
+        {
+          "id": 2,
+          "name": "Seamless Cloud Migrations",
+          "description": "Efficient transition of on-premise applications to the cloud while minimizing disruptions and optimizing performance."
+        },
+        {
+          "id": 3,
+          "name": "DevOps Integration",
+          "description": "Implementation of CI/CD pipelines and infrastructure automation to accelerate deployment cycles and maintain code quality."
+        },
+        {
+          "id": 4,
+          "name": "Multi-Cloud Strategy",
+          "description": "Deployment across multiple cloud providers to ensure high availability, disaster recovery, and compliance."
+        },
+        {
+          "id": 5,
+          "name": "Advanced Security Protocols",
+          "description": "Integration of encryption, identity access management (IAM), and compliance with GDPR, HIPAA, and ISO standards."
+        },
+        {
+          "id": 6,
+          "name": "Cost Optimization",
+          "description": "Maximizing ROI with dynamic resource allocation, auto-scaling, and pay-as-you-go models tailored to your workload needs."
+        },
+        {
+          "id": 7,
+          "name": "Data Management and Analytics",
+          "description": "Leveraging cloud storage and analytics tools for real-time data insights and informed decision-making.."
+        }
+      ]
+    },
+    {
+      "profile": {
+        "id": 11,
+        "name": "Cloud Ops & Migration",
+        "description": "Achieve Optimal Cloud Performance, Security, and Scalability",
+        "img_path": "/Images/Services/cloudOps.jpg",
+        "description_img": "/Images/Services/agileSoftware.jpg",
+        "price": 100,
+        "tag": "Cloud",
+        "overView": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses. Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations."
+      },
+      "overview": {
+        "id": 1,
+        "description": "We specialize in migrating legacy systems, optimizing cloud environments, and implementing robust operational strategies tailored to your specific business needs. By leveraging cutting-edge tools and frameworks, we ensure secure, scalable, and efficient cloud ecosystems that enhance agility, reduce operational overhead and drive innovation.",
+        "img_path": "/Images/Services/cloudOps2.jpg"
+      },
+      "service": [
+        {
+          "id": 1,
+          "name": "Strategic Migration Frameworks",
+          "description": "Minimize downtime with structured, phased migration processes tailored to legacy systems and future scalability."
+        },
+        {
+          "id": 2,
+          "name": "Seamless Integration",
+          "description": "Align new cloud solutions with existing IT environments for unified workflows and enhanced productivity."
+        },
+        {
+          "id": 3,
+          "name": "Automated Operations",
+          "description": "Implement CI/CD pipelines, infrastructure as code (IaC), and intelligent monitoring for efficient, error-free cloud operations."
+        },
+        {
+          "id": 4,
+          "name": "Security First Approach",
+          "description": "Safeguard cloud environments with multi-layered security, encryption protocols, and compliance-driven strategies.‍"
+        },
+        {
+          "id": 5,
+          "name": "Proactive Monitoring & Support",
+          "description": "Ensure uninterrupted cloud operations with real-time monitoring, performance optimization, and round-the-clock support."
+        }
+      ]
+    },
+    {
+      "profile": {
+        "id": 12,
+        "name": "Cloud Maintainance & integration",
+        "description": "Streamline Cloud Complexities with Proven Integration",
+        "img_path": "/Images/Services/cloudMigration.jpg",
+        "description_img": "/Images/Services/agileSoftware.jpg",
+        "price": 100,
+        "tag": "Cloud",
+        "overView": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses. Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations."
+      },
+      "overview": {
+        "id": 1,
+        "description": "Our's Cloud Maintenance & Integration Services are designed to keep your cloud infrastructure robust, secure, and optimized while facilitating seamless integration across multiple platforms and environments.",
+        "img_path": "/Images/Services/cloudMigration22.jpg"
+      },
+      "service": [
+        {
+          "id": 1,
+          "name": "Cloud Integration Services",
+          "description": "Integrating various cloud platforms for unified and seamless data flow."
+        },
+        {
+          "id": 2,
+          "name": "Proactive Monitoring & Management",
+          "description": "Ensuring cloud environments remain optimized and secure"
+        },
+        {
+          "id": 3,
+          "name": "Automated Backup & Disaster Recovery",
+          "description": "Safeguarding data with automated, efficient recovery systems."
+        },
+        {
+          "id": 4,
+          "name": "Cloud Security Services",
+          "description": "Robust, proactive security tailored to each client’s specific environment"
+        },
+        {
+          "id": 5,
+          "name": "Application Performance Optimization",
+          "description": "Enhancing app performance for smoother cloud experiences."
+        },
+        {
+          "name": "Compliance Management",
+          "description": "Ensuring adherence to regulatory standards across all cloud assets"
+        },
+        {
+          "id": 7,
+          "name": "Cost Optimization",
+          "description": "Reducing cloud operational costs with efficiency-driven strategies."
+        },
+        {
+          "id": 8,
+          "name": "Custom API Integration",
+          "description": "Bridging unique applications with custom API solutions."
+        }
+      ]
+    },
+    {
+      "profile": {
+        "id": 13,
+        "name": "Quality Assurance",
+        "description": "Delivering Unmatched Software Quality",
+        "img_path": "/Images/Services/qualityAssurance.jpg",
+        "description_img": "/Images/Services/agileSoftware.jpg",
+        "price": 100,
+        "overView": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses. Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations."
+      },
+      "overview": {
+        "id": 1,
+        "description": "We ensure your software meets the highest standards of quality, reliability, and performance. By combining advanced methodologies with industry best practices, our QA experts deliver comprehensive testing solutions that address every aspect of your application lifecycle, from functionality to compliance and user experience.",
+        "img_path": "/Images/Services/qualityAssurance2.jpg"
+      },
+      "service": [
+        {
+          "id": 1,
+          "name": "Manual & Automated Testing",
+          "description": "Balancing human insight with automation to ensure functional accuracy."
+        },
+        {
+          "id": 2,
+          "name": "Performance & Load Testing",
+          "description": "Validating responsiveness under varied load conditions."
+        },
+        {
+          "id": 3,
+          "name": "Security & Compliance Testing",
+          "description": "Identifying vulnerabilities and ensuring compliance with industry standards."
+        },
+        {
+          "id": 4,
+          "name": "UI/UX & Functional Testing",
+          "description": "Enhancing user experience with intuitive functionality and design."
+        },
+        {
+          "id": 5,
+          "name": "Mobile & Web App Testing",
+          "description": "Ensuring usability and performance across devices and platforms."
+        },
+        {
+          "id": 6,
+          "name": "QA Consulting & Strategy",
+          "description": "Crafting tailored QA strategies for business needs"
+        }
+      ]
+    },
+    {
+      "profile": {
+        "id": 14,
+        "name": "Cyber Security",
+        "description": "From Strategy to Protection: World-Class Cybersecurity for Every Business",
+        "img_path": "/Images/Services/cyberSecurity.jpg",
+        "description_img": "/Images/Services/agileSoftware.jpg",
+        "price": 100,
+        "overView": "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses. Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations."
+      },
+      "overview": {
+        "id": 1,
+        "description": "In a digital world where security threats evolve daily, our cybersecurity services provide businesses with a resilient, comprehensive defense strategy. Our engineers employ a robust toolkit, leveraging the latest in threat detection, prevention, and response technologies to create security frameworks that protect your business across all touchpoints. With expertise across network security, cloud security, and endpoint protection, we equip your enterprise with advanced, adaptable defenses that scale with your needs.",
+        "img_path": "/Images/Services/cyberSecurity2.jpeg"
+      },
+      "service": [
+        {
+          "id": 1,
+          "name": "Threat Detection and Response: ",
+          "description": "Proactive identification and neutralization of threats using AI-powered analytics and real-time monitoring."
+        },
+        {
+          "id": 2,
+          "name": "Vulnerability Assessments & Penetration Testing",
+          "description": "Rigorous testing and analysis to uncover weaknesses before attackers can."
+        },
+        {
+          "id": 3,
+          "name": "Data Protection & Encryption",
+          "description": "Advanced encryption and data security protocols to protect sensitive information at rest and in transit."
+        },
+        {
+          "id": 4,
+          "name": "Network Security & Firewalls",
+          "description": "Implementing firewalls, intrusion prevention systems (IPS), and virtual private networks (VPNs) to secure network traffic."
+        },
+        {
+          "id": 5,
+          "name": "Cloud Security Solutions",
+          "description": "Securing cloud environments with multi-layered defense strategies, customized access controls, and compliance alignment."
+        },
+        {
+          "id": 6,
+          "name": "Endpoint Protection & Device Management",
+          "description": "Safeguarding every device connected to your network with advanced endpoint security and monitoring."
+        },
+        {
+          "id": 7,
+          "name": "Incident Response & Recovery",
+          "description": "Rapid response and disaster recovery planning to minimize downtime and data loss during security events."
+        },
+        {
+          "id": 8,
+          "name": "Compliance & Regulatory Support",
+          "description": "Ensuring alignment with industry regulations (GDPR, HIPAA, etc.)."
+        },
+        {
+          "id": 9,
+          "name": "Security Automation & Orchestration",
+          "description": "Reducing response times and improving efficiency with automated security workflows."
+        }
+      ]
     }
   ],
   "skill": {

@@ -1,0 +1,103 @@
+:root {
+  -primary-color-1: #0199e4;
+  -primary-color-2: #002448;
+  -text-d1: #000;
+  -text-d1-8: rgb(0, 0, 0, 0.8);
+  -text-d2: #121212;
+  -text-p1: #fff;
+  -text-p1-8: rgb(255, 255, 255, 0.8);
+  -text-p2: #c5c5c5;
+  --gradiant-light: linear-gradient(100deg, #212121 0%, #002448 100%);
+  --gradiant-dark: linear-gradient(
+    5deg,
+    rgba(0, 36, 72, 1) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+}
+.text-heading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+.text-description {
+  margin-top: 2rem;
+}
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.carousel {
+  display: flex;
+  gap: 10px;
+  overflow: hidden;
+}
+
+.carousel-item {
+  width: 300px;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding: 10px;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+}
+
+.carousel-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 24px;
+  border-radius: 50%;
+}
+
+.carousel-btn:hover {
+  background-color: grey;
+}
+
+.serviceSectionMiniHeading {
+  color: var(--primary-color-1);
+}
+.industryBoxContainer {
+  border-bottom: 1px solid #949494;
+}
+.MarqueeContainer {
+  background: var(--gradiant-light);
+  padding: 20px 0;
+}
+.projectBox {
+  color: #fff;
+}
+
+.team-carousel-btn {
+  border: none;
+}
+.slick-arrow {
+  display: none !important;
+}
+
+/* ////////////////////////////////// */
+.footer-section {
+  height: 50vh;
+  background-position: center;
+}
+.footerIcon {
+  transition: 0.3s ease;
+}
+.footerIcon:hover {
+  scale: 1.1;
+  color: #fff !important;
+}
