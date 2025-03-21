@@ -14,7 +14,7 @@ export const NavBar = () => {
   const navigate = useNavigate();
 
   const toggleDropdown = (event) => {
-    event.stopPropagation(); // Fix: Prevents immediate close
+    event.stopPropagation(); // Prevents immediate close
     setActiveDropdown(!activeDropdown);
   };
 
@@ -37,6 +37,7 @@ export const NavBar = () => {
 
   return (
     <>
+      {/* Navigation Bar */}
       <div className="NavigationBar text-white d-flex p-2 justify-content-between nav-container">
         {/* Logo & Dark Mode Toggle */}
         <div className="imgBox d-flex gap-3 align-items-center">
@@ -57,7 +58,7 @@ export const NavBar = () => {
           >
             What We Serve ▼
           </h4>
-          {activeDropdown && <NavDropdown />}{" "}
+          {activeDropdown && <NavDropdown />}
           <h4 className="px-4 py-2 rounded cursor-pointer navItemLink text-d">
             Teams
           </h4>
@@ -73,13 +74,7 @@ export const NavBar = () => {
           >
             About Us
           </h4>
-          {/* Dropdown inside desktop nav */}
-          <PrimaryBtn
-            name="Contact Us"
-            onClick={() => {
-              navigate("/contact");
-            }}
-          />
+          <PrimaryBtn name="Contact Us" onClick={() => navigate("/contact")} />
         </div>
 
         {/* Burger Menu (Visible on Small Screens) */}
@@ -95,31 +90,28 @@ export const NavBar = () => {
 
       {/* Mobile Menu */}
       {mobileMenuOpen && (
-        <div className="mobile-nav bg-light text-white p-3">
+        <div className="mobile-nav bg-light text-dark p-3 position-absolute w-100">
           <h4
-            className="py-2 cursor-pointer navItemLink text-d"
-            onClick={toggleDropdown} // Stop propagation to prevent auto-close
+            className="py-2 cursor-pointer navItemLink text-dark"
+            onClick={toggleDropdown}
           >
-            What We Serve? ▼
+            What We Serve ▼
           </h4>
-          {activeDropdown && <NavDropdown />}{" "}
-          {/* Dropdown inside mobile menu */}
-          {["NavItem2", "NavItem3", "NavItem4", "NavItem5"].map(
-            (item, index) => (
-              <h4
-                key={index}
-                className="py-2 cursor-pointer navItemLink text-dark"
-              >
-                {item}
-              </h4>
-            )
-          )}
-          <PrimaryBtn
-            name="Contact Us"
-            onClick={() => {
-              console.log("hello");
-            }}
-          />
+          {activeDropdown && <NavDropdown />}
+
+          <h4 className="py-2 cursor-pointer navItemLink text-dark">Teams</h4>
+          <h4 className="py-2 cursor-pointer navItemLink text-dark">
+            Projects
+          </h4>
+          <h4 className="py-2 cursor-pointer navItemLink text-dark">Careers</h4>
+          <h4
+            className="py-2 cursor-pointer navItemLink text-dark"
+            onClick={() => navigate("/about")}
+          >
+            About Us
+          </h4>
+
+          <PrimaryBtn name="Contact Us" onClick={() => navigate("/contact")} />
         </div>
       )}
     </>
