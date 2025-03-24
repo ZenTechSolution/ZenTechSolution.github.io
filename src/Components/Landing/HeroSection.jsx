@@ -46,6 +46,7 @@ export const HeroImg = ({ data }) => {
         alignItems: "center",
         justifyContent: "center",
         color: "white",
+        overflow: "hidden",
       }}
     >
       {/* Blurred Placeholder (Low Quality) */}
@@ -79,8 +80,16 @@ export const HeroImg = ({ data }) => {
         }}
       />
 
-      {/* Content */}
-      <div className="content text-white text-center" style={{ width: "100%" }}>
+      {/* Content - Fixed Position */}
+      <div
+        className="content text-white text-center"
+        style={{
+          width: "100%",
+          position: "relative",
+          zIndex: 2, // Ensures text stays above the images
+          padding: "20px",
+        }}
+      >
         <h2 className="text-heading w-100" style={{ textAlign: "left" }}>
           {data?.name}
         </h2>
