@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { BloomCircle } from "./../General/BloomCircles";
 
 let overviewData = {
   name: "overview",
@@ -11,7 +12,10 @@ export const Overview = () => {
 
   return (
     <>
-      <div className="project-overview col-11 m-auto mt-5">
+      <div
+        className="project-overview col-11 m-auto mt-5"
+        style={{ position: "relative" }}
+      >
         <div className="row align-items-center">
           <div className="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
             <p className=" text-primary fw-bold text-start">Overview</p>
@@ -27,6 +31,18 @@ export const Overview = () => {
               alt={profile.name}
             />
           </div>
+        </div>
+        <div
+          className="div"
+          style={{
+            position: "absolute",
+            bottom: "0%",
+            scale: "1.5",
+            right: "30%",
+            zIndex: -1,
+          }}
+        >
+          <BloomCircle />
         </div>
       </div>
     </>

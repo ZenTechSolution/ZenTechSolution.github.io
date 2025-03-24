@@ -1,6 +1,6 @@
 export function BloomCircle() {
   return (
-    <div className="div" style={{ position: "relative" }}>
+    <div className="div" style={{ position: "absolute", zIndex: -1 }}>
       <div
         style={{
           position: "absolute",

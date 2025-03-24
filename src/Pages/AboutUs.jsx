@@ -8,6 +8,7 @@ import { OurVision } from "./../Components/About/OurMission";
 import { TeamCarousel } from "../Components/Landing/TeamCarasoul";
 import { TechStack } from "../Components/General/TechStack";
 import { ServedIndustries } from "../Components/General/ServedIndustries";
+import { BloomCircle } from "./../Components/General/BloomCircles";
 
 import { Footer } from "../Components/General/Footer";
 
@@ -23,7 +24,15 @@ export const AboutUs = () => {
       <HeroPageAboutUs />
       <OurMission />
       <OurVision />
-      <OurValues />
+      <div className="div" style={{ position: "relative" }}>
+        <OurValues />
+        <div
+          className="div"
+          style={{ position: "absolute", scale: "2", zIndex: "-1" }}
+        >
+          <BloomCircle />
+        </div>
+      </div>
       <CodeConduct />
       <TechStack />
       <TeamCarousel />

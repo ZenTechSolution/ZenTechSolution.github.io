@@ -8,6 +8,7 @@ import { TeamContact } from "./../Components/TeamPage/TeamContact";
 import { ServiceImage } from "./../Components/Service/ServiceImage";
 import { Footer } from "./../Components/General/Footer";
 import { ServedIndustries } from "./../Components/General/ServedIndustries";
+import { BloomCircle } from "./../Components/General/BloomCircles";
 import { useParams } from "react-router-dom";
 
 export const Teams = () => {
@@ -39,7 +40,21 @@ export const Teams = () => {
           <MyServices skills={data.skills || []} />
           <TeamContact profile={data.profile} />
           <ServiceImage />
-          <MyProjects project={data.projects} />
+          <div className="div" style={{ position: "relative" }}>
+            <MyProjects project={data.projects} />
+            <div
+              className="div"
+              style={{
+                position: "absolute",
+                top: "40%",
+                left: "20%",
+                scale: "1.5",
+                zIndex: "-1",
+              }}
+            >
+              <BloomCircle />
+            </div>
+          </div>
           <ServedIndustries />
           <Footer />
         </>

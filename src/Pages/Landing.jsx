@@ -10,6 +10,7 @@ import { CareerSection } from "../Components//Landing/CareerSection";
 import { ProjectBlogs } from "../Components//Landing/ProjectBlogs";
 import { Footer } from "./../Components/General/Footer";
 import { TechStack } from "./../Components/General/TechStack";
+import { BloomCircle } from "./../Components/General/BloomCircles";
 
 export const Landing = () => {
   return (
@@ -17,7 +18,12 @@ export const Landing = () => {
       <NavBar />
       <HeroSection />
       <OurServicesSection slidesNo={4} />
-      <Industries />
+      <div className="div" style={{ position: "relative" }}>
+        <Industries />
+        <div className="div" style={{ position: "absolute", top: "30%" }}>
+          <BloomCircle />
+        </div>
+      </div>
       <ProjectCarousel />
       <TeamCarousel />
       <Achievements />

@@ -7,16 +7,8 @@
   --text-p1: #fff;
   --text-p1-8: rgb(255, 255, 255, 0.8);
   --text-p2: #c5c5c5;
-  --gradiant-light: linear-gradient(
-    170deg,
-    rgba(0, 36, 72, 1) 0%,
-    rgba(255, 255, 255, 1) 100%
-  );
-  --gradiant-dark: linear-gradient(
-    5deg,
-    rgba(0, 36, 72, 1) 0%,
-    rgba(0, 0, 0, 1) 100%
-  );
+  --gradiant-light: linear-gradient(180deg, #0199e4 0%, #002448 100%);
+  --gradiant-dark: linear-gradient(180deg, #0199e4 0%, #002448 100%);
 }
 body.dark {
   background-color: #121212 !important;
@@ -53,8 +45,9 @@ body.dark .MarqueeContainer {
   padding: 20px 0;
   background-color: #fff;
 }
+
 body.dark .projectBox {
-  color: #000 !important;
+  color: #ffffff !important;
 }
 body.dark .PrimaryBtnOutline {
   color: #fff;

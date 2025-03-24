@@ -8,6 +8,7 @@ import { OurVision } from "./../Components/About/OurMission";
 import { ProjectCarousel } from "./../Components/General/ProjectCarousel";
 import { TeamCarousel } from "./../Components/Landing/TeamCarasoul";
 import { ServedIndustries } from "./../Components/General/ServedIndustries";
+import { BloomCircle } from "./../Components/General/BloomCircles";
 import { Footer } from "../Components/General/Footer";
 
 export const Career = () => {
@@ -27,7 +28,15 @@ export const Career = () => {
       <ProjectCarousel />
       <ContactSection />
       <TeamCarousel />
-      <ServedIndustries />
+      <div className="div" style={{ position: "relative" }}>
+        <ServedIndustries />
+        <div
+          className="div"
+          style={{ position: "absolute", right: "50%", top: "60%" }}
+        >
+          <BloomCircle />
+        </div>
+      </div>
       <Footer />
     </div>
   );

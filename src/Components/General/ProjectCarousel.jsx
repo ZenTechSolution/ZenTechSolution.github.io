@@ -15,7 +15,7 @@ export const ProjectCarousel = () => {
           let projectObj = JSON.parse(projectJson);
 
           if (Array.isArray(projectObj)) {
-            let projectArr = projectObj.map((item) => item.profile); // ✅ Returns the profile
+            let projectArr = projectObj.map((item) => item.profile);
 
             setProjects(projectArr);
           } else {
@@ -34,7 +34,7 @@ export const ProjectCarousel = () => {
     <div className="my-5 py-5">
       <p className="text-primary fw-bold col-11 mx-auto">Projects</p>
       <div className="div d-flex flex-column gap-4 MarqueeContainer py-4">
-        <Marquee speed={150} gradient={false} gradientWidth={50} loop={0}>
+        <Marquee speed={200} gradient={false} gradientWidth={50} loop={0}>
           {[...projects, ...projects].map((project, index) => (
             <ProjectBox key={index} data={project} />
           ))}
@@ -62,7 +62,7 @@ const ProjectBox = ({ data }) => {
   }
   return (
     <div
-      className="projectBox text-center mx-3 d-flex gap-2"
+      className="projectBox text-center mx-3 d-flex gap-2 col-12"
       onClick={boxClick}
     >
       <img
@@ -76,7 +76,7 @@ const ProjectBox = ({ data }) => {
           backgroundColor: "#fff",
         }}
       />
-      <h5 className="m-auto align-self-center">{data.name}</h5>
+      <h5 className="m-0 my-auto align-self-center">{data.name}</h5>
     </div>
   );
 };

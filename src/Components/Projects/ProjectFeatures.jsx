@@ -22,7 +22,6 @@ export const ProjectFeatures = ({ features }) => {
           </div>
         ))}
       </div>
-      <BloomCircle />
     </>
   );
 };
