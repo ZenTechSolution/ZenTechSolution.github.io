@@ -10,6 +10,7 @@ export const TeamEducation = (props) => {
   return (
     <div className="col-11 m-auto">
       <div className="row ">
+        <p className=" text-primary fw-bold">Experience</p>
         <h2 className="serviceSectionHeading mb-3">My Journey</h2>
         {data.map((industry, index) => (
           <IndustryBox key={index} industry={industry} />

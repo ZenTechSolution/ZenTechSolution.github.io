@@ -1,4 +1,4 @@
-import React, { useState, Component } from "react";
+import React, { useState, Component, useEffect } from "react";
 import "./../../Css/DarkMode.css";
 import "./../../Css/Landing.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // Import styles
@@ -7,27 +7,39 @@ import { Carousel } from "react-responsive-carousel";
 let images = [
   {
     name: "Drive Tomorrow",
-    description: "We help companies redefine the future through technology",
+    description:
+      "Empowering businesses with cutting-edge technology for a smarter future.",
     img_path: "/Images/General/HomePageImg.jpg",
   },
   {
-    name: "Drive Tomorrow's Possibilities",
-    description: "We help companies redefine the future through technology",
-    img_path: "/Images/General/HomePageImg.jpg",
+    name: "Unlock Future Possibilities",
+    description: "Innovating today to shape the digital landscape of tomorrow.",
+    img_path: "/Images/General/heroSectionImg2.jpg",
   },
 ];
 
 export const HeroImg = ({ data }) => {
+  const [bgImage, setBgImage] = useState(null);
+
+  useEffect(() => {
+    if (data?.img_path) {
+      const img = new Image();
+      img.src = data.img_path;
+      img.onload = () => setBgImage(data.img_path);
+    }
+  }, [data?.img_path]);
+
   return (
     <div
-      className="HeroSection ImgContainer container-fluid mt-2 rounded"
+      className="HeroSection ImgContainer container-fluid mt-2 "
       style={{
         height: "90vh",
         width: "100%",
-        backgroundImage: `url(${data?.img_path})`,
+        backgroundImage: bgImage ? `url(${bgImage})` : "none",
         backgroundSize: "cover",
         backgroundPosition: "center",
         filter: "grayscale(90%)",
+        transition: "background-image 0.5s ease-in-out",
         display: "flex",
         alignItems: "center",
         justifyContent: "center",
@@ -54,6 +66,15 @@ export const HeroImg = ({ data }) => {
 
 export const HeroSection = () => {
   const [data] = useState(images);
+  const [isMobile, setIsMobile] = useState(false);
+
+  // Detect Mobile Screen
+  useEffect(() => {
+    const checkScreenSize = () => setIsMobile(window.innerWidth <= 768);
+    checkScreenSize(); // Initial check
+    window.addEventListener("resize", checkScreenSize);
+    return () => window.removeEventListener("resize", checkScreenSize);
+  }, []);
 
   return (
     <Carousel
@@ -63,6 +84,7 @@ export const HeroSection = () => {
       showStatus={false}
       showIndicators={true}
       dynamicHeight={false}
+      swipeable={!isMobile} // Disable swipe on mobile
     >
       {data.map((img, index) => (
         <HeroImg key={index} data={img} />

@@ -8,13 +8,12 @@ let footerData = {
   name: "Zentech Solution",
   img_path: "/Images/Icons/logo.png",
   description:
-    "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius praesentium rem quaerat labore libero molestiae aliquid provident repudiandae suscipit placeat, deserunt debitis eveniet maiores iste? Doloribus in ea temporibus corrupti",
-  address:
-    "Plot B, 281 Ghazi Rd, Khuda Buksh Colony KB Society, Lahore, Punjab",
-  mail: "mail@mail.com",
-  linkedIn: "https://linkedIn.com",
-  phone: "505551122",
-  facebook: "https://facebook.com",
+    "We take pride in empowering businesses worldwide with innovative solutions. We bring an unwavering commitment to excellence, backed by a global presence. Our team of experts is dedicated to delivering cutting-edge solutions that drive growth and success for our clients. ",
+  address: " 61 Jade Block Street 2, Park View City, Lahore, 54000",
+  mail: "zentechsol7@gmail.com",
+  // linkedIn: "https://linkedIn.com",
+  phone: "03066673331",
+  // facebook: "https://facebook.com",
 };
 
 export const Footer = () => {
@@ -25,71 +24,66 @@ export const Footer = () => {
   }, []);
 
   return (
-    <div
-      className="m-auto footer-section w-100 d-flex justify-content-center align-items-center py-4 row position-relative"
+    <footer
+      className=" w-100 py-4 position-relative"
       style={{
-        position: "relative",
         background:
           "url(/Images/General/blueBox-2.png) right center / contain no-repeat",
       }}
     >
-      <div className="d-flex flex-wrap justify-content-between col-11 m-auto">
-        {/* Left Section */}
-        <div className="leftSection col-12 col-md-5 d-flex flex-column align-items-center text-md-start">
-          <div
-            className="imgBox mb-3"
-            style={{ width: "100px", height: "100px", alignSelf: "baseline" }}
-          >
-            <img
-              src={data.img_path}
-              style={{ width: "100%", height: "100%", borderRadius: "50%" }}
-              alt="Logo"
-            />
+      <div className="col-11 m-auto">
+        <div className="row align-items-center justify-content-between">
+          {/* Left Section */}
+          <div className="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-start text-center text-md-start">
+            {/* Logo */}
+            <div className="imgBox mb-3">
+              <img
+                src={data.img_path}
+                className="rounded-circle"
+                style={{ width: "80px", height: "80px" }}
+                alt="Logo"
+              />
+            </div>
+            {/* Description */}
+            <p className="fs-6 col-md-8">{data.description}</p>
           </div>
-          <p className="fs-6 col-md-8" style={{ alignSelf: "baseline" }}>
-            {data.description}
-          </p>
-        </div>
 
-        {/* Right Section */}
-        <div className="rightSection col-12 col-md-5 d-flex flex-column align-items-center text-md-end">
-          <p className="fw-bold fs-6 col-4 text-end">{data.address}</p>
-          <p className="fw-bold fs-6 col-4 text-end">{data.mail}</p>
-          <p className="fw-bold fs-6 col-4 text-end">{data.phone}</p>
+          {/* Right Section - Contact Info */}
+          <div className="col-12 col-md-6 d-flex flex-column align-items-center align-items-md-end text-center text-md-end mt-3 mt-md-0">
+            <p className="fw-bold fs-6">{data.address}</p>
+            <p className="fw-bold fs-6">{data.mail}</p>
+            <p className="fw-bold fs-6">{data.phone}</p>
+          </div>
         </div>
       </div>
-
-      {/* Social Media Icons at Bottom Right */}
       <div
-        className="social-icons d-flex gap-3"
+        className="position-absolute d-flex gap-3"
         style={{
-          position: "absolute",
-          bottom: "10px",
-          right: "10px",
-          width: "100px",
+          right: "20px",
+          bottom: "20px",
         }}
       >
         {data.linkedIn && (
           <a
             href={data.linkedIn}
-            className="fs-2 text-primary footerIcon text-muted"
+            className="fs-4 text-muted"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaLinkedin size={25} />
+            <FaLinkedin />
           </a>
         )}
         {data.facebook && (
           <a
             href={data.facebook}
-            className="fs-2 text-primary footerIcon text-muted"
+            className="fs-4 text-muted"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <FaFacebook size={25} />
+            <FaFacebook />
           </a>
         )}
       </div>
-    </div>
+    </footer>
   );
 };

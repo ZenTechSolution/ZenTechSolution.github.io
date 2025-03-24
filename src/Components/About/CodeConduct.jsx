@@ -35,7 +35,7 @@ export const CodeConduct = () => {
               Our Code of Business Principles
             </h2>
             <p className="text-size-medium">
-              Devsinc prioritizes legal and ethical conduct, ensuring honesty,
+              Zentech prioritizes legal and ethical conduct, ensuring honesty,
               fairness, and accountability for all.
             </p>
           </div>

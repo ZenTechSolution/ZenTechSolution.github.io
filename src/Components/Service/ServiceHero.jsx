@@ -31,7 +31,7 @@ export const ServiceHero = (props) => {
         className="glass-box text-white p-4 rounded"
         style={{
           width: "90%",
-          maxWidth: "600px",
+          maxWidth: "90%",
           minWidth: "280px",
           backdropFilter: "blur(10px)",
           background: "rgba(0, 0, 0, 0.28)",
@@ -43,9 +43,21 @@ export const ServiceHero = (props) => {
         }}
       >
         <div className="w-100">
-          <h2 className="fw-bold fs-4">{data.name}</h2>
+          <h2 className="fw-bold fs-6 text-start">Services</h2>
           <p
-            className="mt-2 fs-6"
+            className="mt-2 fs-3 fw-bold text-start"
+            style={{
+              display: "-webkit-box",
+              WebkitBoxOrient: "vertical",
+              WebkitLineClamp: 3,
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+            }}
+          >
+            {data.name}
+          </p>
+          <p
+            className="mt-2 fs-3 text-start"
             style={{
               display: "-webkit-box",
               WebkitBoxOrient: "vertical",

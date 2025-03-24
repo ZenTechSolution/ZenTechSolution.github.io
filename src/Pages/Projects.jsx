@@ -80,15 +80,19 @@ export const Projects = () => {
   const { id } = useParams();
 
   useEffect(() => {
-    const jsonData = localStorage.getItem("projects");
-    if (jsonData) {
-      const projectArr = JSON.parse(jsonData);
-      const filteredProject = projectArr.find((item) => item.profile.id == id);
-      // console.log(projectArr);
-      if (filteredProject) {
-        setProject(filteredProject);
+    const timeout = setTimeout(() => {
+      const jsonData = localStorage.getItem("projects");
+      if (jsonData) {
+        const projectArr = JSON.parse(jsonData);
+        const filteredProject = projectArr.find(
+          (item) => item.profile.id == id
+        );
+
+        if (filteredProject) {
+          setProject(filteredProject);
+        }
       }
-    }
+    }, 500);
   }, [id]);
 
   if (!project) return <p>Loading...</p>;

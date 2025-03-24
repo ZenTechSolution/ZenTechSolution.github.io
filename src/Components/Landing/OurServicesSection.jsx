@@ -7,35 +7,42 @@ import { useNavigate } from "react-router-dom";
 ////////////////////////////////////////////////////////////////
 const ServiceBox = ({ service }) => {
   const navigate = useNavigate();
+  const [bgImage, setBgImage] = useState(null);
+
+  useEffect(() => {
+    if (service?.img_path) {
+      const img = new Image();
+      img.src = service.img_path;
+      img.onload = () => setBgImage(service.img_path);
+    }
+  }, [service?.img_path]);
 
   function NavigatePage() {
     navigate(`/services/${service.id}`);
-    window.location.reload();
   }
 
   return (
     <div
-      onClick={() => NavigatePage()}
+      onClick={NavigatePage}
       className="service-box text-white rounded position-relative"
       style={{
         width: "100%",
         height: "300px",
-        backgroundImage: `url(${service.img_path})`,
+        backgroundImage: bgImage ? `url(${bgImage})` : "none",
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
         padding: "20px",
-        color: "white",
         textShadow: "1px 1px 5px rgba(0,0,0,0.8)",
         display: "flex",
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
         filter: "grayscale(50%)",
-        position: "relative",
+        cursor: "pointer",
+        transition: "background-image 0.5s ease-in-out",
       }}
     >
-      {/* Name Positioned at Top Left */}
       <h2
         className="position-absolute"
         style={{
@@ -52,29 +59,45 @@ const ServiceBox = ({ service }) => {
     </div>
   );
 };
+
 ////////////////////////////////////////////////////////////////
 export const OurServicesSection = ({ slidesNo = 4 }) => {
   const [showAll, setShowAll] = useState(false);
-  let [services, setServices] = useState([]);
+  const [services, setServices] = useState([]);
+  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    let jsonData = localStorage.getItem("nav-services");
-    let jsonObj = JSON.parse(jsonData);
-    setServices(jsonObj);
+    const timer = setTimeout(() => {
+      const jsonData = localStorage.getItem("nav-services");
+
+      if (jsonData) {
+        try {
+          const jsonObj = JSON.parse(jsonData);
+          if (Array.isArray(jsonObj)) {
+            setServices(jsonObj);
+          }
+        } catch (error) {
+          console.error("Error parsing nav-services:", error);
+        }
+      }
+      setLoading(false);
+    }, 1000); // 1-second delay
+
+    return () => clearTimeout(timer); // Cleanup in case the component unmounts
   }, []);
+
+  if (loading) {
+    return <p>Loading...</p>;
+  }
 
   return (
     <div
       className="col-11 m-auto mt-4 position-relative"
-      style={{
-        position: "relative",
-        overflow: "hidden",
-      }}
+      style={{ overflow: "hidden" }}
     >
-      {/* Background Image */}
-      <div className="position-absolute"></div>
-      <p className=" text-primary fw-bold">Services</p>
+      <p className="text-primary fw-bold">Services</p>
       <h2 className="serviceSectionHeading mb-3">Transform Your Business</h2>
+
       <div className="row g-4">
         {services
           .slice(0, showAll ? services.length : slidesNo)
@@ -84,13 +107,8 @@ export const OurServicesSection = ({ slidesNo = 4 }) => {
             </div>
           ))}
       </div>
+
       <div className="text-center mt-4">
-        {/* <button
-          className="btn btn-primary"
-          onClick={() => setShowAll(!showAll)}
-        >
-          {showAll ? "Hide" : "View All"}
-        </button> */}
         <PrimaryBtnOutline
           name={showAll ? "Hide" : "View All"}
           onClick={() => setShowAll(!showAll)}

@@ -23,7 +23,7 @@ export const ToggleSwitch = () => {
         offHandleColor="#fff"
         onHandleColor="#3c3c3c"
         onColor="#6c6c6c"
-        offColor="#cec86e"
+        offColor="#00b4fc"
         onChange={handleChange}
         checked={checked}
       />

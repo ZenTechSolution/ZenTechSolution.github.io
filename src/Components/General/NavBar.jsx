@@ -59,13 +59,19 @@ export const NavBar = () => {
             What We Serve ▼
           </h4>
           {activeDropdown && <NavDropdown />}
-          <h4 className="px-4 py-2 rounded cursor-pointer navItemLink text-d">
+          {/* <h4 className="px-4 py-2 rounded cursor-pointer navItemLink text-d">
             Teams
-          </h4>
-          <h4 className="px-4 py-2 rounded cursor-pointer navItemLink text-d">
+          </h4> */}
+          <h4
+            className="px-4 py-2 rounded cursor-pointer navItemLink text-d"
+            onClick={() => navigate("/projects")}
+          >
             Projects
           </h4>
-          <h4 className="px-4 py-2 rounded cursor-pointer navItemLink text-d">
+          <h4
+            className="px-4 py-2 rounded cursor-pointer navItemLink text-d"
+            onClick={() => navigate("/career")}
+          >
             Careers
           </h4>
           <h4
@@ -99,11 +105,19 @@ export const NavBar = () => {
           </h4>
           {activeDropdown && <NavDropdown />}
 
-          <h4 className="py-2 cursor-pointer navItemLink text-dark">Teams</h4>
-          <h4 className="py-2 cursor-pointer navItemLink text-dark">
+          {/* <h4 className="py-2 cursor-pointer navItemLink text-dark">Teams</h4> */}
+          <h4
+            className="py-2 cursor-pointer navItemLink text-dark"
+            onClick={() => navigate("/projects")}
+          >
             Projects
           </h4>
-          <h4 className="py-2 cursor-pointer navItemLink text-dark">Careers</h4>
+          <h4
+            className="py-2 cursor-pointer navItemLink text-dark"
+            onClick={() => navigate("/career")}
+          >
+            Careers
+          </h4>
           <h4
             className="py-2 cursor-pointer navItemLink text-dark"
             onClick={() => navigate("/about")}
@@ -117,6 +131,7 @@ export const NavBar = () => {
     </>
   );
 };
+
 ////////////////////////////////////////////////////
 export const NavDropdown = () => {
   const [data, setData] = useState([]);

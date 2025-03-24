@@ -105,7 +105,7 @@ export const ServiceOverview = (props) => {
 function ListItem({ list }) {
   return (
     <div className="mb-2 fs-6 fs-md-5 fs-lg-4">
-      <strong className="text-dark fs-5 fs-md-4 fs-lg-3">{list.name} :</strong>{" "}
+      <strong className=" fs-5 fs-md-4 fs-lg-3">{list.name} :</strong>{" "}
       {list.description}
     </div>
   );

@@ -7,25 +7,27 @@ export const ProjectCarousel = () => {
   let [projects, setProjects] = useState([]);
 
   useEffect(() => {
-    let projectJson = localStorage.getItem("projects");
+    const timer = setTimeout(() => {
+      let projectJson = localStorage.getItem("projects");
 
-    if (projectJson) {
-      try {
-        let projectObj = JSON.parse(projectJson);
+      if (projectJson) {
+        try {
+          let projectObj = JSON.parse(projectJson);
 
-        if (Array.isArray(projectObj)) {
-          let projectArr = projectObj.map((item) => item.profile); // ✅ Returns the profile
+          if (Array.isArray(projectObj)) {
+            let projectArr = projectObj.map((item) => item.profile); // ✅ Returns the profile
 
-          setProjects(projectArr);
-        } else {
-          console.warn("Expected an array, but got:", projectObj);
+            setProjects(projectArr);
+          } else {
+            console.warn("Expected an array, but got:", projectObj);
+          }
+        } catch (error) {
+          console.error("Error parsing JSON:", error);
         }
-      } catch (error) {
-        console.error("Error parsing JSON:", error);
+      } else {
+        console.warn("No projects found in localStorage.");
       }
-    } else {
-      console.warn("No projects found in localStorage.");
-    }
+    }, 1000);
   }, []);
 
   return (

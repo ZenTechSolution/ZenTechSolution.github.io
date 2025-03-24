@@ -5,7 +5,7 @@ const data = {
   miniHeading: "Pioneering Trust and Innovation",
   heading: "ZenTech Achievements",
   description:
-    "We take pride in empowering businesses worldwide with innovative solutions. Devinc's bring an unwavering commitment to excellence, backed by a global presence. Our team of experts is dedicated to delivering cutting-edge solutions that drive growth and success for our clients. We are proud to have been recognized for our work and achievements in the industry.",
+    "We take pride in empowering businesses worldwide with innovative solutions. We bring an unwavering commitment to excellence, backed by a global presence. Our team of experts is dedicated to delivering cutting-edge solutions that drive growth and success for our clients. We are proud to have been recognized for our work and achievements in the industry.",
   achievements: [
     { id: 1, count: "20+", label: "Successful Projects" },
     { id: 2, count: "3+", label: "Countries Supported" },

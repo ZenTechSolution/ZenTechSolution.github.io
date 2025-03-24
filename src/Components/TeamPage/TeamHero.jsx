@@ -21,6 +21,7 @@ export const TeamHero = (props) => {
           <div className="row align-items-center justify-content-center">
             {/* Left Section */}
             <div className="col-12 col-md-6 text-center text-md-start">
+              <p className=" text-primary fw-bold">Introduction</p>
               <h2>
                 I am{" "}
                 <span className="text-primary fw-bold">

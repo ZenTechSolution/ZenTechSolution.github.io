@@ -15,7 +15,7 @@ export const OurVision = () => {
   let [data, setData] = useState({
     name: "Vision",
     description:
-      "At Devsinc, we envision transforming IT systems into smart, agile, and AI-driven digital assets. With a decade of expertise, we empower global clients through innovative, adaptive solutions, shaping a future where technology meets the dynamic demands of a connected world.",
+      "At Zentech, we envision transforming IT systems into smart, agile, and AI-driven digital assets. With a decade of expertise, we empower global clients through innovative, adaptive solutions, shaping a future where technology meets the dynamic demands of a connected world.",
   });
   return <GeneralSection data={data} />;
 };
@@ -26,24 +26,25 @@ export function GeneralSection({ data }) {
       <div className="col-11 m-auto">
         {/* Mission Heading */}
         <div className="text-center">
-          <p className=" text-primary fw-bold text-start">{data.name}</p>
+          <p className="text-primary fw-bold text-start">{data.name}</p>
 
           <h2 className="heading-style-h1 text-start fw-bold">
             Our {data.name}
           </h2>
         </div>
 
-        {/* Mission Description with Quote */}
+        {/* Mission Description with Fixed Quote Icon */}
         <div
-          className="quote-border  border  rounded-4 mt-4 d-flex flex-column justify-content-center"
-          style={{ position: "relative", minHeight: "150px" }}
+          className="quote-border border rounded-4 mt-4 d-flex flex-column align-items-center justify-content-center position-relative"
+          style={{ minHeight: "200px", padding: "2rem" }} // Ensures space for varying text length
         >
-          <p className="text-size-medium text-center fs-5  m-auto my-5 px-4">
+          <p className="text-size-medium text-center fs-5 m-auto my-3 py-0">
             {data.description}
           </p>
+          {/* Fixed Quote Icon */}
           <div
-            className="div  p-3 rounded-circle colonCircle"
-            style={{ position: "absolute", top: "-20%", right: "1%" }}
+            className="p-3 rounded-circle colonCircle position-absolute"
+            style={{ top: "-40px", right: "20px" }} // Fixed position
           >
             <FaQuoteLeft size={35} color="#fff" />
           </div>

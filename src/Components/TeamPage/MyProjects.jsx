@@ -221,12 +221,14 @@ export const MyProjects = (props) => {
 
   useEffect(() => {
     setData(props.project);
+    console.log("From Child :", props.project);
   }, []);
 
   const visibleProjects = showAll ? data : data.slice(0, 3);
 
   return (
     <div className="col-11 m-auto my-5">
+      <p className=" text-primary fw-bold text-center">Projects</p>
       <h2 className="text-center fw-bold">My Projects</h2>
       <div className="div">
         {visibleProjects.map((project, index) => (

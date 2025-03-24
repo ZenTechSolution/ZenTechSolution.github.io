@@ -37,7 +37,7 @@ export const ProjectHeroPage = ({ profile, tags }) => {
         className="glass-box text-white p-4 rounded"
         style={{
           width: "90%",
-          maxWidth: "600px",
+          maxWidth: "90%",
           minWidth: "280px",
           backdropFilter: "blur(10px)",
           background: "rgba(0, 0, 0, 0.28)",

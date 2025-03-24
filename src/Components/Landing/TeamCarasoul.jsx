@@ -9,6 +9,15 @@ import { useNavigate } from "react-router-dom";
 
 const TeamBox = ({ member }) => {
   const navigate = useNavigate();
+  const [imgSrc, setImgSrc] = useState(null);
+
+  useEffect(() => {
+    if (member?.img_path) {
+      const img = new Image();
+      img.src = member.img_path;
+      img.onload = () => setImgSrc(member.img_path);
+    }
+  }, [member?.img_path]);
 
   function NavigateTeam() {
     navigate(`/team/${member.id}`);
@@ -16,14 +25,21 @@ const TeamBox = ({ member }) => {
 
   return (
     <div
-      className="p-4 shadow-md rounded-lg text-center"
+      className="p-4 shadow-md rounded-lg text-center cursor-pointer"
       onClick={NavigateTeam}
     >
       <img
-        src={member.img_path}
+        src={imgSrc || "https://via.placeholder.com/150"} // Placeholder while loading
         alt={`${member.first_name} ${member.last_name}`}
-        className="w-24 h-24 rounded-full mx-auto mb-2 rounded-circle"
-        style={{ maxWidth: "300px", maxHeight: "300px" }}
+        className="w-24 h-24 rounded-full mx-auto mb-2"
+        style={{
+          maxWidth: "100%",
+          maxHeight: "350px",
+          objectFit: "cover",
+          borderRadius: "50%",
+          transition: "opacity 0.5s ease-in-out",
+          opacity: imgSrc ? 1 : 0.5, // Smooth transition effect
+        }}
       />
       <h3 className="text-lg font-semibold">
         {member.first_name} {member.last_name}
@@ -37,26 +53,28 @@ export const TeamCarousel = () => {
   let [data, setData] = useState([]);
 
   useEffect(() => {
-    let jsonData = localStorage.getItem("users");
+    const timer = setTimeout(() => {
+      let jsonData = localStorage.getItem("users");
 
-    if (jsonData) {
-      try {
-        let teamObject = JSON.parse(jsonData);
+      if (jsonData) {
+        try {
+          let teamObject = JSON.parse(jsonData);
 
-        if (Array.isArray(teamObject)) {
-          let extractedProfiles = teamObject.map((item) => item.profile);
+          if (Array.isArray(teamObject)) {
+            let extractedProfiles = teamObject.map((item) => item.profile);
 
-          setData(extractedProfiles);
-          console.log("Team Profiles:", extractedProfiles);
-        } else {
-          console.warn("Expected an array but got:", teamObject);
+            setData(extractedProfiles);
+            console.log("Team Profiles:", extractedProfiles);
+          } else {
+            console.warn("Expected an array but got:", teamObject);
+          }
+        } catch (error) {
+          console.error("Error parsing JSON:", error);
         }
-      } catch (error) {
-        console.error("Error parsing JSON:", error);
+      } else {
+        console.warn("No users found in localStorage.");
       }
-    } else {
-      console.warn("No users found in localStorage.");
-    }
+    }, 1000);
   }, []);
 
   const settings = {
@@ -73,40 +91,46 @@ export const TeamCarousel = () => {
   };
 
   return (
-    <div className=" col-11 m-auto p-4">
-      {/* Header Section */}
-      <p className=" text-primary fw-bold text-start">Team</p>
+    <>
+      {data ? (
+        <div className=" col-11 m-auto p-4">
+          {/* Header Section */}
+          <p className=" text-primary fw-bold text-start">Team</p>
 
-      <div className="d-flex justify-content-between items-center mb-4">
-        <h2 className="serviceSectionHeading mb-3">Our Team</h2>
-        <div className="d-flex space-x-2">
-          <button
-            onClick={() => sliderRef.current.slickPrev()}
-            className="team-carousel-btn btn p-2 bg-gray-200 rounded"
-          >
-            <p className="team-carousel-arrow">
-              <FaArrowLeft />
-            </p>
-            {/* <ChevronLeft size={24} /> */}
-          </button>
-          <button
-            onClick={() => sliderRef.current.slickNext()}
-            className="team-carousel-btn btn p-2 bg-gray-200 rounded"
-          >
-            <p className="team-carousel-arrow">
-              <FaArrowRight />
-            </p>
-            {/* <ChevronRight size={24} /> */}
-          </button>
+          <div className="d-flex justify-content-between items-center mb-4">
+            <h2 className="serviceSectionHeading mb-3">Our Team</h2>
+            <div className="d-flex space-x-2">
+              <button
+                onClick={() => sliderRef.current.slickPrev()}
+                className="team-carousel-btn btn p-2 bg-gray-200 rounded"
+              >
+                <p className="team-carousel-arrow">
+                  <FaArrowLeft />
+                </p>
+                {/* <ChevronLeft size={24} /> */}
+              </button>
+              <button
+                onClick={() => sliderRef.current.slickNext()}
+                className="team-carousel-btn btn p-2 bg-gray-200 rounded"
+              >
+                <p className="team-carousel-arrow">
+                  <FaArrowRight />
+                </p>
+                {/* <ChevronRight size={24} /> */}
+              </button>
+            </div>
+          </div>
+
+          {/* Carousel */}
+          <Slider ref={sliderRef} {...settings}>
+            {data.map((member) => (
+              <TeamBox key={member.id} member={member} />
+            ))}
+          </Slider>
         </div>
-      </div>
-
-      {/* Carousel */}
-      <Slider ref={sliderRef} {...settings}>
-        {data.map((member) => (
-          <TeamBox key={member.id} member={member} />
-        ))}
-      </Slider>
-    </div>
+      ) : (
+        <p>Loading</p>
+      )}
+    </>
   );
 };

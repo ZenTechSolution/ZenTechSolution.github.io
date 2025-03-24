@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { HeroPageAboutUs } from "./../Components/About/HeroPageAboutUs";
 import { NavBar } from "./../Components/General/NavBar";
 import { CodeConduct } from "./../Components/About/CodeConduct";
@@ -8,9 +8,15 @@ import { OurVision } from "./../Components/About/OurMission";
 import { TeamCarousel } from "../Components/Landing/TeamCarasoul";
 import { TechStack } from "../Components/General/TechStack";
 import { ServedIndustries } from "../Components/General/ServedIndustries";
+
 import { Footer } from "../Components/General/Footer";
 
 export const AboutUs = () => {
+  useEffect(() => {
+    setTimeout(() => {
+      document.title = "About Us | Zentech Solutions";
+    }, 100);
+  }, []);
   return (
     <div>
       <NavBar />

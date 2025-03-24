@@ -23,7 +23,6 @@ export const Landing = () => {
       <Achievements />
       <TechStack />
       <CareerSection />
-      {/* <ProjectBlogs /> */}
       <Footer />
     </>
   );

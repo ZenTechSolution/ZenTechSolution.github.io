@@ -42,6 +42,7 @@ export const MyServices = (props) => {
           "url(/Images/General/blueBox-2.png) right bottom / contain no-repeat ",
       }}
     >
+      <p className=" text-primary fw-bold">Technologies</p>
       <h2 className="serviceSectionHeading mb-5 text-center">
         Familiar Technologies
       </h2>

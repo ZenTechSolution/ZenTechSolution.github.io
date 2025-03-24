@@ -21,9 +21,7 @@ export const TeamContact = (props) => {
           />
         </div>
         <div className="col-12 col-md-7">
-          <p className="text-uppercase text-primary fs-6 fw-bold mt-4">
-            About Me
-          </p>
+          <p className=" text-primary fw-bold">About</p>
           <h2 className="fw-bold">{data.name}</h2>
           <h5 className="fs-5">{data.description}</h5>
 

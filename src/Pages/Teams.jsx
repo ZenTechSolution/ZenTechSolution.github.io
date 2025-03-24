@@ -7,6 +7,7 @@ import { TeamEducation } from "./../Components/TeamPage/TeamEducation";
 import { TeamContact } from "./../Components/TeamPage/TeamContact";
 import { ServiceImage } from "./../Components/Service/ServiceImage";
 import { Footer } from "./../Components/General/Footer";
+import { ServedIndustries } from "./../Components/General/ServedIndustries";
 import { useParams } from "react-router-dom";
 
 export const Teams = () => {
@@ -14,15 +15,18 @@ export const Teams = () => {
   const [data, setData] = useState(null);
 
   useEffect(() => {
-    const teamJson = localStorage.getItem("users");
-    if (teamJson) {
-      const teamArr = JSON.parse(teamJson);
-      const foundedTeam = teamArr.find((item) => item.profile.id == id);
-      if (foundedTeam) {
-        setData(foundedTeam);
-        console.log("Founded Team Member:", foundedTeam);
+    const timer = setTimeout(() => {
+      const teamJson = localStorage.getItem("users");
+      if (teamJson) {
+        const teamArr = JSON.parse(teamJson);
+        const foundedTeam = teamArr.find((item) => item.profile.id == id);
+        if (foundedTeam) {
+          document.title = `${foundedTeam.profile.first_name} ${foundedTeam.profile.last_name} | Zentech Solutions`;
+          setData(foundedTeam);
+          console.log("Founded Team Member:", foundedTeam);
+        }
       }
-    }
+    }, 500);
   }, [id]);
 
   return (
@@ -36,6 +40,7 @@ export const Teams = () => {
           <TeamContact profile={data.profile} />
           <ServiceImage />
           <MyProjects project={data.projects} />
+          <ServedIndustries />
           <Footer />
         </>
       ) : (
