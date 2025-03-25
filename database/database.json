@@ -761,7 +761,7 @@
         "id": 2,
         "name": "App Development",
         "description": "Custom Mobile Apps for Tomorrow",
-        "img_path": "/Images/Services/mobileApp.jpg",
+        "img_path": "/Images/Services/mobileAppImg.jpg",
         "description_img": "/Images/Services/agileSoftware.jpg",
         "price": 100,
         "tag": "Digital Transformation",
