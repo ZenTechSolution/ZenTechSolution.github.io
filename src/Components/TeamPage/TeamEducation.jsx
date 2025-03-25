@@ -53,6 +53,17 @@ function IndustryBox({ industry }) {
             textOverflow: "ellipsis",
           }}
         >
+          ({industry.institute} )
+        </p>
+        <p
+          style={{
+            display: "-webkit-box",
+            WebkitBoxOrient: "vertical",
+            WebkitLineClamp: 5, // Limit to 5 lines
+            overflow: "hidden",
+            textOverflow: "ellipsis",
+          }}
+        >
           {industry.description}
         </p>
       </div>

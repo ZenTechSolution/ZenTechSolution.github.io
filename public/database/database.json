@@ -72,28 +72,37 @@
       ],
       "education": [
         {
-          "name": "ICS",
-          "from": "2017-01-01",
-          "to": "2019-01-01",
+          "name": "Bachelor of Science in Software Engineering",
+          "from": "2010-01-01",
+          "to": "2014-01-01",
           "type": "education",
-          "institute": "Jinnah Science Collage",
-          "description": "892/1100"
+          "institute": "Punjab University College of Information Technology Lahore",
+          "description": ""
         },
         {
-          "name": "BsIt",
-          "from": "2019-01-01",
-          "to": "2021-01-01",
-          "type": "education",
-          "institute": "Islamia University Bahawalpur",
-          "description": "Cgpa 3.54"
-        },
-        {
-          "name": "Web Dev",
-          "from": "2017-01-01",
-          "to": "2019-01-01",
+          "name": "Founder & CEO",
+          "from": "2014-01-01",
+          "to": "2017-01-01",
           "type": "job",
-          "institute": "Zentech",
-          "description": "Worked as a Web Developer at Zentech, developing dynamic websites and web applications using modern technologies. Collaborated with designers and backend teams to build responsive and user-friendly interfaces. Gained experience in front-end and back-end development, optimizing performance and functionality."
+          "institute": "Khasol Ltd.",
+          "description": "Co-founded Khasol Ltd , focusing on mobile app development. Led Flutter app development, ensuring high-performance and scalable applications. Contributed to business growth by implementing innovative solutions."
+        },
+
+        {
+          "name": "Freelancer (Mobile App Developer)",
+          "from": "2020-01-01",
+          "to": "Present",
+          "type": "job",
+          "institute": "Upwork",
+          "description": "Worked as a freelancer on Upwork, specializing in mobile application development. Completed numerous projects, delivering high-quality solutions for clients globally. Developed cross-platform mobile apps using modern technologies such as Flutter, React, and Firebase."
+        },
+        {
+          "name": "Chief Mobile App Engineer (CMO)",
+          "from": "2017-01-01",
+          "to": "Present",
+          "type": "job",
+          "institute": "ZenSports (a Keystar Brand)",
+          "description": "Working remotely as the Lead Mobile App Developer at ZenSports. Spearheaded mobile app development projects, designing and implementing scalable solutions. Led a team of developers, ensuring high-quality code and best practices. Developed cross-platform applications using Flutter and React Native while collaborating with international teams."
         }
       ],
       "projects": [101, 102, 103, 104, 105, 106, 107, 108]
@@ -218,12 +227,12 @@
       },
       "skills": [
         {
-          "id": 8,
-          "name": "Laravel"
-        },
-        {
           "id": 2,
           "name": "React"
+        },
+        {
+          "id": 8,
+          "name": "Laravel"
         },
         {
           "id": 3,
@@ -240,6 +249,10 @@
         {
           "id": 4,
           "name": "html"
+        },
+        {
+          "id": 4,
+          "name": "javascript"
         },
         {
           "id": 3,
@@ -273,8 +286,8 @@
         },
         {
           "name": "Web Developer",
-          "from": "2017-01-01",
-          "to": "2019-01-01",
+          "from": "2024-09-01",
+          "to": "present",
           "type": "job",
           "institute": "Zentech Solutions",
           "description": "Worked as a Web Developer at Zentech, developing dynamic websites and web applications using modern technologies. Collaborated with designers and backend teams to build responsive and user-friendly interfaces. Gained experience in front-end and back-end development, optimizing performance and functionality."
