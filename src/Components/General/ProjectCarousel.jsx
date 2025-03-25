@@ -42,7 +42,7 @@ export const ProjectCarousel = () => {
           ))}
         </Marquee>
         <Marquee
-          speed={100}
+          speed={1}
           gradient={false}
           gradientWidth={50}
           loop={0}
@@ -79,7 +79,7 @@ const ProjectBox = ({ data }) => {
           backgroundColor: "#fff",
         }}
       />
-      <h5 className="m-0 my-auto align-self-center">{data.name}</h5>
+      <h5 className="m-0 my-auto align-self-center text-start">{data.name}</h5>
     </div>
   );
 };
