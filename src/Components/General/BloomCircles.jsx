@@ -10,7 +10,7 @@ export function BloomCircle() {
           transformOrigin: "top left",
           opacity: 0.7,
           background: "rgba(56, 119, 195)",
-          boxShadow: "167.41px 167.41px 167.41px rgba(77, 120, 150, 0.5)", // Assuming a semi-transparent shadow
+          boxShadow: "167.41px 167.41px 167.41px rgba(77, 120, 150, 0.5)",
           filter: "blur(83.7px)",
         }}
       ></div>

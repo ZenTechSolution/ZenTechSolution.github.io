@@ -40,7 +40,10 @@ export const CareerSection = () => {
                     }}
                     onLoadedData={() => setVideoLoaded(true)}
                   >
-                    <source src="/Images/Videos/meeting.mp4" type="video/mp4" />
+                    <source
+                      src="/Images/Videos/officeMeeting.mp4"
+                      type="video/mp4"
+                    />
                   </video>
                 </div>
               </div>

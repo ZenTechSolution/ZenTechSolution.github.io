@@ -20,7 +20,15 @@ export const Landing = () => {
       <OurServicesSection slidesNo={4} />
       <div className="div" style={{ position: "relative" }}>
         <Industries />
-        <div className="div" style={{ position: "absolute", top: "30%" }}>
+        <div
+          className="div"
+          style={{
+            position: "absolute",
+            top: "30%",
+            maxWidth: "100%",
+            width: "100px",
+          }}
+        >
           <BloomCircle />
         </div>
       </div>
