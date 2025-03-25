@@ -61,7 +61,7 @@ export const CodeConduct = () => {
 // Reusable Business Image Component
 const BusinessImage = ({ src, alt }) => {
   return (
-    <div className="aspect-ratio-square">
+    <div className="aspect-ratio-square CodeOfConduct">
       <LazyLoadImage
         effect="blur"
         src={src}

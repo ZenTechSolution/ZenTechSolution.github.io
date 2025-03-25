@@ -128,3 +128,6 @@
 .lazy-load-image-background {
   width: fit-content;
 }
+.CodeOfConduct .lazy-load-image-background {
+  width: 100% !important;
+}
