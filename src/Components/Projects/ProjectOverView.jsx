@@ -15,7 +15,7 @@ export const ProjectOverView = ({ project }) => {
 
   return (
     <>
-      <div className="project-overview container mt-5">
+      <div className="project-overview col-11 m-auto mt-5">
         <div className="row align-items-center">
           <div className="col-12 col-md-6 text-center text-md-start mb-4 mb-md-0">
             <p className=" text-primary fw-bold text-start">Overview</p>

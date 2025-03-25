@@ -284,7 +284,7 @@ const ProjectBox = ({ project }) => {
 
         <div className="div">
           {profile.link ? (
-            <a href={profile.link}>
+            <a href={profile.link} target="_blank">
               <PrimaryBtn name={"Visit Project"} />
             </a>
           ) : (

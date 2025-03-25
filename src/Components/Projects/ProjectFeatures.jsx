@@ -6,7 +6,7 @@ export const ProjectFeatures = ({ features }) => {
   return (
     <>
       <div
-        className="d-flex container flex-wrap justify-content-start gap-4"
+        className="d-flex col-11 m-auto flex-wrap justify-content-start gap-4"
         style={{ margin: "auto" }}
       >
         {features.map((feature, index) => (

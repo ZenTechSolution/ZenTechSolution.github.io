@@ -7,60 +7,6 @@ import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/blur.css";
 
 ////////////////////////////////////////////////////////////////
-// const ServiceBox = ({ service }) => {
-//   const navigate = useNavigate();
-//   const [bgImage, setBgImage] = useState(null);
-
-//   useEffect(() => {
-//     if (service?.img_path) {
-//       const img = new Image();
-//       img.src = service.img_path;
-//       img.onload = () => setBgImage(service.img_path);
-//     }
-//   }, [service?.img_path]);
-
-//   function NavigatePage() {
-//     navigate(`/services/${service.id}`);
-//   }
-
-//   return (
-//     <div
-//       onClick={NavigatePage}
-//       className="service-box text-white rounded position-relative"
-//       style={{
-//         width: "100%",
-//         height: "300px",
-//         backgroundImage: bgImage ? `url(${bgImage})` : "none",
-//         backgroundSize: "cover",
-//         backgroundPosition: "center",
-//         backgroundRepeat: "no-repeat",
-//         padding: "20px",
-//         textShadow: "1px 1px 5px rgba(0,0,0,0.8)",
-//         display: "flex",
-//         flexDirection: "column",
-//         justifyContent: "center",
-//         alignItems: "center",
-//         filter: "grayscale(50%)",
-//         cursor: "pointer",
-//         transition: "background-image 0.5s ease-in-out",
-//       }}
-//     >
-//       <h2
-//         className="position-absolute"
-//         style={{
-//           top: "10px",
-//           left: "15px",
-//           fontSize: "24px",
-//           fontWeight: "bold",
-//           padding: "5px 10px",
-//           borderRadius: "5px",
-//         }}
-//       >
-//         {service.name}
-//       </h2>
-//     </div>
-//   );
-// };
 
 const ServiceBox = ({ service }) => {
   const navigate = useNavigate();
@@ -80,7 +26,7 @@ const ServiceBox = ({ service }) => {
         height: "300px",
         position: "relative",
         cursor: "pointer",
-        padding: "20px",
+        padding: "0px",
         textShadow: "1px 1px 5px rgba(0,0,0,0.8)",
         display: "flex",
         flexDirection: "column",
@@ -127,9 +73,9 @@ const ServiceBox = ({ service }) => {
 
       {/* Service Name */}
       <h2
-        className="position-absolute"
+        className="position-absolute col-6"
         style={{
-          top: "30px",
+          top: "20px",
           left: "15px",
           fontSize: "24px",
           fontWeight: "bold",

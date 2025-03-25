@@ -20,86 +20,6 @@ let images = [
   },
 ];
 
-// export const HeroImg = ({ data }) => {
-//   const [bgImage, setBgImage] = useState(null);
-//   const [isLoaded, setIsLoaded] = useState(false);
-
-//   useEffect(() => {
-//     if (data?.img_path) {
-//       const img = new Image();
-//       img.src = data.img_path;
-//       img.onload = () => {
-//         setBgImage(data.img_path);
-//         setIsLoaded(true);
-//       };
-//     }
-//   }, [data?.img_path]);
-
-//   return (
-//     <div
-//       className="HeroSection ImgContainer container-fluid mt-2"
-//       style={{
-//         height: "90vh",
-//         width: "100%",
-//         position: "relative",
-//         display: "flex",
-//         alignItems: "center",
-//         justifyContent: "center",
-//         color: "white",
-//         overflow: "hidden",
-//       }}
-//     >
-//       {/* Blurred Placeholder (Low Quality) */}
-//       <LazyLoadImage
-//         src={data.img_path}
-//         effect="blur"
-//         alt={data?.name}
-//         style={{
-//           position: "absolute",
-//           width: "100%",
-//           height: "100%",
-//           objectFit: "cover",
-//           filter: "grayscale(90%)",
-//           transition: "opacity 0.5s ease-in-out",
-//           opacity: isLoaded ? 0 : 1, // Hide once high-quality loads
-//         }}
-//       />
-
-//       {/* High-Quality Background Image */}
-//       <div
-//         style={{
-//           position: "absolute",
-//           width: "100%",
-//           height: "100%",
-//           backgroundImage: bgImage ? `url(${bgImage})` : "none",
-//           backgroundSize: "cover",
-//           backgroundPosition: "center",
-//           filter: "grayscale(90%)",
-//           transition: "opacity 0.5s ease-in-out",
-//           opacity: isLoaded ? 1 : 0, // Show when loaded
-//         }}
-//       />
-
-//       {/* Content - Fixed Position */}
-//       <div
-//         className="content text-white text-center"
-//         style={{
-//           width: "100%",
-//           position: "relative",
-//           zIndex: 2, // Ensures text stays above the images
-//           padding: "20px",
-//         }}
-//       >
-//         <h2 className="text-heading w-100" style={{ textAlign: "left" }}>
-//           {data?.name}
-//         </h2>
-//         <h4 className="text-description" style={{ textAlign: "left" }}>
-//           {data?.description}
-//         </h4>
-//       </div>
-//     </div>
-//   );
-// };
 export const HeroImg = ({ data }) => {
   const [isLoaded, setIsLoaded] = useState(false);
 
@@ -136,10 +56,10 @@ export const HeroImg = ({ data }) => {
         afterLoad={() => setIsLoaded(true)} // Mark image as loaded
       />
 
-      {/* Content - Overlay (Above Image) */}
       <div
-        className="content text-white text-center"
+        className="content text-white text-center align-self-end"
         style={{
+          marginBottom: "100px",
           width: "100%",
           position: "absolute",
           zIndex: 2, // Keeps text above image
