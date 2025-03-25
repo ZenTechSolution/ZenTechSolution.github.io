@@ -1,10 +1,10 @@
-import React from "react";
+import React, { use, useEffect, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { PrimaryBtn } from "./../General/General";
 import { LazyLoadImage } from "react-lazy-load-image-component";
 import "react-lazy-load-image-component/src/effects/opacity.css";
 
-let data = {
+let careerData = {
   miniHeading: "Careers",
   heading: "Join Our Team, Shape the Future",
   description:
@@ -13,7 +13,11 @@ let data = {
 };
 
 export const CareerHero = () => {
-  const navigate = useNavigate();
+  const [data, setData] = useState({});
+
+  useEffect(() => {
+    setData(careerData);
+  }, [careerData]);
 
   return (
     <div
@@ -27,9 +31,9 @@ export const CareerHero = () => {
       {/* Lazy Load Background Image - Positioned Absolutely */}
       <LazyLoadImage
         src={data?.img_path}
-        effect="blur"
-        alt="About Us Background"
-        className="hero-about-bg"
+        effect="opacity" // Smooth fade-in effect
+        alt="Project Background"
+        className="project-hero-bg"
         style={{
           position: "absolute",
           top: 0,
@@ -46,10 +50,11 @@ export const CareerHero = () => {
         className="glass-box text-white p-4 rounded"
         style={{
           width: "90%",
+          maxWidth: "90%",
           minWidth: "280px",
-          backdropFilter: "blur(15px)",
-          background: "rgba(1, 1, 1, 0.28)",
-          border: "1px solid rgba(159, 147, 147, 0.3)",
+          backdropFilter: "blur(10px)",
+          background: "rgba(0, 0, 0, 0.28)",
+          border: "1px solid rgba(255, 255, 255, 0.3)",
           borderRadius: "12px",
           textAlign: "center",
           padding: "20px",
@@ -58,9 +63,10 @@ export const CareerHero = () => {
           position: "absolute",
         }}
       >
-        <div className="w-100 text-start">
+        <div className="w-100">
+          <h2 className="fw-bold fs-6 text-start">{data.miniHeading}</h2>
           <p
-            className="mt-2 fs-6 fw-bold"
+            className="mt-2 fs-2 fw-bold text-start"
             style={{
               display: "-webkit-box",
               WebkitBoxOrient: "vertical",
@@ -69,10 +75,32 @@ export const CareerHero = () => {
               textOverflow: "ellipsis",
             }}
           >
-            {data.miniHeading}
+            {data.name}
           </p>
-          <h2 className="fw-bold fs-1">{data.heading}</h2>
-          <p className="fs-5">{data.description}</p>
+          <p
+            className="mt-2 fs-2 fw-bold text-start"
+            style={{
+              display: "-webkit-box",
+              WebkitBoxOrient: "vertical",
+              WebkitLineClamp: 3,
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+            }}
+          >
+            {data.heading}
+          </p>
+          <p
+            className="mt-0 fs-4 text-start"
+            style={{
+              display: "-webkit-box",
+              WebkitBoxOrient: "vertical",
+              WebkitLineClamp: 3,
+              overflow: "hidden",
+              textOverflow: "ellipsis",
+            }}
+          >
+            {data.description}
+          </p>
         </div>
       </div>
     </div>
