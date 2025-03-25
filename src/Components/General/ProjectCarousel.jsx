@@ -70,7 +70,7 @@ const ProjectBox = ({ data }) => {
       <LazyLoadImage
         src={data.img_path}
         alt={data.name}
-        effect="blur"
+        effect="opacity"
         className="rounded-circle"
         style={{
           width: "80px",
