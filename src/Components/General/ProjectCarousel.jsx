@@ -42,7 +42,7 @@ export const ProjectCarousel = () => {
           ))}
         </Marquee>
         <Marquee
-          speed={1}
+          speed={100}
           gradient={false}
           gradientWidth={50}
           loop={0}
