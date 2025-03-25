@@ -17,7 +17,7 @@ export const Landing = () => {
     <>
       <NavBar />
       <HeroSection />
-      <OurServicesSection slidesNo={4} />
+      <OurServicesSection slidesNo={7} />
       <div className="div" style={{ position: "relative" }}>
         <Industries />
         <div

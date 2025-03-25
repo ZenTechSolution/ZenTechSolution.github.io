@@ -13,6 +13,7 @@ const ServiceBox = ({ service }) => {
 
   function NavigatePage() {
     navigate(`/services/${service.id}`);
+    window.location.reload();
   }
 
   console.log("Image Path:", service?.img_path); // Debugging Log
