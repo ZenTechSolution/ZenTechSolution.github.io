@@ -567,6 +567,156 @@
         "User-friendly dashboard to manage toll-related services efficiently.",
         "Automated billing system with detailed invoices for transparency."
       ]
+    },
+    {
+      "profile": {
+        "id": 106,
+        "name": "Miles",
+        "description": "Miles is the toll management system, designed specifically for vehicle users. It allows users to pay toll bills online, track their transactions, and manage toll-related services efficiently. The platform enhances convenience by offering seamless digital payments and additional features for a hassle-free experience.",
+        "img_path": "/Images/Projects/MilesMobile.png",
+        "customer_review": "Patreon has revolutionized toll payments for our users! The online payment system is smooth, secure, and user-friendly. Managing toll expenses has never been easier. Highly recommended!",
+        "customer_name": "Sarah Williams"
+      },
+      "tags": [
+        "flutter",
+        "php",
+        "sql",
+        "nodejs",
+        "feathers",
+        "javascript",
+        "html",
+        "css"
+      ],
+      "Images": [
+        {
+          "id": 1,
+          "img_path": "/Images/Projects/Miles/5.png"
+        },
+        {
+          "id": 2,
+          "img_path": "/Images/Projects/Miles/2.png"
+        },
+        {
+          "id": 3,
+          "img_path": "/Images/Projects/Miles/6.png"
+        },
+        {
+          "id": 4,
+          "img_path": "/Images/Projects/Miles/4.png"
+        },
+        {
+          "id": 5,
+          "img_path": "/Images/Projects/Miles/1.png"
+        },
+        {
+          "id": 6,
+          "img_path": "/Images/Projects/Miles/3.png"
+        }
+      ],
+      "features": [
+        "Multi-vehicle management support for users with multiple registered vehicles.",
+        "Secure authentication and authorization to protect user data and payments.",
+        "Seamless online toll payment system for quick and hassle-free transactions.",
+        "Instant notifications and alerts for toll charges and payment confirmations.",
+        "Real-time transaction tracking to monitor toll payments and history.",
+        "Digital wallet integration for convenient and cashless toll payments.",
+        "User-friendly dashboard to manage toll-related services efficiently.",
+        "Automated billing system with detailed invoices for transparency."
+      ]
+    },
+    {
+      "profile": {
+        "id": 107,
+        "name": "ScentAbility MashGame",
+        "description": "ScentAbility MashGame is an interactive mobile game developed using Flutter and SQL. It offers an engaging and dynamic experience where players match scents with corresponding objects, enhancing their sensory and cognitive skills. The game features multiple levels, timed challenges, and a rewarding progression system.",
+        "img_path": "/Images/Projects/ScentAbilityMashGame.png",
+        "customer_review": "ScentAbility MashGame is an innovative and fun way to engage the senses! The gameplay is smooth, and the challenges keep players hooked. Highly recommended for all ages!",
+        "customer_name": "Sarah Williams"
+      },
+      "tags": ["flutter", "java", "sql"],
+      "Images": [
+        {
+          "id": 1,
+          "img_path": "/Images/Projects/ScentsAbilityMatchGame/1.png"
+        },
+        {
+          "id": 2,
+          "img_path": "/Images/Projects/ScentsAbilityMatchGame/2.png"
+        },
+        {
+          "id": 3,
+          "img_path": "/Images/Projects/ScentsAbilityJigsawGame/3.png"
+        },
+        {
+          "id": 4,
+          "img_path": "/Images/Projects/ScentsAbilityMatchGame/4.png"
+        },
+        {
+          "id": 5,
+          "img_path": "/Images/Projects/ScentsAbilityMatchGame/5.png"
+        },
+        {
+          "id": 6,
+          "img_path": "/Images/Projects/ScentsAbilityMatchGame/6.png"
+        }
+      ],
+      "features": [
+        "Multi-vehicle management support for users with multiple registered vehicles.",
+        "Secure authentication and authorization to protect user data and payments.",
+        "Seamless online toll payment system for quick and hassle-free transactions.",
+        "Instant notifications and alerts for toll charges and payment confirmations.",
+        "Real-time transaction tracking to monitor toll payments and history.",
+        "Digital wallet integration for convenient and cashless toll payments.",
+        "User-friendly dashboard to manage toll-related services efficiently.",
+        "Automated billing system with detailed invoices for transparency."
+      ]
+    },
+    {
+      "profile": {
+        "id": 108,
+        "name": "ScentsAbility JigsawGame",
+        "description": "ScentsAbility JigsawGame is a fun and engaging mobile puzzle game developed using Flutter. It offers a seamless jigsaw puzzle experience with beautiful images, intuitive controls, and smooth animations, making it an enjoyable game for all ages.",
+        "img_path": "/Images/Projects/ScentsabilityJigsaw.png",
+        "customer_review": "ScentsAbility JigsawGame is an amazing puzzle game! The interface is smooth, and the gameplay feels so intuitive. The animations and graphics are well-crafted, making it an enjoyable experience. Highly recommended!",
+        "customer_name": "Sarah Williams"
+      },
+      "tags": ["flutter", "java", "sql"],
+      "Images": [
+        {
+          "id": 1,
+          "img_path": "/Images/Projects/ScentsAbilityJigsawGame/1.png"
+        },
+        {
+          "id": 2,
+          "img_path": "/Images/Projects/ScentsAbilityJigsawGame/3.png"
+        },
+        {
+          "id": 3,
+          "img_path": "/Images/Projects/ScentsAbilityJigsawGame/2.png"
+        },
+        {
+          "id": 4,
+          "img_path": "/Images/Projects/ScentsAbilityJigsawGame/4.png"
+        },
+        {
+          "id": 5,
+          "img_path": "/Images/Projects/ScentsAbilityJigsawGame/6.png"
+        },
+        {
+          "id": 6,
+          "img_path": "/Images/Projects/ScentsAbilityJigsawGame/5.png"
+        }
+      ],
+      "features": [
+        "Engaging jigsaw puzzle gameplay with multiple difficulty levels.",
+        "High-quality images and smooth animations for an immersive experience.",
+        "User-friendly interface with intuitive drag-and-drop mechanics.",
+        "Auto-save feature to resume puzzles anytime.",
+        "Hint system to assist players when stuck on challenging puzzles.",
+        "Customizable puzzle pieces and board settings for personalized gameplay.",
+        "Offline mode support to play without an internet connection.",
+        "Regular updates with new puzzle packs and themes."
+      ]
     }
   ],
   "services": [
