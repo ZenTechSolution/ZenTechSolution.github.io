@@ -109,7 +109,7 @@
   text-wrap: auto;
 }
 .projectBox {
-  width: 250px;
+  min-width: 250px;
 }
 .lazy-load-image-background {
   width: 100%;
