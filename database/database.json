@@ -18,8 +18,16 @@
       },
       "skills": [
         {
-          "id": 10,
-          "name": "laravel"
+          "id": 7,
+          "name": "flutter"
+        },
+        {
+          "id": 6,
+          "name": "kotlin"
+        },
+        {
+          "id": 9,
+          "name": "java"
         },
         {
           "id": 10,
@@ -38,24 +46,8 @@
           "name": "Nodejs"
         },
         {
-          "id": 10,
-          "name": "Typescript"
-        },
-        {
-          "id": 7,
-          "name": "flutter"
-        },
-        {
-          "id": 1,
-          "name": "javascript"
-        },
-        {
           "id": 2,
           "name": "Firebase"
-        },
-        {
-          "id": 6,
-          "name": "kotlin"
         },
         {
           "id": 9,
@@ -66,8 +58,16 @@
           "name": "Sql"
         },
         {
-          "id": 9,
-          "name": "java"
+          "id": 10,
+          "name": "laravel"
+        },
+        {
+          "id": 10,
+          "name": "Typescript"
+        },
+        {
+          "id": 1,
+          "name": "javascript"
         }
       ],
       "education": [
@@ -96,7 +96,7 @@
           "description": "Worked as a Web Developer at Zentech, developing dynamic websites and web applications using modern technologies. Collaborated with designers and backend teams to build responsive and user-friendly interfaces. Gained experience in front-end and back-end development, optimizing performance and functionality."
         }
       ],
-      "projects": [101, 102, 103, 104, 105]
+      "projects": [101, 102, 103, 104, 105, 106, 107, 108]
     },
     {
       "profile": {
@@ -198,7 +198,7 @@
           "description": "Specializing in mobile app development using Flutter, I design and build high-performance applications for both mobile and Android TV platforms. I develop interactive and engaging games with Flutter, ensuring seamless user experiences. My role involves end-to-end development, performance optimization, and troubleshooting to deliver scalable and efficient solutions."
         }
       ],
-      "projects": [101, 102, 103, 104, 105]
+      "projects": [101, 102, 103, 104, 105, 106, 107, 108]
     },
     {
       "profile": {
@@ -280,7 +280,7 @@
           "description": "Worked as a Web Developer at Zentech, developing dynamic websites and web applications using modern technologies. Collaborated with designers and backend teams to build responsive and user-friendly interfaces. Gained experience in front-end and back-end development, optimizing performance and functionality."
         }
       ],
-      "projects": [103, 104, 105]
+      "projects": [101, 102, 103]
     }
   ],
   "projects": [
@@ -290,9 +290,9 @@
         "name": "Schoollet",
         "description": "Schoollet is a digital transaction and management platform designed for students and canteens. The app allows users to add students, deposit virtual credits, and apply for withdrawals. When a canteen generates a bill, the student's credit balance is automatically deducted through the mobile app. This seamless cashless system ensures efficient transaction management for schools and canteens.",
         "img_path": "/Images/Projects/schoollet.png",
-        "link": "https://schoollet.com",
+        "link": "https://schoollet.com.sa",
         "customer_review": "Schoollet transformed the way we handle transactions at our school! The cashless system is seamless, and students love the convenience. The team was responsive, professional, and implemented the solution flawlessly. Highly recommended!",
-        "customer_name": "Naif"
+        "customer_name": "Naif Al Harbi"
       },
       "tags": [
         "flutter",
@@ -351,9 +351,9 @@
         "name": "Schoollet Canteen",
         "description": "Schoollet Canteen is a mobile application designed for canteens and student transactions. It enables canteen users to create bills, accept cashless payments using virtual credits, and track transactions. The backend is controlled via a web portal, allowing canteens to manage billing, create withdrawal requests, and efficiently handle earnings.",
         "img_path": "/Images/Projects/schoolletCanteen.png",
-        "link": "https://schoollet.com",
+        "link": "https://schoollet.com.sa",
         "customer_review": "Schoollet Canteen has completely streamlined our operations. The ability to generate bills instantly and accept digital payments has made transactions effortless. The web-based backend control is a game changer. Highly recommended for any school canteen!",
-        "customer_name": "Naif"
+        "customer_name": "Naif Al Harbi"
       },
       "tags": [
         "flutter",
@@ -412,7 +412,7 @@
         "description": "WeAd is a web application designed to control an Android TV app for ad management. It allows users to add new ads, connect new screens, and manage which ads run on specific screens. Users can schedule ads with start and end dates, ensuring automatic disabling after expiry. The system provides a seamless and efficient way to manage digital signage.",
         "img_path": "/Images/Projects/wead.png",
         "customer_review": "WeAd has revolutionized our digital ad management. The ability to control screens remotely and schedule ads effortlessly has saved us time and increased efficiency. The platform is intuitive, and the automation features are fantastic. Highly recommended!",
-        "customer_name": "Naif"
+        "customer_name": "Naif Al Harbi"
       },
       "tags": [
         "flutter",
@@ -455,22 +455,12 @@
       "profile": {
         "id": 104,
         "name": "Eris",
-        "description": "Eris is a toll management system designed to control entry and exit signals while automating billing processes. The system allows users to open and close toll signals and generate bills efficiently, ensuring smooth traffic management and accurate transaction tracking.",
+        "description": "Eris is a toll management system designed for toll plaza management, allowing operators to control entry and exit barriers, automate billing, and efficiently manage toll payments. The system enables users to detect vehicles, generate receipts in USD and Canadian dollars, and handle emergency booth barrier operations, ensuring smooth traffic flow and accurate transaction tracking.",
         "img_path": "/Images/Projects/eris.png",
-        "customer_review": "Eris has streamlined our toll operations significantly! The ability to manage signals and generate bills automatically has improved efficiency and reduced manual work. Highly recommended!",
-        "customer_name": "Michael Johnson"
+        "customer_review": "Eris has streamlined our toll operations significantly! The ability to manage barriers and generate receipts automatically has improved efficiency and reduced manual work. Highly recommended!",
+        "customer_name": "Johnque Washington"
       },
-      "tags": [
-        "flutter",
-        "php",
-        "firebase",
-        "sql",
-        "nodejs",
-        "javascript",
-        "html",
-        "css",
-        "feathers"
-      ],
+      "tags": ["flutter", "php", "sql", "nodejs", "feathers"],
       "Images": [
         {
           "id": 1,
@@ -490,24 +480,27 @@
         }
       ],
       "features": [
-        "Automated toll entry and exit signal control for seamless traffic management.",
+        "Automated toll entry and exit barrier control for seamless traffic management.",
         "Real-time billing system to generate accurate toll charges instantly.",
-        "User-friendly interface for opening and closing toll signals with a single click.",
+        "User-friendly interface for opening and closing toll barriers with a single click.",
         "Secure authentication and authorization to prevent unauthorized access.",
         "Detailed transaction history for tracking toll payments and vehicle movements.",
         "Web-based admin panel for monitoring toll operations and managing users.",
         "Automated reports and analytics to optimize toll collection and traffic flow.",
-        "Seamless integration with payment gateways for cashless transactions."
+        "Seamless integration with payment gateways for cashless transactions.",
+        "Vehicle detection system for automatic toll charge calculation.",
+        "Emergency barrier control to allow manual override when needed.",
+        "Receipt generation in both USD and Canadian dollars."
       ]
     },
     {
       "profile": {
         "id": 105,
         "name": "Patreon",
-        "description": "Patreon is the toll management system, designed specifically for vehicle users. It allows users to pay toll bills online, track their transactions, and manage toll-related services efficiently. The platform enhances convenience by offering seamless digital payments and additional features for a hassle-free experience.",
+        "description": "Patreon is a comprehensive toll management mobile application designed for vehicle users, specifically those using the Ambassador Bridge toll plaza. The app allows users to seamlessly make toll payments in both USD and Canadian dollars, track transactions, and manage multiple vehicles effortlessly. With secure authentication, real-time transaction monitoring, and instant notifications, Patreon ensures a smooth and hassle-free toll payment experience. Its user-friendly interface, digital wallet integration, and automated billing system enhance convenience, making toll payments more efficient and transparent.",
         "img_path": "/Images/Projects/patreonManagment.png",
         "customer_review": "Patreon has revolutionized toll payments for our users! The online payment system is smooth, secure, and user-friendly. Managing toll expenses has never been easier. Highly recommended!",
-        "customer_name": "Sarah Williams"
+        "customer_name": "Johnque Washington"
       },
       "tags": [
         "flutter",
@@ -572,10 +565,10 @@
       "profile": {
         "id": 106,
         "name": "Miles",
-        "description": "Miles is the toll management system, designed specifically for vehicle users. It allows users to pay toll bills online, track their transactions, and manage toll-related services efficiently. The platform enhances convenience by offering seamless digital payments and additional features for a hassle-free experience.",
+        "description": "Miles is the backend toll management system for the Patreon and Eris apps, designed for administrators to manage toll operations efficiently. It enables vehicle activation, number plate recognition through image capture, and access to toll plaza cameras. Miles also allows administrators to retrieve government vehicle details based on license plates, monitor transactions, and ensure smooth toll management with real-time insights.",
         "img_path": "/Images/Projects/MilesMobile.png",
-        "customer_review": "Patreon has revolutionized toll payments for our users! The online payment system is smooth, secure, and user-friendly. Managing toll expenses has never been easier. Highly recommended!",
-        "customer_name": "Sarah Williams"
+        "customer_review": "Miles has revolutionized toll payments for our users! The online payment system is smooth, secure, and user-friendly. Managing toll expenses has never been easier. Highly recommended!",
+        "customer_name": "Johnque Washington"
       },
       "tags": [
         "flutter",
@@ -614,24 +607,27 @@
         }
       ],
       "features": [
+        "Number plate recognition with image capture for seamless vehicle identification.",
         "Multi-vehicle management support for users with multiple registered vehicles.",
-        "Secure authentication and authorization to protect user data and payments.",
-        "Seamless online toll payment system for quick and hassle-free transactions.",
+        "Secure authentication and authorization to protect user data and transactions.",
+        "Seamless online toll payment system for quick and hassle-free processing.",
         "Instant notifications and alerts for toll charges and payment confirmations.",
-        "Real-time transaction tracking to monitor toll payments and history.",
-        "Digital wallet integration for convenient and cashless toll payments.",
-        "User-friendly dashboard to manage toll-related services efficiently.",
-        "Automated billing system with detailed invoices for transparency."
+        "Real-time transaction tracking for monitoring toll payments and history.",
+        "Integration with government databases for vehicle detail verification.",
+        "Digital wallet support for convenient and cashless toll payments.",
+        "Access to toll plaza cameras for enhanced monitoring and security.",
+        "Automated billing system with detailed invoices for transparency.",
+        "User-friendly admin dashboard for managing toll operations efficiently."
       ]
     },
     {
       "profile": {
         "id": 107,
         "name": "ScentAbility MashGame",
-        "description": "ScentAbility MashGame is an interactive mobile game developed using Flutter and SQL. It offers an engaging and dynamic experience where players match scents with corresponding objects, enhancing their sensory and cognitive skills. The game features multiple levels, timed challenges, and a rewarding progression system.",
+        "description": "ScentAbility MashGame is an interactive card-matching mobile game developed using Flutter and SQL. Players match scents with corresponding objects, enhancing their sensory and cognitive skills. The game features multiple levels, timed challenges, and a rewarding progression system, making it engaging for all ages.",
         "img_path": "/Images/Projects/ScentAbilityMashGame.png",
         "customer_review": "ScentAbility MashGame is an innovative and fun way to engage the senses! The gameplay is smooth, and the challenges keep players hooked. Highly recommended for all ages!",
-        "customer_name": "Sarah Williams"
+        "customer_name": "John Becker (Qc Cloud)"
       },
       "tags": ["flutter", "java", "sql"],
       "Images": [
@@ -661,24 +657,24 @@
         }
       ],
       "features": [
-        "Multi-vehicle management support for users with multiple registered vehicles.",
-        "Secure authentication and authorization to protect user data and payments.",
-        "Seamless online toll payment system for quick and hassle-free transactions.",
-        "Instant notifications and alerts for toll charges and payment confirmations.",
-        "Real-time transaction tracking to monitor toll payments and history.",
-        "Digital wallet integration for convenient and cashless toll payments.",
-        "User-friendly dashboard to manage toll-related services efficiently.",
-        "Automated billing system with detailed invoices for transparency."
+        "Interactive card-matching gameplay with scent-object associations.",
+        "Multiple difficulty levels to challenge players of all ages.",
+        "Timed challenges that enhance cognitive and sensory skills.",
+        "Rewarding progression system with achievements and unlockables.",
+        "User-friendly interface with smooth and responsive gameplay.",
+        "Engaging animations and sound effects for an immersive experience.",
+        "Offline play support to enjoy the game anytime, anywhere.",
+        "Developed using Flutter and SQL for a fast and seamless performance."
       ]
     },
     {
       "profile": {
         "id": 108,
         "name": "ScentsAbility JigsawGame",
-        "description": "ScentsAbility JigsawGame is a fun and engaging mobile puzzle game developed using Flutter. It offers a seamless jigsaw puzzle experience with beautiful images, intuitive controls, and smooth animations, making it an enjoyable game for all ages.",
+        "description": "ScentsAbility JigsawGame is an interactive mobile puzzle game developed using Flutter. It transforms images into jigsaw puzzles, providing a fun and engaging experience for players of all ages. With smooth animations, intuitive controls, and beautifully crafted visuals, the game offers an enjoyable and immersive puzzle-solving adventure.",
         "img_path": "/Images/Projects/ScentsabilityJigsaw.png",
         "customer_review": "ScentsAbility JigsawGame is an amazing puzzle game! The interface is smooth, and the gameplay feels so intuitive. The animations and graphics are well-crafted, making it an enjoyable experience. Highly recommended!",
-        "customer_name": "Sarah Williams"
+        "customer_name": "John Becker (Qc Cloud)"
       },
       "tags": ["flutter", "java", "sql"],
       "Images": [
@@ -709,6 +705,7 @@
       ],
       "features": [
         "Engaging jigsaw puzzle gameplay with multiple difficulty levels.",
+        "Transforms images into interactive jigsaw puzzles.",
         "High-quality images and smooth animations for an immersive experience.",
         "User-friendly interface with intuitive drag-and-drop mechanics.",
         "Auto-save feature to resume puzzles anytime.",
