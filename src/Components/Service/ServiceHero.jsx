@@ -1,4 +1,6 @@
 import React, { useEffect, useState } from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 let data = {
   id: "1",
@@ -13,20 +15,40 @@ let data = {
     "Our web development services provide enterprise-grade and customized web development services tailored to meet the evolving demands of modern businesses.Whether you need a simple landing page or a complex web application, we have the expertise to deliver results that exceed expectations.",
 };
 
-export const ServiceHero = (props) => {
-  let [data, setData] = useState({});
+export const ServiceHero = ({ profile }) => {
+  const [data, setData] = useState({});
+
   useEffect(() => {
-    setData(props.profile);
-  }, []);
+    setData(profile);
+  }, [profile]);
+
   return (
     <div
       className="d-flex align-items-end justify-content-center position-relative"
       style={{
         width: "100vw",
         height: "90vh",
-        background: `url(${data.img_path}) center / cover no-repeat`,
+        overflow: "hidden",
       }}
     >
+      {/* Lazy Load Background Image - Positioned Absolutely */}
+      <LazyLoadImage
+        src={data?.img_path}
+        effect="blur"
+        alt={data?.name}
+        className="service-hero-bg"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          zIndex: 0, // Background image stays at the lowest layer
+        }}
+      />
+
+      {/* Content - Above Background Image */}
       <div
         className="glass-box text-white p-4 rounded"
         style={{
@@ -40,6 +62,8 @@ export const ServiceHero = (props) => {
           textAlign: "center",
           padding: "20px",
           marginBottom: "5vh",
+          zIndex: 1, // Ensures content is above the background image
+          position: "absolute",
         }}
       >
         <div className="w-100">

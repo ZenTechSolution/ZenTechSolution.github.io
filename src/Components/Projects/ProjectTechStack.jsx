@@ -19,6 +19,7 @@ import {
 } from "react-icons/si";
 import { FaWordpress, FaPhp, FaCode } from "react-icons/fa";
 import { FaFlutter, FaHtml5 } from "react-icons/fa6";
+import { GiFeather } from "react-icons/gi";
 
 export const ProjectTechStack = ({ tags = [] }) => {
   return (
@@ -93,6 +94,7 @@ const getTechData = (tech) => {
     css: { name: "CSS", icon: DiCss3, color: "#264de4" },
     java: { name: "Java", icon: DiJava, color: "#007396" },
     html: { name: "Html", icon: FaHtml5, color: "#fe2d13" },
+    feathers: { name: "Feather Js", icon: GiFeather, color: "#858585" },
   };
 
   return techMap[tech] || { name: tech, icon: FaCode, color: "#36454F" }; // Charcoal color for unknown tech

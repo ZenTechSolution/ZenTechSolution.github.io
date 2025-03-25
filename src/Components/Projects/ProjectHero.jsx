@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import { PrimaryBtn } from "./../General/General";
 import { MyProjects } from "./../TeamPage/MyProjects";
 import { useNavigate } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 let ProjectPage = {
   miniHeading: "Projects",
@@ -12,7 +14,7 @@ let ProjectPage = {
 };
 
 export const ProjectHero = () => {
-  const [data, setData] = useState(ProjectPage);
+  const [data] = useState(ProjectPage);
   const navigate = useNavigate();
 
   return (
@@ -21,9 +23,27 @@ export const ProjectHero = () => {
       style={{
         width: "100vw",
         height: "90vh",
-        background: `url(${data.img_path}) center / cover no-repeat`,
+        overflow: "hidden",
       }}
     >
+      {/* Lazy Load Background Image - Positioned Absolutely */}
+      <LazyLoadImage
+        src={data?.img_path}
+        effect="opacity" // Smooth fade-in effect
+        alt="Project Background"
+        className="project-hero-bg"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          zIndex: 0, // Background image stays behind the content
+        }}
+      />
+
+      {/* Content - Above Background Image */}
       <div
         className="glass-box text-white p-4 rounded"
         style={{
@@ -37,6 +57,8 @@ export const ProjectHero = () => {
           textAlign: "center",
           padding: "20px",
           marginBottom: "5vh",
+          zIndex: 1, // Ensures content is above the background image
+          position: "absolute",
         }}
       >
         <div className="w-100">
@@ -58,10 +80,8 @@ export const ProjectHero = () => {
             style={{ width: "fit-content" }}
           >
             <PrimaryBtn
-              name={"Lets Discuss Your Project"}
-              onClick={() => {
-                navigate("/contact");
-              }}
+              name="Let's Discuss Your Project"
+              onClick={() => navigate("/contact")}
             />
           </div>
         </div>

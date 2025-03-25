@@ -3,23 +3,73 @@ import { PrimaryBtnOutline } from "./../General/General";
 import "./../../Css/Classes.css";
 import "./../../Css/Landing.css";
 import { useNavigate } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 ////////////////////////////////////////////////////////////////
+// const ServiceBox = ({ service }) => {
+//   const navigate = useNavigate();
+//   const [bgImage, setBgImage] = useState(null);
+
+//   useEffect(() => {
+//     if (service?.img_path) {
+//       const img = new Image();
+//       img.src = service.img_path;
+//       img.onload = () => setBgImage(service.img_path);
+//     }
+//   }, [service?.img_path]);
+
+//   function NavigatePage() {
+//     navigate(`/services/${service.id}`);
+//   }
+
+//   return (
+//     <div
+//       onClick={NavigatePage}
+//       className="service-box text-white rounded position-relative"
+//       style={{
+//         width: "100%",
+//         height: "300px",
+//         backgroundImage: bgImage ? `url(${bgImage})` : "none",
+//         backgroundSize: "cover",
+//         backgroundPosition: "center",
+//         backgroundRepeat: "no-repeat",
+//         padding: "20px",
+//         textShadow: "1px 1px 5px rgba(0,0,0,0.8)",
+//         display: "flex",
+//         flexDirection: "column",
+//         justifyContent: "center",
+//         alignItems: "center",
+//         filter: "grayscale(50%)",
+//         cursor: "pointer",
+//         transition: "background-image 0.5s ease-in-out",
+//       }}
+//     >
+//       <h2
+//         className="position-absolute"
+//         style={{
+//           top: "10px",
+//           left: "15px",
+//           fontSize: "24px",
+//           fontWeight: "bold",
+//           padding: "5px 10px",
+//           borderRadius: "5px",
+//         }}
+//       >
+//         {service.name}
+//       </h2>
+//     </div>
+//   );
+// };
+
 const ServiceBox = ({ service }) => {
   const navigate = useNavigate();
-  const [bgImage, setBgImage] = useState(null);
-
-  useEffect(() => {
-    if (service?.img_path) {
-      const img = new Image();
-      img.src = service.img_path;
-      img.onload = () => setBgImage(service.img_path);
-    }
-  }, [service?.img_path]);
 
   function NavigatePage() {
     navigate(`/services/${service.id}`);
   }
+
+  console.log("Image Path:", service?.img_path); // Debugging Log
 
   return (
     <div
@@ -28,10 +78,8 @@ const ServiceBox = ({ service }) => {
       style={{
         width: "100%",
         height: "300px",
-        backgroundImage: bgImage ? `url(${bgImage})` : "none",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        backgroundRepeat: "no-repeat",
+        position: "relative",
+        cursor: "pointer",
         padding: "20px",
         textShadow: "1px 1px 5px rgba(0,0,0,0.8)",
         display: "flex",
@@ -39,14 +87,49 @@ const ServiceBox = ({ service }) => {
         justifyContent: "center",
         alignItems: "center",
         filter: "grayscale(50%)",
-        cursor: "pointer",
-        transition: "background-image 0.5s ease-in-out",
+        overflow: "visible", // Ensure it's not clipping the image
       }}
     >
+      {/* Lazy Load Background Image with Fallback */}
+      {service?.img_path ? (
+        <LazyLoadImage
+          src={service.img_path}
+          effect="blur"
+          alt={service?.name || "Service Image"}
+          className="service-bg"
+          style={{
+            width: "100%",
+            height: "100%",
+            objectFit: "cover",
+            borderRadius: "10px",
+            zIndex: -1,
+          }}
+        />
+      ) : (
+        <div
+          className="fallback-img"
+          style={{
+            position: "absolute",
+            width: "100%",
+            height: "100%",
+            background: "#ccc", // Fallback color
+            borderRadius: "10px",
+            zIndex: -1,
+          }}
+        >
+          <p
+            style={{ color: "black", textAlign: "center", marginTop: "130px" }}
+          >
+            No Image
+          </p>
+        </div>
+      )}
+
+      {/* Service Name */}
       <h2
         className="position-absolute"
         style={{
-          top: "10px",
+          top: "30px",
           left: "15px",
           fontSize: "24px",
           fontWeight: "bold",

@@ -62,7 +62,7 @@ export const ProjectHeroPage = ({ profile, tags }) => {
           >
             {profiles.name || "Loading..."}
           </p>
-          <div className="mt-3" style={{ width: "fitContent" }}>
+          <div className="mt-3 ProjectTechDivs" style={{ width: "fitContent" }}>
             {tag.slice(0, 5).map((t, index) => (
               <span key={index} className="badge bg-secondary me-1">
                 {t}

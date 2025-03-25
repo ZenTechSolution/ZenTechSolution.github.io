@@ -6,6 +6,8 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import { FaArrowRight, FaArrowLeft } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 const TeamBox = ({ member }) => {
   const navigate = useNavigate();
@@ -28,9 +30,10 @@ const TeamBox = ({ member }) => {
       className="p-4 shadow-md rounded-lg text-center cursor-pointer"
       onClick={NavigateTeam}
     >
-      <img
+      <LazyLoadImage
         src={imgSrc || "https://via.placeholder.com/150"} // Placeholder while loading
         alt={`${member.first_name} ${member.last_name}`}
+        effect="blur"
         className="w-24 h-24 rounded-full mx-auto mb-2"
         style={{
           maxWidth: "100%",

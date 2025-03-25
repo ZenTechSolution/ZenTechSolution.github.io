@@ -2,6 +2,8 @@ import React, { useEffect, useState } from "react";
 import Marquee from "react-fast-marquee";
 import "./../../Css/Landing.css";
 import { useNavigate } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 ////////////////////////////////////////////////////////////////
 export const ProjectCarousel = () => {
   let [projects, setProjects] = useState([]);
@@ -65,9 +67,10 @@ const ProjectBox = ({ data }) => {
       className="projectBox text-center mx-3 d-flex gap-2 col-12"
       onClick={boxClick}
     >
-      <img
+      <LazyLoadImage
         src={data.img_path}
         alt={data.name}
+        effect="blur"
         className="rounded-circle"
         style={{
           width: "80px",

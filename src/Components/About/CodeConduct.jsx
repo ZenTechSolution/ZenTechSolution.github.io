@@ -1,5 +1,7 @@
 import React from "react";
 import "./../../Css/Responsive.css";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 const businessPrinciples = [
   {
@@ -21,7 +23,7 @@ export const CodeConduct = () => {
       <div className="col-11 m-auto mt-5">
         <div className="row justify-content-center align-items-center">
           {/* Left Image */}
-          <div className="col-md-4 mb-5">
+          <div className="col-md-4" style={{ marginBottom: "10px" }}>
             <BusinessImage
               src={businessPrinciples[0].img_path}
               alt={businessPrinciples[0].imgAlt}
@@ -31,7 +33,7 @@ export const CodeConduct = () => {
           {/* Center Content */}
           <div className="col-md-4 text-center">
             <p className="text-primary fw-bold text-center">Code of Conduct</p>
-            <h2 className="heading-style-h3">
+            <h2 className="serviceSectionHeading mb-5 text-center">
               Our Code of Business Principles
             </h2>
             <p className="text-size-medium">
@@ -41,7 +43,10 @@ export const CodeConduct = () => {
           </div>
 
           {/* Right Image */}
-          <div className="col-md-4 mt-5 AboutBottomImg">
+          <div
+            className="col-md-4 AboutBottomImg"
+            style={{ marginTop: "100px" }}
+          >
             <BusinessImage
               src={businessPrinciples[1].img_path}
               alt={businessPrinciples[1].imgAlt}
@@ -57,7 +62,8 @@ export const CodeConduct = () => {
 const BusinessImage = ({ src, alt }) => {
   return (
     <div className="aspect-ratio-square">
-      <img
+      <LazyLoadImage
+        effect="blur"
         src={src}
         alt={alt}
         style={{ height: "400px", width: "100%", objectFit: "cover" }}

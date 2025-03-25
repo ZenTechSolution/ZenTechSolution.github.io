@@ -3,6 +3,8 @@ import { PrimaryBtn } from "./../General/General";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { ImagePath } from "./ServiceImage";
 import { useNavigate } from "react-router-dom";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 export const ServiceData = {
   profile: {
@@ -81,8 +83,9 @@ export const ServiceOverview = (props) => {
             </div>
           </div>
           <div className="col-12 col-md-6 d-flex justify-content-center">
-            <img
+            <LazyLoadImage
               src={data.overview.img_path}
+              effect="blur"
               alt="Service Overview"
               className="img-fluid rounded shadow"
               style={{ maxWidth: "600px", width: "100%", height: "auto" }}

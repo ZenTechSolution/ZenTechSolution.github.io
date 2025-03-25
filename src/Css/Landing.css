@@ -105,3 +105,17 @@
 .projectBox {
   width: 250px;
 }
+.lazy-load-image-background {
+  width: 100%;
+  height: 100%;
+}
+.control-arrow {
+  background-color: transparent;
+  color: #fff !important;
+}
+.control-arrow:hover {
+  background-color: transparent !important;
+}
+.ProjectTechDivs {
+  width: fit-content;
+}

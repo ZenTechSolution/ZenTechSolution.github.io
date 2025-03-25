@@ -1,5 +1,8 @@
 import { useState, useEffect } from "react";
 
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
+
 export const ServiceData = [
   "/Images/General/software1.jpg",
   "/Images/General/software2.jpg",
@@ -21,11 +24,12 @@ export function ServiceImage() {
 
   return (
     <div className="m-auto text-center my-5">
-      <img
+      <LazyLoadImage
+        effect="blur"
         src={imageSrc}
         alt="Service"
         className="img-fluid"
-        style={{ objectFit: "cover", minWidth: "100vw", maxHeight: "100vh" }}
+        style={{ objectFit: "cover", minWidth: "100vw", height: "auto" }}
       />
     </div>
   );

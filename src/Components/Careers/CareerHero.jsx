@@ -1,6 +1,8 @@
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { PrimaryBtn } from "./../General/General";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/opacity.css";
 
 let data = {
   miniHeading: "Careers",
@@ -19,9 +21,27 @@ export const CareerHero = () => {
       style={{
         width: "100vw",
         height: "90vh",
-        background: `url(${data.img_path}) center / cover no-repeat`,
+        overflow: "hidden",
       }}
     >
+      {/* Lazy Load Background Image - Positioned Absolutely */}
+      <LazyLoadImage
+        src={data?.img_path}
+        effect="blur"
+        alt="About Us Background"
+        className="hero-about-bg"
+        style={{
+          position: "absolute",
+          top: 0,
+          left: 0,
+          width: "100%",
+          height: "100%",
+          objectFit: "cover",
+          zIndex: 0, // Background image stays behind the content
+        }}
+      />
+
+      {/* Content - Above Background Image */}
       <div
         className="glass-box text-white p-4 rounded"
         style={{
@@ -34,18 +54,19 @@ export const CareerHero = () => {
           textAlign: "center",
           padding: "20px",
           marginBottom: "5vh",
+          zIndex: 1, // Ensures content is above the background image
+          position: "absolute",
         }}
       >
         <div className="w-100 text-start">
           <p
-            className="mt-2 fs-6"
+            className="mt-2 fs-6 fw-bold"
             style={{
               display: "-webkit-box",
               WebkitBoxOrient: "vertical",
               WebkitLineClamp: 3,
               overflow: "hidden",
               textOverflow: "ellipsis",
-              fontWeight: "bold",
             }}
           >
             {data.miniHeading}
