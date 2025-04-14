@@ -4,12 +4,12 @@
       "profile": {
         "id": 3,
         "first_name": "Adil",
-        "last_name": "Sehr",
+        "last_name": "Sher",
         "role": "Founder & Lead Mobile Developer",
-        "email": "adil@example.com",
+        "email": "adilsher7@gmail.com",
         "dob": "1989-06-15",
         "facebook": "https://facebook.com/adilsehr",
-        "github": "https://github.com/adilsehr",
+        "github": "https://github.com/ewavetech",
         "linkedin": "https://www.linkedin.com/in/adil-sher-16069a6b/",
         "twitter": "https://twitter.com/adilsehr",
         "address": "Lahore, Pakistan",
@@ -113,15 +113,15 @@
         "first_name": "M.Saad",
         "last_name": "Shafiq",
         "role": "Senior Mobile App Developer",
-        "email": "saad@example.com",
-        "dob": "1998-08-10",
-        "facebook": "https://facebook.com/saadshafique",
-        "github": "https://github.com/saadshafique",
+        "email": "muhammadsaadshafiq275@gmail.com",
+        "dob": "2003-07-08",
+        "facebook": "https://facebook.com/",
+        "github": "https://github.com/mrerrorsan",
         "linkedin": "https://www.linkedin.com/in/muhammad-saad-shafiq-a93201240",
-        "twitter": "https://twitter.com/saadshafique",
+        "twitter": "https://twitter.com/",
         "address": "Lahore, Pakistan",
         "img_path": "/Images/Team/saadshafique.jpg",
-        "description": "Experienced mobile app developer with 3 years of expertise in Flutter, game development, and AI scripting using PHP and Python."
+        "description": "Experienced mobile app developer with 3+ years of expertise in Flutter, game development, and AI scripting using PHP and Python."
       },
       "skills": [
         {
